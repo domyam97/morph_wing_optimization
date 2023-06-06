@@ -30,7 +30,6 @@ OpenFoam/constant/polyMesh/neighbour*
 OpenFoam/constant/polyMesh/boundary*
 OpenFoam/constant/polyMesh/sets
 OpenFoam/constant/polyMesh/*
-OpenFoam/constant/extendedFeatureEdgeMesh*
 
 # Zones and levels
 *Level*
@@ -61,9 +60,6 @@ OpenFoam/VTK*
 *.err
 *.stl
 *.ruse
-*.sbatch
 
-
-direct_opt/outputs*
 modulus/outputs*
 */__pycache__.*

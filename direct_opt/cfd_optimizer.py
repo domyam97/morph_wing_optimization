@@ -9,7 +9,7 @@ from optimizer import *
 
 
 sys.path.append("../..")
-from morph_wing_optimizer.modulus.morph_wing_surface import *
+from morph_wing.modulus.morph_wing_surface import *
 
 from modulus.sym.hydra import ModulusConfig
 from modulus.sym.domain import Domain
@@ -365,11 +365,11 @@ def eval_nn_l(x):
     cfg.custom.Vinf = V
     cfg.custom.alpha = alpha
     cfg.run_mode='eval'
-    res_path = os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/lift.csv")
     if not np.all(np.equal(x,last_x_d)):
         solve_nn(cfg, domain, nodes)
-    lift = np.loadtxt(res_path, skiprows=1, delimiter=',',usecols=(1))
-    os.remove(res_path)
+    lift = np.loadtxt(os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/lift.csv"), 
+        skiprows=1, delimiter=',',usecols=(1))
+    os.remove("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/lift.csv")
         
     last_x_l = x
     print(lift.shape)
@@ -387,11 +387,11 @@ def eval_nn(x):
     cfg.custom.Vinf = V
     cfg.custom.alpha = alpha
     cfg.run_mode='eval'
-    res_path = os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/drag.csv")
     if not np.all(np.equal(last_x_l,x)):
         solve_nn(cfg, domain, nodes)
-    drag = np.loadtxt(res_path, skiprows=1, delimiter=',',usecols=(1))
-    os.remove(res_path)
+    drag = np.loadtxt(os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/drag.csv"),
+         skiprows=1, delimiter=',',usecols=(1))
+    os.remove("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/drag.csv")
          
     last_x_d = x
     if drag.shape:
