@@ -60,6 +60,9 @@ OpenFoam/VTK*
 *.err
 *.stl
 *.ruse
+OpenFoam/*.log
 
+direct_opt/__pycache__*
 modulus/outputs*
-*/__pycache__.*
+modulus/__pycache__*
+*__pycache__*
