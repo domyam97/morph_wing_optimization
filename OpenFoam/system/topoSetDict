@@ -1,0 +1,23 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+actions
+(
+  {
+    name    smallVolume;
+    type    cellSet;
+    action  new;
+    source  boxToCell;
+    sourceInfo
+    {
+      box (-0.3 -0.6 -0.2) (0.7 0 0.2);
+    }
+  }
+);

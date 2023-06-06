@@ -1,0 +1,68 @@
+# Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+defaults :
+  - modulus_default
+  - /arch/fully_connected_cfg@arch.branch_uvw
+  - /arch/fully_connected_cfg@arch.branch_p
+  - /arch/fully_connected_cfg@arch.branch_nuT
+  - /arch/fully_connected_cfg@arch.trunk
+  - /arch/deeponet_cfg@arch.deeponet_uvw
+  - /arch/deeponet_cfg@arch.deeponet_p
+  - /arch/deeponet_cfg@arch.deeponet_nuT
+  - scheduler: tf_exponential_lr
+  - optimizer: adam
+  - loss: res_norm
+  - _self_
+
+arch:
+  branch_p:
+    nr_layers: 4
+    layer_size: 128
+  branch_nuT:
+    nr_layers: 4
+    layer_size: 128
+  branch_uvw:
+    nr_layers: 4
+    layer_size: 128
+  trunk:
+    nr_layers: 4
+    layer_size: 128
+  deeponet_uvw:
+    output_keys: u,v,w
+  deeponet_p:
+    output_keys: p
+  deeponet_nuT:
+    output_keys: nuT
+
+scheduler:
+  decay_rate: 0.9
+  decay_steps: 2000
+
+
+training:
+  rec_validation_freq: 5000
+  rec_constraint_freq: 2000
+  max_steps: 50000
+
+
+batch_size:
+  train: 7000
+  lr_phys: 500
+  validation: 3000
+
+
+
+save_filetypes: "npy"
+

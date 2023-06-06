@@ -1,0 +1,83 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     simpleFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime; 
+
+endTime         500;
+
+deltaT          1;
+
+adjustTimeStep true;
+
+maxCo 0.3;
+
+writeControl    timeStep;
+
+writeInterval   50;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+
+// ************************************************************************* //
+
+functions
+{
+    wallShearStress1
+    {
+        // Mandatory entries (unmodifiable)
+        type            wallShearStress;
+        libs            (fieldFunctionObjects);
+
+        // Optional entries (runtime modifiable)
+        patches         (wing); // (wall1 "(wall2|wall3)");
+
+        // Optional (inherited) entries
+        writePrecision  8;
+        writeToFile     true;
+        useUserTime     true;
+        enabled         true;
+        log             true;
+        writeControl    writeTime;
+    }
+
+    volFieldValue1
+    {
+        type                volFieldValue;
+        libs                 ("libfieldFunctionObjects.so");
+        log                  false; //true;
+        writeControl         writeTime;
+        writeFormat          ascii; //binary;
+        writeFields          true;//writes the fields of the volume
+        regionType           cellSet; //cellZone;
+        name                 smallVolume; // defined by the topoSetDict
+        operation            average; 
+        fields
+        (
+            U p nuTilda wallShearStress
+        );
+    }
+}
