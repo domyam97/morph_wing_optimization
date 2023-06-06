@@ -1,0 +1,165 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+castellatedMesh 	true;
+
+snap	true;
+
+addLayers	true;
+
+mergeTolerance 	1e-06;
+
+
+geometry
+{
+	morphWingTran.stl
+	{
+		type 	triSurfaceMesh;
+		name	wing;
+	}
+	disk.stl
+	{
+		type triSurfaceMesh;
+		name	wall;
+	}
+
+	box_trailing
+	{
+		type 	searchableBox;
+		min	(-0.3 -1 -0.3);
+		max	(1.7 0 0.3);
+	}
+}; 
+
+castellatedMeshControls
+{
+	locationInMesh	(-0.532 -0.5 0);
+
+	allowFreeStandingZoneFaces true;
+
+	maxLocalCells 1e+06;
+	maxGlobalCells 2e+06;
+	minRefinementCells 10;
+	nCellsBetweenLevels 6;
+	
+	features 
+	(
+	{
+		file "morphWingTran.eMesh";
+		level 5;
+	}
+	);
+
+	refinementSurfaces
+	{
+		wing
+		{
+			level (3 5);
+		}
+
+		wall
+		{
+			level (1 2);
+		}
+	}
+
+	resolveFeatureAngle 45;	
+
+
+	refinementRegions
+	{
+		box_trailing
+		{
+			mode 	inside;
+			levels ((1.0 3));
+		}
+	}
+};
+
+snapControls
+{
+	nSmoothPatch 	3;
+	tolerance 	3;
+	nSolveIter 	15;
+	nRelaxIter	5;
+
+	implicitFeatureSnap true;
+	explicitFeatureSnap true;
+};
+
+addLayersControls
+{
+	layers
+	{
+		wing
+		{
+			nSurfaceLayers 3;
+		}
+		
+		wall
+		{
+			nSurfaceLayers 3;
+		}
+	}
+
+	relativeSizes true;
+	
+	expansionRatio	1.3;
+	
+	finalLayerThickness 0.7;
+
+	minThickness 0.0025;
+
+	nGrow 0;
+
+	featureAngle 60;
+	
+	nRelaxIter 5;
+	nSmoothSurfaceNormals 1;
+	nSmoothNormals 3;
+	nSmoothThickness 10;
+	nLayerIter 20;
+	relativeSizes true;
+	
+	minMedialAxisAngle 90;
+	maxThicknessToMedialRatio 0.3;
+	maxFaceThicknessRatio 0.5;
+	
+	nBufferCellsNoExtrude 0;
+};
+
+meshQualityControls
+{
+	maxNonOrtho 65;
+	
+	maxBoundarySkewness 20;
+	maxInternalSkewness 4;
+
+	maxConcave 80;
+
+	minVol 1e-20;
+
+	minTetQuality 1e-30;
+
+	minArea -1;
+
+	minTwist 0.05;
+
+	minDeterminant 0.001;
+
+	minFaceWeight 0.05;
+
+	minVolRatio 0.01;
+	
+	minTriangleTwist 0.01;
+
+	errorReduction 0.75;
+	
+	nSmoothScale 4;
+};

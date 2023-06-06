@@ -1,0 +1,72 @@
+# Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+defaults :
+  - modulus_default
+  - /arch/fully_connected_cfg@arch.branch_tau
+  - /arch/fully_connected_cfg@arch.branch_p
+  - /arch/fully_connected_cfg@arch.trunk
+  - /arch/deeponet_cfg@arch.deeponet_tau
+  - /arch/deeponet_cfg@arch.deeponet_p
+  - scheduler: cosine_annealing_warm_restarts
+  - optimizer: adam
+  - loss: sum
+  - _self_
+
+arch:
+  branch_p:
+    nr_layers: 4
+    layer_size: 128
+  branch_tau:
+    nr_layers: 4
+    layer_size: 128
+  trunk:
+    nr_layers: 4
+    layer_size: 128
+  deeponet_tau:
+    output_keys: tau_x, tau_y, tau_z
+  deeponet_p:
+    output_keys: p
+
+scheduler:
+  T_0: 15000
+  T_mult: 2
+  eta_min: 0.00005
+
+training:
+  rec_validation_freq: 5000
+  rec_constraint_freq: 2000
+  max_steps: 100000
+
+
+batch_size:
+  train: 7154
+  validation: 3072
+  
+loss:
+  weights:
+      tau_x:1000
+      tau_z:1000
+  
+  
+custom:
+  d1: 0.0
+  d2: 0.0
+  Vinf: 14.0
+  alpha: 3.0
+  
+run_mode: 'eval'
+
+save_filetypes: "npy"
+
