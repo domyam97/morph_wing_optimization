@@ -1,0 +1,1699 @@
+1
+host
+sh02-16n05.int
+proc IDs
+
+nodes
+sh02-16n05
+sh02-16n05.int
+sh02-16n05
+addr
+sh02-16n05
+[15:26:04] - JIT using the NVFuser TorchScript backend
+[15:26:04] - JitManager: {'_enabled': True, '_arch_mode': <JitArchMode.ONLY_ACTIVATION: 1>, '_use_nvfuser': True, '_autograd_nodes': False}
+[15:26:04] - GraphManager: {'_func_arch': False, '_debug': False, '_func_arch_allow_partial_hessian': True}
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:05] - Read wing.vtp file successfully
+[15:26:05] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:06] - Read wing.vtp file successfully
+[15:26:06] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:07] - Read wing.vtp file successfully
+[15:26:07] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:08] - Read wing.vtp file successfully
+[15:26:08] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:09] - Read wing.vtp file successfully
+[15:26:09] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:10] - Read wing.vtp file successfully
+[15:26:10] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:11] - Read wing.vtp file successfully
+[15:26:11] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:12] - Read wing.vtp file successfully
+[15:26:12] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:13] - Read wing.vtp file successfully
+[15:26:13] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:14] - Read wing.vtp file successfully
+[15:26:14] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:15] - Read wing.vtp file successfully
+[15:26:15] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:16] - Read wing.vtp file successfully
+[15:26:16] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:17] - Read wing.vtp file successfully
+[15:26:17] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:18] - Read wing.vtp file successfully
+[15:26:18] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:19] - Read wing.vtp file successfully
+[15:26:19] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:20] - Read wing.vtp file successfully
+[15:26:20] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:21] - Read wing.vtp file successfully
+[15:26:21] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:22] - Read wing.vtp file successfully
+[15:26:22] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:23] - Read wing.vtp file successfully
+[15:26:23] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:24] - Read wing.vtp file successfully
+[15:26:24] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:25] - Read wing.vtp file successfully
+[15:26:25] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:26] - Read wing.vtp file successfully
+[15:26:26] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:27] - Read wing.vtp file successfully
+[15:26:27] - Loaded vtkPolyData object from file
+[15:26:28] - Read wing.vtp file successfully
+[15:26:28] - Loaded vtkPolyData object from file
+[15:26:28] - Read wing.vtp file successfully
+[15:26:28] - Loaded vtkPolyData object from file
+[15:26:28] - Read wing.vtp file successfully
+[15:26:28] - Loaded vtkPolyData object from file
+(1159523, 1) (129962, 1)
+[15:26:35] - Installed PyTorch version 2.0.1+cu117 is not TorchScript supported in Modulus. Version 1.14.0a0+410ce96 is officially supported.
+[15:26:35] - attempting to restore from: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:26:35] - optimizer checkpoint not found
+[15:26:35] - attempting to initialize network from /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:26:35] - model deepo_p.0.pth not found for initialization
+[15:26:35] - model deepo_tau.0.pth not found for initialization
+[15:26:35] - model deepo_p.0.pth not found
+[15:26:35] - model deepo_tau.0.pth not found
+[15:26:39] - [step:          0] record constraint batch time:  6.393e-01s
+[15:26:49] - [step:          0] record validators time:  9.134e+00s
+[15:26:49] - [step:          0] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:26:49] - [step:          0] loss:  3.465e+01
+[15:26:50] - Attempting cuda graph building, this may take a bit...
+[15:26:55] - [step:        100] loss:  3.060e+01, time/iteration:  5.919e+01 ms
+[15:27:00] - [step:        200] loss:  4.071e+00, time/iteration:  5.339e+01 ms
+[15:27:05] - [step:        300] loss:  3.074e+00, time/iteration:  5.013e+01 ms
+[15:27:10] - [step:        400] loss:  1.470e+00, time/iteration:  5.288e+01 ms
+[15:27:16] - [step:        500] loss:  1.722e+00, time/iteration:  5.279e+01 ms
+[15:27:20] - [step:        600] loss:  1.526e+00, time/iteration:  4.921e+01 ms
+[15:27:26] - [step:        700] loss:  1.522e+00, time/iteration:  5.289e+01 ms
+[15:27:31] - [step:        800] loss:  1.396e+00, time/iteration:  4.902e+01 ms
+[15:27:36] - [step:        900] loss:  1.525e+00, time/iteration:  5.229e+01 ms
+[15:27:49] - [step:       1000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:27:49] - [step:       1000] loss:  1.293e+00, time/iteration:  1.278e+02 ms
+[15:27:54] - [step:       1100] loss:  1.112e+00, time/iteration:  4.947e+01 ms
+[15:27:59] - [step:       1200] loss:  1.341e+00, time/iteration:  5.270e+01 ms
+[15:28:04] - [step:       1300] loss:  8.725e-01, time/iteration:  4.821e+01 ms
+[15:28:09] - [step:       1400] loss:  1.017e+00, time/iteration:  5.226e+01 ms
+[15:28:14] - [step:       1500] loss:  1.087e+00, time/iteration:  5.265e+01 ms
+[15:28:19] - [step:       1600] loss:  9.891e-01, time/iteration:  4.936e+01 ms
+[15:28:24] - [step:       1700] loss:  1.324e+00, time/iteration:  5.310e+01 ms
+[15:28:29] - [step:       1800] loss:  1.005e+00, time/iteration:  4.934e+01 ms
+[15:28:35] - [step:       1900] loss:  7.212e-01, time/iteration:  5.195e+01 ms
+[15:28:40] - [step:       2000] record constraint batch time:  9.174e-02s
+[15:28:40] - [step:       2000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:28:40] - [step:       2000] loss:  7.368e-01, time/iteration:  5.413e+01 ms
+[15:28:45] - [step:       2100] loss:  8.057e-01, time/iteration:  4.989e+01 ms
+[15:28:50] - [step:       2200] loss:  8.314e-01, time/iteration:  5.303e+01 ms
+[15:28:55] - [step:       2300] loss:  6.666e-01, time/iteration:  4.951e+01 ms
+[15:29:01] - [step:       2400] loss:  7.312e-01, time/iteration:  5.269e+01 ms
+[15:29:06] - [step:       2500] loss:  8.101e-01, time/iteration:  5.233e+01 ms
+[15:29:11] - [step:       2600] loss:  5.802e-01, time/iteration:  4.949e+01 ms
+[15:29:16] - [step:       2700] loss:  5.604e-01, time/iteration:  5.233e+01 ms
+[15:29:21] - [step:       2800] loss:  6.847e-01, time/iteration:  4.931e+01 ms
+[15:29:26] - [step:       2900] loss:  5.539e-01, time/iteration:  5.249e+01 ms
+[15:29:32] - [step:       3000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:29:32] - [step:       3000] loss:  6.290e-01, time/iteration:  5.629e+01 ms
+[15:29:37] - [step:       3100] loss:  6.268e-01, time/iteration:  4.923e+01 ms
+[15:29:42] - [step:       3200] loss:  7.197e-01, time/iteration:  5.268e+01 ms
+[15:29:47] - [step:       3300] loss:  5.737e-01, time/iteration:  5.274e+01 ms
+[15:29:52] - [step:       3400] loss:  5.760e-01, time/iteration:  4.948e+01 ms
+[15:29:57] - [step:       3500] loss:  5.441e-01, time/iteration:  5.291e+01 ms
+[15:30:02] - [step:       3600] loss:  6.014e-01, time/iteration:  4.916e+01 ms
+[15:30:08] - [step:       3700] loss:  4.902e-01, time/iteration:  5.224e+01 ms
+[15:30:13] - [step:       3800] loss:  4.697e-01, time/iteration:  5.292e+01 ms
+[15:30:18] - [step:       3900] loss:  5.777e-01, time/iteration:  4.975e+01 ms
+[15:30:23] - [step:       4000] record constraint batch time:  1.030e-01s
+[15:30:23] - [step:       4000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:30:23] - [step:       4000] loss:  4.725e-01, time/iteration:  5.476e+01 ms
+[15:30:28] - [step:       4100] loss:  5.510e-01, time/iteration:  4.958e+01 ms
+[15:30:34] - [step:       4200] loss:  5.247e-01, time/iteration:  5.278e+01 ms
+[15:30:39] - [step:       4300] loss:  4.176e-01, time/iteration:  5.296e+01 ms
+[15:30:44] - [step:       4400] loss:  5.072e-01, time/iteration:  4.975e+01 ms
+[15:30:49] - [step:       4500] loss:  3.876e-01, time/iteration:  5.291e+01 ms
+[15:30:54] - [step:       4600] loss:  4.085e-01, time/iteration:  4.976e+01 ms
+[15:30:59] - [step:       4700] loss:  4.073e-01, time/iteration:  5.243e+01 ms
+[15:31:05] - [step:       4800] loss:  4.789e-01, time/iteration:  5.241e+01 ms
+[15:31:10] - [step:       4900] loss:  3.642e-01, time/iteration:  4.911e+01 ms
+[15:31:23] - [step:       5000] record validators time:  8.656e+00s
+[15:31:24] - [step:       5000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:31:24] - [step:       5000] loss:  3.960e-01, time/iteration:  1.404e+02 ms
+[15:31:28] - [step:       5100] loss:  4.847e-01, time/iteration:  4.915e+01 ms
+[15:31:34] - [step:       5200] loss:  3.840e-01, time/iteration:  5.188e+01 ms
+[15:31:39] - [step:       5300] loss:  3.019e-01, time/iteration:  5.231e+01 ms
+[15:31:44] - [step:       5400] loss:  2.692e-01, time/iteration:  4.965e+01 ms
+[15:31:49] - [step:       5500] loss:  3.289e-01, time/iteration:  5.283e+01 ms
+[15:31:54] - [step:       5600] loss:  3.175e-01, time/iteration:  4.971e+01 ms
+[15:31:59] - [step:       5700] loss:  3.013e-01, time/iteration:  5.280e+01 ms
+[15:32:05] - [step:       5800] loss:  2.989e-01, time/iteration:  5.239e+01 ms
+[15:32:10] - [step:       5900] loss:  2.942e-01, time/iteration:  4.944e+01 ms
+[15:32:15] - [step:       6000] record constraint batch time:  4.656e-01s
+[15:32:16] - [step:       6000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:32:16] - [step:       6000] loss:  2.496e-01, time/iteration:  6.620e+01 ms
+[15:32:21] - [step:       6100] loss:  2.956e-01, time/iteration:  4.953e+01 ms
+[15:32:26] - [step:       6200] loss:  2.083e-01, time/iteration:  5.285e+01 ms
+[15:32:32] - [step:       6300] loss:  2.133e-01, time/iteration:  5.259e+01 ms
+[15:32:37] - [step:       6400] loss:  2.458e-01, time/iteration:  4.912e+01 ms
+[15:32:42] - [step:       6500] loss:  2.989e-01, time/iteration:  5.228e+01 ms
+[15:32:47] - [step:       6600] loss:  1.895e-01, time/iteration:  5.217e+01 ms
+[15:32:52] - [step:       6700] loss:  2.543e-01, time/iteration:  4.930e+01 ms
+[15:32:57] - [step:       6800] loss:  2.390e-01, time/iteration:  5.224e+01 ms
+[15:33:02] - [step:       6900] loss:  2.166e-01, time/iteration:  4.955e+01 ms
+[15:33:08] - [step:       7000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:33:08] - [step:       7000] loss:  2.486e-01, time/iteration:  5.625e+01 ms
+[15:33:13] - [step:       7100] loss:  1.759e-01, time/iteration:  5.247e+01 ms
+[15:33:18] - [step:       7200] loss:  1.684e-01, time/iteration:  4.946e+01 ms
+[15:33:23] - [step:       7300] loss:  1.678e-01, time/iteration:  5.204e+01 ms
+[15:33:28] - [step:       7400] loss:  1.765e-01, time/iteration:  4.967e+01 ms
+[15:33:33] - [step:       7500] loss:  1.391e-01, time/iteration:  5.195e+01 ms
+[15:33:39] - [step:       7600] loss:  1.407e-01, time/iteration:  5.235e+01 ms
+[15:33:44] - [step:       7700] loss:  1.957e-01, time/iteration:  4.911e+01 ms
+[15:33:49] - [step:       7800] loss:  1.461e-01, time/iteration:  5.255e+01 ms
+[15:33:54] - [step:       7900] loss:  1.836e-01, time/iteration:  4.891e+01 ms
+[15:34:02] - [step:       8000] record constraint batch time:  3.586e+00s
+[15:34:04] - [step:       8000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:34:04] - [step:       8000] loss:  1.693e-01, time/iteration:  1.054e+02 ms
+[15:34:09] - [step:       8100] loss:  1.285e-01, time/iteration:  5.239e+01 ms
+[15:34:14] - [step:       8200] loss:  1.894e-01, time/iteration:  4.901e+01 ms
+[15:34:20] - [step:       8300] loss:  1.215e-01, time/iteration:  5.233e+01 ms
+[15:34:25] - [step:       8400] loss:  1.220e-01, time/iteration:  4.951e+01 ms
+[15:34:30] - [step:       8500] loss:  9.957e-02, time/iteration:  5.225e+01 ms
+[15:34:35] - [step:       8600] loss:  1.035e-01, time/iteration:  5.185e+01 ms
+[15:34:40] - [step:       8700] loss:  1.346e-01, time/iteration:  4.900e+01 ms
+[15:34:45] - [step:       8800] loss:  9.629e-02, time/iteration:  5.181e+01 ms
+[15:34:50] - [step:       8900] loss:  9.789e-02, time/iteration:  4.834e+01 ms
+[15:34:55] - [step:       9000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:34:55] - [step:       9000] loss:  1.076e-01, time/iteration:  5.594e+01 ms
+[15:35:01] - [step:       9100] loss:  9.713e-02, time/iteration:  5.151e+01 ms
+[15:35:05] - [step:       9200] loss:  1.005e-01, time/iteration:  4.823e+01 ms
+[15:35:11] - [step:       9300] loss:  9.583e-02, time/iteration:  5.118e+01 ms
+[15:35:16] - [step:       9400] loss:  8.805e-02, time/iteration:  5.132e+01 ms
+[15:35:21] - [step:       9500] loss:  1.039e-01, time/iteration:  4.828e+01 ms
+[15:35:26] - [step:       9600] loss:  1.037e-01, time/iteration:  5.245e+01 ms
+[15:35:31] - [step:       9700] loss:  8.442e-02, time/iteration:  4.929e+01 ms
+[15:35:36] - [step:       9800] loss:  8.658e-02, time/iteration:  5.242e+01 ms
+[15:35:41] - [step:       9900] loss:  7.286e-02, time/iteration:  5.238e+01 ms
+[15:35:48] - [step:      10000] record constraint batch time:  1.981e+00s
+[15:35:57] - [step:      10000] record validators time:  9.084e+00s
+[15:36:03] - [step:      10000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:36:03] - [step:      10000] loss:  8.272e-02, time/iteration:  2.139e+02 ms
+[15:36:08] - [step:      10100] loss:  7.836e-02, time/iteration:  5.267e+01 ms
+[15:36:13] - [step:      10200] loss:  8.439e-02, time/iteration:  4.924e+01 ms
+[15:36:18] - [step:      10300] loss:  7.912e-02, time/iteration:  5.257e+01 ms
+[15:36:23] - [step:      10400] loss:  7.297e-02, time/iteration:  5.237e+01 ms
+[15:36:28] - [step:      10500] loss:  8.486e-02, time/iteration:  5.011e+01 ms
+[15:36:34] - [step:      10600] loss:  6.476e-02, time/iteration:  5.256e+01 ms
+[15:36:38] - [step:      10700] loss:  7.417e-02, time/iteration:  4.921e+01 ms
+[15:36:44] - [step:      10800] loss:  7.520e-02, time/iteration:  5.244e+01 ms
+[15:36:49] - [step:      10900] loss:  7.405e-02, time/iteration:  5.248e+01 ms
+[15:36:56] - [step:      11000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:36:56] - [step:      11000] loss:  6.253e-02, time/iteration:  6.904e+01 ms
+[15:37:01] - [step:      11100] loss:  6.554e-02, time/iteration:  5.252e+01 ms
+[15:37:06] - [step:      11200] loss:  5.822e-02, time/iteration:  4.926e+01 ms
+[15:37:11] - [step:      11300] loss:  6.205e-02, time/iteration:  5.221e+01 ms
+[15:37:16] - [step:      11400] loss:  6.177e-02, time/iteration:  5.245e+01 ms
+[15:37:21] - [step:      11500] loss:  5.245e-02, time/iteration:  4.938e+01 ms
+[15:37:27] - [step:      11600] loss:  7.072e-02, time/iteration:  5.250e+01 ms
+[15:37:32] - [step:      11700] loss:  4.985e-02, time/iteration:  4.936e+01 ms
+[15:37:37] - [step:      11800] loss:  5.970e-02, time/iteration:  5.202e+01 ms
+[15:37:42] - [step:      11900] loss:  7.692e-02, time/iteration:  5.203e+01 ms
+[15:37:50] - [step:      12000] record constraint batch time:  3.034e+00s
+[15:37:53] - [step:      12000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:37:53] - [step:      12000] loss:  6.570e-02, time/iteration:  1.135e+02 ms
+[15:37:59] - [step:      12100] loss:  6.085e-02, time/iteration:  5.288e+01 ms
+[15:38:04] - [step:      12200] loss:  6.707e-02, time/iteration:  4.909e+01 ms
+[15:38:09] - [step:      12300] loss:  5.281e-02, time/iteration:  5.236e+01 ms
+[15:38:14] - [step:      12400] loss:  5.290e-02, time/iteration:  5.223e+01 ms
+[15:38:19] - [step:      12500] loss:  5.222e-02, time/iteration:  4.947e+01 ms
+[15:38:24] - [step:      12600] loss:  6.287e-02, time/iteration:  5.242e+01 ms
+[15:38:29] - [step:      12700] loss:  4.842e-02, time/iteration:  5.216e+01 ms
+[15:38:34] - [step:      12800] loss:  4.738e-02, time/iteration:  4.942e+01 ms
+[15:38:40] - [step:      12900] loss:  4.893e-02, time/iteration:  5.146e+01 ms
+[15:38:45] - [step:      13000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:38:45] - [step:      13000] loss:  5.753e-02, time/iteration:  5.159e+01 ms
+[15:38:50] - [step:      13100] loss:  4.476e-02, time/iteration:  5.213e+01 ms
+[15:38:55] - [step:      13200] loss:  5.055e-02, time/iteration:  5.227e+01 ms
+[15:39:00] - [step:      13300] loss:  5.297e-02, time/iteration:  4.899e+01 ms
+[15:39:05] - [step:      13400] loss:  4.537e-02, time/iteration:  5.204e+01 ms
+[15:39:10] - [step:      13500] loss:  4.419e-02, time/iteration:  4.912e+01 ms
+[15:39:15] - [step:      13600] loss:  4.694e-02, time/iteration:  5.236e+01 ms
+[15:39:21] - [step:      13700] loss:  4.470e-02, time/iteration:  5.229e+01 ms
+[15:39:26] - [step:      13800] loss:  4.086e-02, time/iteration:  4.943e+01 ms
+[15:39:31] - [step:      13900] loss:  4.730e-02, time/iteration:  5.269e+01 ms
+[15:39:36] - [step:      14000] record constraint batch time:  4.555e-01s
+[15:39:37] - [step:      14000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:39:37] - [step:      14000] loss:  4.668e-02, time/iteration:  6.185e+01 ms
+[15:39:42] - [step:      14100] loss:  4.341e-02, time/iteration:  5.232e+01 ms
+[15:39:47] - [step:      14200] loss:  4.340e-02, time/iteration:  5.209e+01 ms
+[15:39:52] - [step:      14300] loss:  4.667e-02, time/iteration:  4.973e+01 ms
+[15:39:58] - [step:      14400] loss:  4.414e-02, time/iteration:  5.310e+01 ms
+[15:40:03] - [step:      14500] loss:  5.373e-02, time/iteration:  4.945e+01 ms
+[15:40:08] - [step:      14600] loss:  3.510e-02, time/iteration:  5.170e+01 ms
+[15:40:13] - [step:      14700] loss:  4.343e-02, time/iteration:  5.219e+01 ms
+[15:40:18] - [step:      14800] loss:  4.190e-02, time/iteration:  4.946e+01 ms
+[15:40:23] - [step:      14900] loss:  4.514e-02, time/iteration:  5.218e+01 ms
+[15:40:40] - [step:      15000] record validators time:  1.190e+01s
+[15:40:43] - [step:      15000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:40:43] - [step:      15000] loss:  3.908e-02, time/iteration:  1.939e+02 ms
+[15:40:48] - [step:      15100] loss:  2.862e+01, time/iteration:  5.259e+01 ms
+[15:40:53] - [step:      15200] loss:  5.533e+00, time/iteration:  5.176e+01 ms
+[15:40:58] - [step:      15300] loss:  1.905e+00, time/iteration:  4.958e+01 ms
+[15:41:03] - [step:      15400] loss:  1.542e+00, time/iteration:  5.208e+01 ms
+[15:41:08] - [step:      15500] loss:  1.165e+00, time/iteration:  4.912e+01 ms
+[15:41:13] - [step:      15600] loss:  9.765e-01, time/iteration:  5.221e+01 ms
+[15:41:19] - [step:      15700] loss:  1.120e+00, time/iteration:  5.259e+01 ms
+[15:41:24] - [step:      15800] loss:  1.008e+00, time/iteration:  5.009e+01 ms
+[15:41:29] - [step:      15900] loss:  1.145e+00, time/iteration:  5.191e+01 ms
+[15:41:34] - [step:      16000] record constraint batch time:  8.484e-02s
+[15:41:35] - [step:      16000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:41:35] - [step:      16000] loss:  1.210e+00, time/iteration:  6.069e+01 ms
+[15:41:40] - [step:      16100] loss:  1.015e+00, time/iteration:  4.925e+01 ms
+[15:41:45] - [step:      16200] loss:  8.075e-01, time/iteration:  5.205e+01 ms
+[15:41:50] - [step:      16300] loss:  8.264e-01, time/iteration:  4.876e+01 ms
+[15:41:55] - [step:      16400] loss:  9.749e-01, time/iteration:  5.141e+01 ms
+[15:42:00] - [step:      16500] loss:  9.185e-01, time/iteration:  5.189e+01 ms
+[15:42:05] - [step:      16600] loss:  7.417e-01, time/iteration:  4.975e+01 ms
+[15:42:10] - [step:      16700] loss:  8.606e-01, time/iteration:  5.217e+01 ms
+[15:42:15] - [step:      16800] loss:  7.780e-01, time/iteration:  4.950e+01 ms
+[15:42:21] - [step:      16900] loss:  8.614e-01, time/iteration:  5.211e+01 ms
+[15:42:31] - [step:      17000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:42:31] - [step:      17000] loss:  6.540e-01, time/iteration:  1.005e+02 ms
+[15:42:36] - [step:      17100] loss:  7.267e-01, time/iteration:  4.936e+01 ms
+[15:42:41] - [step:      17200] loss:  7.804e-01, time/iteration:  5.215e+01 ms
+[15:42:46] - [step:      17300] loss:  5.637e-01, time/iteration:  4.934e+01 ms
+[15:42:51] - [step:      17400] loss:  7.410e-01, time/iteration:  5.186e+01 ms
+[15:42:56] - [step:      17500] loss:  6.347e-01, time/iteration:  5.214e+01 ms
+[15:43:01] - [step:      17600] loss:  6.038e-01, time/iteration:  4.940e+01 ms
+[15:43:06] - [step:      17700] loss:  7.620e-01, time/iteration:  5.191e+01 ms
+[15:43:11] - [step:      17800] loss:  6.189e-01, time/iteration:  4.930e+01 ms
+[15:43:16] - [step:      17900] loss:  5.818e-01, time/iteration:  5.238e+01 ms
+[15:43:22] - [step:      18000] record constraint batch time:  1.071e-01s
+[15:43:26] - [step:      18000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:43:26] - [step:      18000] loss:  5.709e-01, time/iteration:  9.662e+01 ms
+[15:43:31] - [step:      18100] loss:  5.782e-01, time/iteration:  4.964e+01 ms
+[15:43:36] - [step:      18200] loss:  6.552e-01, time/iteration:  5.226e+01 ms
+[15:43:41] - [step:      18300] loss:  5.836e-01, time/iteration:  4.932e+01 ms
+[15:43:46] - [step:      18400] loss:  6.519e-01, time/iteration:  5.190e+01 ms
+[15:43:52] - [step:      18500] loss:  5.804e-01, time/iteration:  5.174e+01 ms
+[15:43:57] - [step:      18600] loss:  6.128e-01, time/iteration:  4.949e+01 ms
+[15:44:02] - [step:      18700] loss:  6.255e-01, time/iteration:  5.191e+01 ms
+[15:44:07] - [step:      18800] loss:  6.325e-01, time/iteration:  5.170e+01 ms
+[15:44:12] - [step:      18900] loss:  5.667e-01, time/iteration:  4.923e+01 ms
+[15:44:18] - [step:      19000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:44:18] - [step:      19000] loss:  5.677e-01, time/iteration:  6.545e+01 ms
+[15:44:23] - [step:      19100] loss:  6.333e-01, time/iteration:  4.892e+01 ms
+[15:44:28] - [step:      19200] loss:  4.508e-01, time/iteration:  5.183e+01 ms
+[15:44:34] - [step:      19300] loss:  4.598e-01, time/iteration:  5.158e+01 ms
+[15:44:38] - [step:      19400] loss:  6.004e-01, time/iteration:  4.906e+01 ms
+[15:44:44] - [step:      19500] loss:  6.014e-01, time/iteration:  5.169e+01 ms
+[15:44:49] - [step:      19600] loss:  5.420e-01, time/iteration:  4.929e+01 ms
+[15:44:54] - [step:      19700] loss:  4.372e-01, time/iteration:  5.213e+01 ms
+[15:44:59] - [step:      19800] loss:  6.141e-01, time/iteration:  5.159e+01 ms
+[15:45:04] - [step:      19900] loss:  4.865e-01, time/iteration:  4.940e+01 ms
+[15:45:09] - [step:      20000] record constraint batch time:  9.052e-02s
+[15:45:18] - [step:      20000] record validators time:  8.928e+00s
+[15:45:18] - [step:      20000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:45:18] - [step:      20000] loss:  4.528e-01, time/iteration:  1.430e+02 ms
+[15:45:23] - [step:      20100] loss:  4.429e-01, time/iteration:  5.002e+01 ms
+[15:45:28] - [step:      20200] loss:  5.004e-01, time/iteration:  5.238e+01 ms
+[15:45:34] - [step:      20300] loss:  5.139e-01, time/iteration:  5.160e+01 ms
+[15:45:38] - [step:      20400] loss:  5.500e-01, time/iteration:  4.863e+01 ms
+[15:45:44] - [step:      20500] loss:  4.236e-01, time/iteration:  5.078e+01 ms
+[15:45:48] - [step:      20600] loss:  4.063e-01, time/iteration:  4.908e+01 ms
+[15:45:54] - [step:      20700] loss:  3.506e-01, time/iteration:  5.234e+01 ms
+[15:45:59] - [step:      20800] loss:  6.824e-01, time/iteration:  5.202e+01 ms
+[15:46:04] - [step:      20900] loss:  4.817e-01, time/iteration:  4.932e+01 ms
+[15:46:10] - [step:      21000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:46:10] - [step:      21000] loss:  5.353e-01, time/iteration:  5.726e+01 ms
+[15:46:14] - [step:      21100] loss:  4.657e-01, time/iteration:  4.918e+01 ms
+[15:46:20] - [step:      21200] loss:  5.153e-01, time/iteration:  5.156e+01 ms
+[15:46:25] - [step:      21300] loss:  3.881e-01, time/iteration:  5.169e+01 ms
+[15:46:30] - [step:      21400] loss:  5.180e-01, time/iteration:  4.914e+01 ms
+[15:46:35] - [step:      21500] loss:  5.261e-01, time/iteration:  5.154e+01 ms
+[15:46:40] - [step:      21600] loss:  4.924e-01, time/iteration:  4.927e+01 ms
+[15:46:45] - [step:      21700] loss:  4.669e-01, time/iteration:  5.207e+01 ms
+[15:46:50] - [step:      21800] loss:  4.076e-01, time/iteration:  5.133e+01 ms
+[15:46:55] - [step:      21900] loss:  5.080e-01, time/iteration:  4.956e+01 ms
+[15:47:01] - [step:      22000] record constraint batch time:  2.678e-01s
+[15:47:03] - [step:      22000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:47:03] - [step:      22000] loss:  4.862e-01, time/iteration:  7.612e+01 ms
+[15:47:08] - [step:      22100] loss:  5.501e-01, time/iteration:  5.187e+01 ms
+[15:47:13] - [step:      22200] loss:  3.967e-01, time/iteration:  4.942e+01 ms
+[15:47:18] - [step:      22300] loss:  3.876e-01, time/iteration:  5.188e+01 ms
+[15:47:23] - [step:      22400] loss:  3.651e-01, time/iteration:  4.925e+01 ms
+[15:47:28] - [step:      22500] loss:  4.060e-01, time/iteration:  5.193e+01 ms
+[15:47:33] - [step:      22600] loss:  3.663e-01, time/iteration:  5.193e+01 ms
+[15:47:38] - [step:      22700] loss:  3.947e-01, time/iteration:  4.944e+01 ms
+[15:47:43] - [step:      22800] loss:  3.792e-01, time/iteration:  5.153e+01 ms
+[15:47:48] - [step:      22900] loss:  3.924e-01, time/iteration:  4.937e+01 ms
+[15:47:55] - [step:      23000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:47:55] - [step:      23000] loss:  4.994e-01, time/iteration:  6.868e+01 ms
+[15:48:00] - [step:      23100] loss:  4.020e-01, time/iteration:  5.169e+01 ms
+[15:48:05] - [step:      23200] loss:  3.930e-01, time/iteration:  4.921e+01 ms
+[15:48:10] - [step:      23300] loss:  3.534e-01, time/iteration:  5.162e+01 ms
+[15:48:15] - [step:      23400] loss:  3.889e-01, time/iteration:  4.980e+01 ms
+[15:48:21] - [step:      23500] loss:  3.678e-01, time/iteration:  5.180e+01 ms
+[15:48:26] - [step:      23600] loss:  4.012e-01, time/iteration:  5.163e+01 ms
+[15:48:31] - [step:      23700] loss:  3.923e-01, time/iteration:  4.839e+01 ms
+[15:48:36] - [step:      23800] loss:  3.206e-01, time/iteration:  5.063e+01 ms
+[15:48:41] - [step:      23900] loss:  3.762e-01, time/iteration:  4.808e+01 ms
+[15:48:47] - [step:      24000] record constraint batch time:  1.670e+00s
+[15:48:49] - [step:      24000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:48:49] - [step:      24000] loss:  3.289e-01, time/iteration:  8.631e+01 ms
+[15:48:54] - [step:      24100] loss:  3.074e-01, time/iteration:  5.189e+01 ms
+[15:48:59] - [step:      24200] loss:  2.768e-01, time/iteration:  4.953e+01 ms
+[15:49:04] - [step:      24300] loss:  2.480e-01, time/iteration:  5.180e+01 ms
+[15:49:09] - [step:      24400] loss:  2.708e-01, time/iteration:  4.946e+01 ms
+[15:49:15] - [step:      24500] loss:  2.906e-01, time/iteration:  5.222e+01 ms
+[15:49:20] - [step:      24600] loss:  2.474e-01, time/iteration:  5.264e+01 ms
+[15:49:25] - [step:      24700] loss:  2.715e-01, time/iteration:  4.919e+01 ms
+[15:49:30] - [step:      24800] loss:  2.412e-01, time/iteration:  5.055e+01 ms
+[15:49:35] - [step:      24900] loss:  3.352e-01, time/iteration:  4.935e+01 ms
+[15:49:52] - [step:      25000] record validators time:  1.186e+01s
+[15:49:52] - [step:      25000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:49:52] - [step:      25000] loss:  2.449e-01, time/iteration:  1.734e+02 ms
+[15:49:57] - [step:      25100] loss:  3.309e-01, time/iteration:  5.251e+01 ms
+[15:50:02] - [step:      25200] loss:  2.416e-01, time/iteration:  4.907e+01 ms
+[15:50:07] - [step:      25300] loss:  2.466e-01, time/iteration:  5.087e+01 ms
+[15:50:13] - [step:      25400] loss:  2.674e-01, time/iteration:  5.153e+01 ms
+[15:50:17] - [step:      25500] loss:  2.065e-01, time/iteration:  4.914e+01 ms
+[15:50:23] - [step:      25600] loss:  2.337e-01, time/iteration:  5.115e+01 ms
+[15:50:28] - [step:      25700] loss:  2.135e-01, time/iteration:  4.992e+01 ms
+[15:50:33] - [step:      25800] loss:  1.983e-01, time/iteration:  5.179e+01 ms
+[15:50:38] - [step:      25900] loss:  2.031e-01, time/iteration:  5.148e+01 ms
+[15:50:43] - [step:      26000] record constraint batch time:  3.502e-01s
+[15:50:44] - [step:      26000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:50:44] - [step:      26000] loss:  2.056e-01, time/iteration:  6.320e+01 ms
+[15:50:49] - [step:      26100] loss:  1.750e-01, time/iteration:  5.083e+01 ms
+[15:50:54] - [step:      26200] loss:  2.456e-01, time/iteration:  4.896e+01 ms
+[15:50:59] - [step:      26300] loss:  1.724e-01, time/iteration:  5.107e+01 ms
+[15:51:04] - [step:      26400] loss:  1.938e-01, time/iteration:  5.145e+01 ms
+[15:51:09] - [step:      26500] loss:  2.274e-01, time/iteration:  4.877e+01 ms
+[15:51:14] - [step:      26600] loss:  1.728e-01, time/iteration:  5.109e+01 ms
+[15:51:19] - [step:      26700] loss:  1.759e-01, time/iteration:  4.985e+01 ms
+[15:51:25] - [step:      26800] loss:  1.873e-01, time/iteration:  5.180e+01 ms
+[15:51:30] - [step:      26900] loss:  2.114e-01, time/iteration:  5.193e+01 ms
+[15:51:36] - [step:      27000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:51:36] - [step:      27000] loss:  1.968e-01, time/iteration:  6.089e+01 ms
+[15:51:41] - [step:      27100] loss:  1.723e-01, time/iteration:  5.249e+01 ms
+[15:51:46] - [step:      27200] loss:  1.645e-01, time/iteration:  4.928e+01 ms
+[15:51:51] - [step:      27300] loss:  1.853e-01, time/iteration:  5.208e+01 ms
+[15:51:56] - [step:      27400] loss:  1.672e-01, time/iteration:  5.188e+01 ms
+[15:52:01] - [step:      27500] loss:  1.860e-01, time/iteration:  4.924e+01 ms
+[15:52:07] - [step:      27600] loss:  1.392e-01, time/iteration:  5.124e+01 ms
+[15:52:11] - [step:      27700] loss:  1.679e-01, time/iteration:  4.945e+01 ms
+[15:52:17] - [step:      27800] loss:  1.552e-01, time/iteration:  5.196e+01 ms
+[15:52:22] - [step:      27900] loss:  1.786e-01, time/iteration:  5.143e+01 ms
+[15:52:27] - [step:      28000] record constraint batch time:  4.602e-01s
+[15:52:27] - [step:      28000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:52:27] - [step:      28000] loss:  1.842e-01, time/iteration:  5.541e+01 ms
+[15:52:33] - [step:      28100] loss:  1.881e-01, time/iteration:  5.166e+01 ms
+[15:52:38] - [step:      28200] loss:  1.407e-01, time/iteration:  5.158e+01 ms
+[15:52:43] - [step:      28300] loss:  1.644e-01, time/iteration:  4.900e+01 ms
+[15:52:48] - [step:      28400] loss:  1.463e-01, time/iteration:  5.111e+01 ms
+[15:52:53] - [step:      28500] loss:  1.747e-01, time/iteration:  4.846e+01 ms
+[15:52:58] - [step:      28600] loss:  1.477e-01, time/iteration:  5.069e+01 ms
+[15:53:03] - [step:      28700] loss:  1.411e-01, time/iteration:  5.035e+01 ms
+[15:53:08] - [step:      28800] loss:  1.447e-01, time/iteration:  4.858e+01 ms
+[15:53:13] - [step:      28900] loss:  1.503e-01, time/iteration:  5.152e+01 ms
+[15:53:19] - [step:      29000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:53:19] - [step:      29000] loss:  1.293e-01, time/iteration:  6.396e+01 ms
+[15:53:24] - [step:      29100] loss:  1.871e-01, time/iteration:  5.158e+01 ms
+[15:53:29] - [step:      29200] loss:  1.377e-01, time/iteration:  5.180e+01 ms
+[15:53:34] - [step:      29300] loss:  1.371e-01, time/iteration:  4.937e+01 ms
+[15:53:40] - [step:      29400] loss:  1.530e-01, time/iteration:  5.217e+01 ms
+[15:53:44] - [step:      29500] loss:  1.372e-01, time/iteration:  4.906e+01 ms
+[15:53:50] - [step:      29600] loss:  1.222e-01, time/iteration:  5.176e+01 ms
+[15:53:55] - [step:      29700] loss:  1.236e-01, time/iteration:  5.200e+01 ms
+[15:54:00] - [step:      29800] loss:  1.212e-01, time/iteration:  4.923e+01 ms
+[15:54:05] - [step:      29900] loss:  1.233e-01, time/iteration:  5.177e+01 ms
+[15:54:10] - [step:      30000] record constraint batch time:  5.796e-01s
+[15:54:20] - [step:      30000] record validators time:  9.136e+00s
+[15:54:21] - [step:      30000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:54:21] - [step:      30000] loss:  1.288e-01, time/iteration:  1.582e+02 ms
+[15:54:26] - [step:      30100] loss:  1.298e-01, time/iteration:  5.224e+01 ms
+[15:54:31] - [step:      30200] loss:  1.297e-01, time/iteration:  5.147e+01 ms
+[15:54:36] - [step:      30300] loss:  1.364e-01, time/iteration:  4.926e+01 ms
+[15:54:41] - [step:      30400] loss:  1.329e-01, time/iteration:  5.148e+01 ms
+[15:54:46] - [step:      30500] loss:  1.182e-01, time/iteration:  4.986e+01 ms
+[15:54:51] - [step:      30600] loss:  1.113e-01, time/iteration:  5.182e+01 ms
+[15:54:57] - [step:      30700] loss:  1.152e-01, time/iteration:  5.177e+01 ms
+[15:55:02] - [step:      30800] loss:  1.063e-01, time/iteration:  4.940e+01 ms
+[15:55:07] - [step:      30900] loss:  1.034e-01, time/iteration:  5.162e+01 ms
+[15:55:16] - [step:      31000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:55:16] - [step:      31000] loss:  9.899e-02, time/iteration:  9.318e+01 ms
+[15:55:21] - [step:      31100] loss:  1.054e-01, time/iteration:  5.247e+01 ms
+[15:55:26] - [step:      31200] loss:  9.037e-02, time/iteration:  5.198e+01 ms
+[15:55:31] - [step:      31300] loss:  1.310e-01, time/iteration:  4.861e+01 ms
+[15:55:36] - [step:      31400] loss:  1.036e-01, time/iteration:  5.159e+01 ms
+[15:55:42] - [step:      31500] loss:  8.955e-02, time/iteration:  5.137e+01 ms
+[15:55:47] - [step:      31600] loss:  9.206e-02, time/iteration:  4.966e+01 ms
+[15:55:52] - [step:      31700] loss:  1.003e-01, time/iteration:  5.194e+01 ms
+[15:55:57] - [step:      31800] loss:  9.845e-02, time/iteration:  4.927e+01 ms
+[15:56:02] - [step:      31900] loss:  9.806e-02, time/iteration:  5.204e+01 ms
+[15:56:08] - [step:      32000] record constraint batch time:  9.742e-01s
+[15:56:10] - [step:      32000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:56:10] - [step:      32000] loss:  1.014e-01, time/iteration:  7.982e+01 ms
+[15:56:15] - [step:      32100] loss:  9.461e-02, time/iteration:  4.952e+01 ms
+[15:56:20] - [step:      32200] loss:  1.083e-01, time/iteration:  5.124e+01 ms
+[15:56:25] - [step:      32300] loss:  1.056e-01, time/iteration:  4.934e+01 ms
+[15:56:30] - [step:      32400] loss:  9.235e-02, time/iteration:  5.173e+01 ms
+[15:56:35] - [step:      32500] loss:  8.228e-02, time/iteration:  5.163e+01 ms
+[15:56:40] - [step:      32600] loss:  9.127e-02, time/iteration:  4.881e+01 ms
+[15:56:45] - [step:      32700] loss:  8.201e-02, time/iteration:  5.187e+01 ms
+[15:56:50] - [step:      32800] loss:  9.830e-02, time/iteration:  4.928e+01 ms
+[15:56:55] - [step:      32900] loss:  8.498e-02, time/iteration:  5.166e+01 ms
+[15:57:06] - [step:      33000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:57:06] - [step:      33000] loss:  9.362e-02, time/iteration:  1.070e+02 ms
+[15:57:11] - [step:      33100] loss:  9.083e-02, time/iteration:  4.946e+01 ms
+[15:57:16] - [step:      33200] loss:  7.741e-02, time/iteration:  5.170e+01 ms
+[15:57:21] - [step:      33300] loss:  9.015e-02, time/iteration:  4.961e+01 ms
+[15:57:26] - [step:      33400] loss:  7.985e-02, time/iteration:  5.214e+01 ms
+[15:57:32] - [step:      33500] loss:  7.702e-02, time/iteration:  5.209e+01 ms
+[15:57:37] - [step:      33600] loss:  8.414e-02, time/iteration:  4.947e+01 ms
+[15:57:42] - [step:      33700] loss:  7.407e-02, time/iteration:  5.198e+01 ms
+[15:57:47] - [step:      33800] loss:  7.428e-02, time/iteration:  4.943e+01 ms
+[15:57:52] - [step:      33900] loss:  8.191e-02, time/iteration:  5.151e+01 ms
+[15:57:58] - [step:      34000] record constraint batch time:  1.032e+00s
+[15:57:59] - [step:      34000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:57:59] - [step:      34000] loss:  7.269e-02, time/iteration:  7.473e+01 ms
+[15:58:04] - [step:      34100] loss:  8.294e-02, time/iteration:  4.901e+01 ms
+[15:58:09] - [step:      34200] loss:  9.013e-02, time/iteration:  5.178e+01 ms
+[15:58:14] - [step:      34300] loss:  7.423e-02, time/iteration:  4.930e+01 ms
+[15:58:20] - [step:      34400] loss:  1.012e-01, time/iteration:  5.244e+01 ms
+[15:58:25] - [step:      34500] loss:  9.615e-02, time/iteration:  5.212e+01 ms
+[15:58:30] - [step:      34600] loss:  6.915e-02, time/iteration:  5.000e+01 ms
+[15:58:35] - [step:      34700] loss:  6.700e-02, time/iteration:  5.136e+01 ms
+[15:58:40] - [step:      34800] loss:  7.326e-02, time/iteration:  5.159e+01 ms
+[15:58:45] - [step:      34900] loss:  7.330e-02, time/iteration:  4.954e+01 ms
+[15:58:59] - [step:      35000] record validators time:  8.838e+00s
+[15:58:59] - [step:      35000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:58:59] - [step:      35000] loss:  6.391e-02, time/iteration:  1.447e+02 ms
+[15:59:04] - [step:      35100] loss:  7.341e-02, time/iteration:  4.940e+01 ms
+[15:59:10] - [step:      35200] loss:  7.078e-02, time/iteration:  5.160e+01 ms
+[15:59:15] - [step:      35300] loss:  6.820e-02, time/iteration:  5.235e+01 ms
+[15:59:20] - [step:      35400] loss:  7.459e-02, time/iteration:  4.947e+01 ms
+[15:59:25] - [step:      35500] loss:  7.213e-02, time/iteration:  5.203e+01 ms
+[15:59:30] - [step:      35600] loss:  6.611e-02, time/iteration:  4.891e+01 ms
+[15:59:35] - [step:      35700] loss:  6.520e-02, time/iteration:  5.056e+01 ms
+[15:59:40] - [step:      35800] loss:  7.563e-02, time/iteration:  5.115e+01 ms
+[15:59:45] - [step:      35900] loss:  6.248e-02, time/iteration:  4.798e+01 ms
+[15:59:50] - [step:      36000] record constraint batch time:  8.149e-02s
+[15:59:50] - [step:      36000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[15:59:50] - [step:      36000] loss:  6.916e-02, time/iteration:  5.344e+01 ms
+[15:59:55] - [step:      36100] loss:  7.001e-02, time/iteration:  4.883e+01 ms
+[16:00:00] - [step:      36200] loss:  6.311e-02, time/iteration:  5.131e+01 ms
+[16:00:05] - [step:      36300] loss:  7.225e-02, time/iteration:  5.145e+01 ms
+[16:00:10] - [step:      36400] loss:  6.274e-02, time/iteration:  4.885e+01 ms
+[16:00:15] - [step:      36500] loss:  6.072e-02, time/iteration:  5.135e+01 ms
+[16:00:20] - [step:      36600] loss:  1.232e-01, time/iteration:  4.892e+01 ms
+[16:00:25] - [step:      36700] loss:  6.158e-02, time/iteration:  5.156e+01 ms
+[16:00:31] - [step:      36800] loss:  6.115e-02, time/iteration:  5.171e+01 ms
+[16:00:36] - [step:      36900] loss:  6.029e-02, time/iteration:  4.909e+01 ms
+[16:00:41] - [step:      37000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:00:41] - [step:      37000] loss:  5.510e-02, time/iteration:  5.285e+01 ms
+[16:00:46] - [step:      37100] loss:  5.423e-02, time/iteration:  4.988e+01 ms
+[16:00:51] - [step:      37200] loss:  5.971e-02, time/iteration:  5.164e+01 ms
+[16:00:56] - [step:      37300] loss:  5.333e-02, time/iteration:  5.165e+01 ms
+[16:01:01] - [step:      37400] loss:  5.993e-02, time/iteration:  4.955e+01 ms
+[16:01:06] - [step:      37500] loss:  5.696e-02, time/iteration:  5.200e+01 ms
+[16:01:11] - [step:      37600] loss:  6.376e-02, time/iteration:  4.926e+01 ms
+[16:01:16] - [step:      37700] loss:  4.780e-02, time/iteration:  5.233e+01 ms
+[16:01:22] - [step:      37800] loss:  5.991e-02, time/iteration:  5.141e+01 ms
+[16:01:27] - [step:      37900] loss:  5.957e-02, time/iteration:  4.971e+01 ms
+[16:01:38] - [step:      38000] record constraint batch time:  6.361e+00s
+[16:01:41] - [step:      38000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:01:41] - [step:      38000] loss:  5.992e-02, time/iteration:  1.467e+02 ms
+[16:01:47] - [step:      38100] loss:  6.612e-02, time/iteration:  5.322e+01 ms
+[16:01:51] - [step:      38200] loss:  6.173e-02, time/iteration:  4.914e+01 ms
+[16:01:57] - [step:      38300] loss:  5.900e-02, time/iteration:  5.171e+01 ms
+[16:02:02] - [step:      38400] loss:  5.101e-02, time/iteration:  4.932e+01 ms
+[16:02:07] - [step:      38500] loss:  5.328e-02, time/iteration:  5.166e+01 ms
+[16:02:12] - [step:      38600] loss:  5.806e-02, time/iteration:  5.175e+01 ms
+[16:02:17] - [step:      38700] loss:  6.119e-02, time/iteration:  4.941e+01 ms
+[16:02:22] - [step:      38800] loss:  4.727e-02, time/iteration:  5.201e+01 ms
+[16:02:27] - [step:      38900] loss:  5.327e-02, time/iteration:  4.999e+01 ms
+[16:02:38] - [step:      39000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:02:38] - [step:      39000] loss:  4.967e-02, time/iteration:  1.068e+02 ms
+[16:02:43] - [step:      39100] loss:  5.033e-02, time/iteration:  5.200e+01 ms
+[16:02:48] - [step:      39200] loss:  5.474e-02, time/iteration:  4.962e+01 ms
+[16:02:53] - [step:      39300] loss:  4.714e-02, time/iteration:  5.168e+01 ms
+[16:02:58] - [step:      39400] loss:  5.326e-02, time/iteration:  4.945e+01 ms
+[16:03:03] - [step:      39500] loss:  5.169e-02, time/iteration:  5.123e+01 ms
+[16:03:08] - [step:      39600] loss:  5.303e-02, time/iteration:  5.155e+01 ms
+[16:03:13] - [step:      39700] loss:  5.418e-02, time/iteration:  4.985e+01 ms
+[16:03:18] - [step:      39800] loss:  4.817e-02, time/iteration:  5.232e+01 ms
+[16:03:24] - [step:      39900] loss:  5.100e-02, time/iteration:  5.021e+01 ms
+[16:03:30] - [step:      40000] record constraint batch time:  1.070e+00s
+[16:03:45] - [step:      40000] record validators time:  1.527e+01s
+[16:03:48] - [step:      40000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:03:48] - [step:      40000] loss:  4.116e-02, time/iteration:  2.424e+02 ms
+[16:03:53] - [step:      40100] loss:  4.958e-02, time/iteration:  5.231e+01 ms
+[16:03:58] - [step:      40200] loss:  4.711e-02, time/iteration:  4.959e+01 ms
+[16:04:03] - [step:      40300] loss:  4.108e-02, time/iteration:  5.175e+01 ms
+[16:04:08] - [step:      40400] loss:  4.678e-02, time/iteration:  4.977e+01 ms
+[16:04:13] - [step:      40500] loss:  4.218e-02, time/iteration:  5.172e+01 ms
+[16:04:18] - [step:      40600] loss:  4.763e-02, time/iteration:  5.173e+01 ms
+[16:04:23] - [step:      40700] loss:  4.654e-02, time/iteration:  4.879e+01 ms
+[16:04:28] - [step:      40800] loss:  4.367e-02, time/iteration:  5.142e+01 ms
+[16:04:34] - [step:      40900] loss:  4.507e-02, time/iteration:  5.074e+01 ms
+[16:04:39] - [step:      41000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:04:39] - [step:      41000] loss:  4.854e-02, time/iteration:  5.333e+01 ms
+[16:04:44] - [step:      41100] loss:  4.089e-02, time/iteration:  5.160e+01 ms
+[16:04:49] - [step:      41200] loss:  5.280e-02, time/iteration:  4.954e+01 ms
+[16:04:54] - [step:      41300] loss:  5.963e-02, time/iteration:  5.193e+01 ms
+[16:04:59] - [step:      41400] loss:  5.104e-02, time/iteration:  5.194e+01 ms
+[16:05:04] - [step:      41500] loss:  4.823e-02, time/iteration:  4.964e+01 ms
+[16:05:10] - [step:      41600] loss:  5.380e-02, time/iteration:  5.167e+01 ms
+[16:05:14] - [step:      41700] loss:  4.592e-02, time/iteration:  4.903e+01 ms
+[16:05:20] - [step:      41800] loss:  4.767e-02, time/iteration:  5.145e+01 ms
+[16:05:25] - [step:      41900] loss:  4.023e-02, time/iteration:  5.223e+01 ms
+[16:05:30] - [step:      42000] record constraint batch time:  2.343e-01s
+[16:05:31] - [step:      42000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:05:31] - [step:      42000] loss:  4.262e-02, time/iteration:  5.923e+01 ms
+[16:05:36] - [step:      42100] loss:  4.366e-02, time/iteration:  5.162e+01 ms
+[16:05:41] - [step:      42200] loss:  4.139e-02, time/iteration:  4.897e+01 ms
+[16:05:46] - [step:      42300] loss:  4.446e-02, time/iteration:  5.160e+01 ms
+[16:05:51] - [step:      42400] loss:  4.130e-02, time/iteration:  5.135e+01 ms
+[16:05:56] - [step:      42500] loss:  4.179e-02, time/iteration:  4.969e+01 ms
+[16:06:01] - [step:      42600] loss:  4.033e-02, time/iteration:  5.215e+01 ms
+[16:06:06] - [step:      42700] loss:  4.552e-02, time/iteration:  4.956e+01 ms
+[16:06:11] - [step:      42800] loss:  3.833e-02, time/iteration:  5.158e+01 ms
+[16:06:17] - [step:      42900] loss:  3.926e-02, time/iteration:  5.215e+01 ms
+[16:06:22] - [step:      43000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:06:22] - [step:      43000] loss:  4.350e-02, time/iteration:  5.375e+01 ms
+[16:06:27] - [step:      43100] loss:  4.414e-02, time/iteration:  5.188e+01 ms
+[16:06:32] - [step:      43200] loss:  4.138e-02, time/iteration:  4.961e+01 ms
+[16:06:37] - [step:      43300] loss:  4.923e-02, time/iteration:  5.208e+01 ms
+[16:06:43] - [step:      43400] loss:  4.354e-02, time/iteration:  5.203e+01 ms
+[16:06:47] - [step:      43500] loss:  3.734e-02, time/iteration:  4.959e+01 ms
+[16:06:53] - [step:      43600] loss:  4.129e-02, time/iteration:  5.210e+01 ms
+[16:06:58] - [step:      43700] loss:  4.426e-02, time/iteration:  4.941e+01 ms
+[16:07:03] - [step:      43800] loss:  4.270e-02, time/iteration:  5.223e+01 ms
+[16:07:08] - [step:      43900] loss:  3.927e-02, time/iteration:  5.159e+01 ms
+[16:07:15] - [step:      44000] record constraint batch time:  1.959e+00s
+[16:07:16] - [step:      44000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:07:16] - [step:      44000] loss:  3.878e-02, time/iteration:  8.465e+01 ms
+[16:07:22] - [step:      44100] loss:  4.107e-02, time/iteration:  5.208e+01 ms
+[16:07:27] - [step:      44200] loss:  4.366e-02, time/iteration:  5.100e+01 ms
+[16:07:32] - [step:      44300] loss:  4.504e-02, time/iteration:  4.817e+01 ms
+[16:07:37] - [step:      44400] loss:  3.957e-02, time/iteration:  5.052e+01 ms
+[16:07:42] - [step:      44500] loss:  4.497e-02, time/iteration:  4.916e+01 ms
+[16:07:47] - [step:      44600] loss:  4.280e-02, time/iteration:  5.193e+01 ms
+[16:07:52] - [step:      44700] loss:  3.904e-02, time/iteration:  5.103e+01 ms
+[16:07:57] - [step:      44800] loss:  4.003e-02, time/iteration:  4.925e+01 ms
+[16:08:02] - [step:      44900] loss:  4.321e-02, time/iteration:  5.136e+01 ms
+[16:08:14] - [step:      45000] record validators time:  7.188e+00s
+[16:08:15] - [step:      45000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:08:15] - [step:      45000] loss:  3.789e-02, time/iteration:  1.273e+02 ms
+[16:08:20] - [step:      45100] loss:  2.652e+01, time/iteration:  5.274e+01 ms
+[16:08:25] - [step:      45200] loss:  1.444e+01, time/iteration:  5.181e+01 ms
+[16:08:30] - [step:      45300] loss:  4.266e+00, time/iteration:  4.874e+01 ms
+[16:08:35] - [step:      45400] loss:  1.194e+00, time/iteration:  5.101e+01 ms
+[16:08:40] - [step:      45500] loss:  1.030e+00, time/iteration:  4.903e+01 ms
+[16:08:45] - [step:      45600] loss:  8.969e-01, time/iteration:  5.173e+01 ms
+[16:08:50] - [step:      45700] loss:  8.574e-01, time/iteration:  5.213e+01 ms
+[16:08:55] - [step:      45800] loss:  7.262e-01, time/iteration:  4.991e+01 ms
+[16:09:01] - [step:      45900] loss:  7.900e-01, time/iteration:  5.174e+01 ms
+[16:09:06] - [step:      46000] record constraint batch time:  2.465e-01s
+[16:09:07] - [step:      46000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:09:07] - [step:      46000] loss:  6.682e-01, time/iteration:  6.186e+01 ms
+[16:09:12] - [step:      46100] loss:  7.611e-01, time/iteration:  5.197e+01 ms
+[16:09:17] - [step:      46200] loss:  6.485e-01, time/iteration:  5.227e+01 ms
+[16:09:22] - [step:      46300] loss:  7.724e-01, time/iteration:  4.963e+01 ms
+[16:09:27] - [step:      46400] loss:  6.501e-01, time/iteration:  5.212e+01 ms
+[16:09:32] - [step:      46500] loss:  6.149e-01, time/iteration:  4.952e+01 ms
+[16:09:38] - [step:      46600] loss:  5.822e-01, time/iteration:  5.212e+01 ms
+[16:09:43] - [step:      46700] loss:  6.668e-01, time/iteration:  5.155e+01 ms
+[16:09:48] - [step:      46800] loss:  7.457e-01, time/iteration:  4.916e+01 ms
+[16:09:53] - [step:      46900] loss:  6.106e-01, time/iteration:  5.166e+01 ms
+[16:09:58] - [step:      47000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:09:58] - [step:      47000] loss:  6.484e-01, time/iteration:  5.040e+01 ms
+[16:10:03] - [step:      47100] loss:  5.188e-01, time/iteration:  5.170e+01 ms
+[16:10:08] - [step:      47200] loss:  5.998e-01, time/iteration:  5.065e+01 ms
+[16:10:13] - [step:      47300] loss:  5.833e-01, time/iteration:  4.869e+01 ms
+[16:10:18] - [step:      47400] loss:  5.619e-01, time/iteration:  5.181e+01 ms
+[16:10:23] - [step:      47500] loss:  5.789e-01, time/iteration:  5.148e+01 ms
+[16:10:28] - [step:      47600] loss:  6.250e-01, time/iteration:  4.915e+01 ms
+[16:10:33] - [step:      47700] loss:  5.797e-01, time/iteration:  5.117e+01 ms
+[16:10:38] - [step:      47800] loss:  5.895e-01, time/iteration:  4.899e+01 ms
+[16:10:43] - [step:      47900] loss:  5.039e-01, time/iteration:  5.155e+01 ms
+[16:10:49] - [step:      48000] record constraint batch time:  8.565e-02s
+[16:10:49] - [step:      48000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:10:49] - [step:      48000] loss:  5.550e-01, time/iteration:  5.342e+01 ms
+[16:10:54] - [step:      48100] loss:  6.053e-01, time/iteration:  4.950e+01 ms
+[16:10:59] - [step:      48200] loss:  6.127e-01, time/iteration:  5.109e+01 ms
+[16:11:04] - [step:      48300] loss:  5.531e-01, time/iteration:  4.905e+01 ms
+[16:11:09] - [step:      48400] loss:  5.405e-01, time/iteration:  5.113e+01 ms
+[16:11:14] - [step:      48500] loss:  6.307e-01, time/iteration:  5.213e+01 ms
+[16:11:19] - [step:      48600] loss:  6.730e-01, time/iteration:  4.955e+01 ms
+[16:11:24] - [step:      48700] loss:  6.611e-01, time/iteration:  5.209e+01 ms
+[16:11:29] - [step:      48800] loss:  5.936e-01, time/iteration:  4.900e+01 ms
+[16:11:34] - [step:      48900] loss:  4.772e-01, time/iteration:  5.137e+01 ms
+[16:11:40] - [step:      49000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:11:40] - [step:      49000] loss:  4.889e-01, time/iteration:  5.546e+01 ms
+[16:11:45] - [step:      49100] loss:  4.943e-01, time/iteration:  4.919e+01 ms
+[16:11:50] - [step:      49200] loss:  5.885e-01, time/iteration:  5.156e+01 ms
+[16:11:55] - [step:      49300] loss:  5.061e-01, time/iteration:  4.960e+01 ms
+[16:12:00] - [step:      49400] loss:  4.846e-01, time/iteration:  5.154e+01 ms
+[16:12:05] - [step:      49500] loss:  4.174e-01, time/iteration:  5.168e+01 ms
+[16:12:10] - [step:      49600] loss:  6.752e-01, time/iteration:  4.825e+01 ms
+[16:12:15] - [step:      49700] loss:  5.056e-01, time/iteration:  5.047e+01 ms
+[16:12:20] - [step:      49800] loss:  4.723e-01, time/iteration:  4.827e+01 ms
+[16:12:25] - [step:      49900] loss:  4.186e-01, time/iteration:  5.071e+01 ms
+[16:12:33] - [step:      50000] record constraint batch time:  2.758e+00s
+[16:12:42] - [step:      50000] record validators time:  9.340e+00s
+[16:12:43] - [step:      50000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:12:43] - [step:      50000] loss:  4.916e-01, time/iteration:  1.806e+02 ms
+[16:12:48] - [step:      50100] loss:  4.790e-01, time/iteration:  4.989e+01 ms
+[16:12:53] - [step:      50200] loss:  4.201e-01, time/iteration:  5.184e+01 ms
+[16:12:58] - [step:      50300] loss:  4.015e-01, time/iteration:  5.187e+01 ms
+[16:13:03] - [step:      50400] loss:  4.946e-01, time/iteration:  4.927e+01 ms
+[16:13:08] - [step:      50500] loss:  4.493e-01, time/iteration:  5.158e+01 ms
+[16:13:13] - [step:      50600] loss:  5.361e-01, time/iteration:  4.901e+01 ms
+[16:13:18] - [step:      50700] loss:  5.471e-01, time/iteration:  5.189e+01 ms
+[16:13:24] - [step:      50800] loss:  4.836e-01, time/iteration:  5.209e+01 ms
+[16:13:29] - [step:      50900] loss:  4.195e-01, time/iteration:  4.924e+01 ms
+[16:13:34] - [step:      51000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:13:34] - [step:      51000] loss:  3.885e-01, time/iteration:  5.241e+01 ms
+[16:13:39] - [step:      51100] loss:  5.097e-01, time/iteration:  4.902e+01 ms
+[16:13:44] - [step:      51200] loss:  4.830e-01, time/iteration:  5.164e+01 ms
+[16:13:49] - [step:      51300] loss:  4.375e-01, time/iteration:  5.139e+01 ms
+[16:13:54] - [step:      51400] loss:  3.563e-01, time/iteration:  4.931e+01 ms
+[16:13:59] - [step:      51500] loss:  5.364e-01, time/iteration:  5.196e+01 ms
+[16:14:04] - [step:      51600] loss:  4.605e-01, time/iteration:  4.961e+01 ms
+[16:14:09] - [step:      51700] loss:  3.750e-01, time/iteration:  5.182e+01 ms
+[16:14:14] - [step:      51800] loss:  3.951e-01, time/iteration:  5.181e+01 ms
+[16:14:19] - [step:      51900] loss:  4.319e-01, time/iteration:  4.956e+01 ms
+[16:14:26] - [step:      52000] record constraint batch time:  1.452e+00s
+[16:14:27] - [step:      52000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:14:27] - [step:      52000] loss:  4.356e-01, time/iteration:  7.674e+01 ms
+[16:14:32] - [step:      52100] loss:  3.580e-01, time/iteration:  4.922e+01 ms
+[16:14:37] - [step:      52200] loss:  4.547e-01, time/iteration:  5.155e+01 ms
+[16:14:42] - [step:      52300] loss:  4.024e-01, time/iteration:  5.135e+01 ms
+[16:14:47] - [step:      52400] loss:  3.442e-01, time/iteration:  4.999e+01 ms
+[16:14:52] - [step:      52500] loss:  3.815e-01, time/iteration:  5.119e+01 ms
+[16:14:57] - [step:      52600] loss:  3.989e-01, time/iteration:  4.980e+01 ms
+[16:15:03] - [step:      52700] loss:  4.392e-01, time/iteration:  5.117e+01 ms
+[16:15:08] - [step:      52800] loss:  3.908e-01, time/iteration:  5.145e+01 ms
+[16:15:13] - [step:      52900] loss:  5.086e-01, time/iteration:  4.901e+01 ms
+[16:15:23] - [step:      53000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:15:23] - [step:      53000] loss:  4.094e-01, time/iteration:  1.090e+02 ms
+[16:15:28] - [step:      53100] loss:  3.867e-01, time/iteration:  4.915e+01 ms
+[16:15:34] - [step:      53200] loss:  3.509e-01, time/iteration:  5.139e+01 ms
+[16:15:39] - [step:      53300] loss:  3.300e-01, time/iteration:  5.206e+01 ms
+[16:15:44] - [step:      53400] loss:  4.177e-01, time/iteration:  4.954e+01 ms
+[16:15:49] - [step:      53500] loss:  4.221e-01, time/iteration:  5.236e+01 ms
+[16:15:54] - [step:      53600] loss:  4.553e-01, time/iteration:  5.202e+01 ms
+[16:15:59] - [step:      53700] loss:  3.933e-01, time/iteration:  4.923e+01 ms
+[16:16:04] - [step:      53800] loss:  3.818e-01, time/iteration:  5.144e+01 ms
+[16:16:09] - [step:      53900] loss:  3.588e-01, time/iteration:  4.942e+01 ms
+[16:16:17] - [step:      54000] record constraint batch time:  2.537e+00s
+[16:16:22] - [step:      54000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:16:22] - [step:      54000] loss:  3.090e-01, time/iteration:  1.327e+02 ms
+[16:16:28] - [step:      54100] loss:  3.874e-01, time/iteration:  5.236e+01 ms
+[16:16:33] - [step:      54200] loss:  4.725e-01, time/iteration:  4.943e+01 ms
+[16:16:38] - [step:      54300] loss:  3.431e-01, time/iteration:  5.150e+01 ms
+[16:16:43] - [step:      54400] loss:  3.753e-01, time/iteration:  4.943e+01 ms
+[16:16:48] - [step:      54500] loss:  3.658e-01, time/iteration:  5.179e+01 ms
+[16:16:53] - [step:      54600] loss:  3.999e-01, time/iteration:  5.179e+01 ms
+[16:16:58] - [step:      54700] loss:  3.411e-01, time/iteration:  4.983e+01 ms
+[16:17:03] - [step:      54800] loss:  3.453e-01, time/iteration:  5.160e+01 ms
+[16:17:08] - [step:      54900] loss:  3.548e-01, time/iteration:  4.945e+01 ms
+[16:17:22] - [step:      55000] record validators time:  8.760e+00s
+[16:17:23] - [step:      55000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:17:23] - [step:      55000] loss:  3.224e-01, time/iteration:  1.440e+02 ms
+[16:17:28] - [step:      55100] loss:  3.343e-01, time/iteration:  5.196e+01 ms
+[16:17:33] - [step:      55200] loss:  3.729e-01, time/iteration:  4.939e+01 ms
+[16:17:38] - [step:      55300] loss:  3.069e-01, time/iteration:  5.239e+01 ms
+[16:17:43] - [step:      55400] loss:  3.302e-01, time/iteration:  4.947e+01 ms
+[16:17:48] - [step:      55500] loss:  3.413e-01, time/iteration:  5.165e+01 ms
+[16:17:53] - [step:      55600] loss:  3.401e-01, time/iteration:  5.158e+01 ms
+[16:17:58] - [step:      55700] loss:  3.354e-01, time/iteration:  4.985e+01 ms
+[16:18:03] - [step:      55800] loss:  3.724e-01, time/iteration:  5.177e+01 ms
+[16:18:08] - [step:      55900] loss:  3.564e-01, time/iteration:  4.943e+01 ms
+[16:18:14] - [step:      56000] record constraint batch time:  5.534e-01s
+[16:18:15] - [step:      56000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:18:15] - [step:      56000] loss:  3.329e-01, time/iteration:  6.565e+01 ms
+[16:18:20] - [step:      56100] loss:  3.592e-01, time/iteration:  5.180e+01 ms
+[16:18:25] - [step:      56200] loss:  3.431e-01, time/iteration:  4.960e+01 ms
+[16:18:30] - [step:      56300] loss:  3.955e-01, time/iteration:  5.207e+01 ms
+[16:18:35] - [step:      56400] loss:  3.955e-01, time/iteration:  4.923e+01 ms
+[16:18:40] - [step:      56500] loss:  2.670e-01, time/iteration:  5.195e+01 ms
+[16:18:46] - [step:      56600] loss:  2.680e-01, time/iteration:  5.176e+01 ms
+[16:18:50] - [step:      56700] loss:  2.839e-01, time/iteration:  4.955e+01 ms
+[16:18:56] - [step:      56800] loss:  2.949e-01, time/iteration:  5.200e+01 ms
+[16:19:01] - [step:      56900] loss:  3.634e-01, time/iteration:  5.104e+01 ms
+[16:19:07] - [step:      57000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:19:07] - [step:      57000] loss:  3.391e-01, time/iteration:  6.630e+01 ms
+[16:19:13] - [step:      57100] loss:  2.570e-01, time/iteration:  5.209e+01 ms
+[16:19:18] - [step:      57200] loss:  2.816e-01, time/iteration:  4.928e+01 ms
+[16:19:23] - [step:      57300] loss:  2.941e-01, time/iteration:  5.140e+01 ms
+[16:19:28] - [step:      57400] loss:  2.913e-01, time/iteration:  5.186e+01 ms
+[16:19:33] - [step:      57500] loss:  2.561e-01, time/iteration:  4.918e+01 ms
+[16:19:38] - [step:      57600] loss:  3.266e-01, time/iteration:  5.157e+01 ms
+[16:19:43] - [step:      57700] loss:  2.976e-01, time/iteration:  4.919e+01 ms
+[16:19:48] - [step:      57800] loss:  2.818e-01, time/iteration:  5.153e+01 ms
+[16:19:53] - [step:      57900] loss:  2.786e-01, time/iteration:  5.081e+01 ms
+[16:19:58] - [step:      58000] record constraint batch time:  2.054e-01s
+[16:19:58] - [step:      58000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:19:58] - [step:      58000] loss:  3.366e-01, time/iteration:  5.392e+01 ms
+[16:20:04] - [step:      58100] loss:  2.499e-01, time/iteration:  5.200e+01 ms
+[16:20:09] - [step:      58200] loss:  2.443e-01, time/iteration:  4.918e+01 ms
+[16:20:14] - [step:      58300] loss:  2.381e-01, time/iteration:  5.155e+01 ms
+[16:20:19] - [step:      58400] loss:  3.680e-01, time/iteration:  5.181e+01 ms
+[16:20:24] - [step:      58500] loss:  2.413e-01, time/iteration:  4.938e+01 ms
+[16:20:29] - [step:      58600] loss:  2.894e-01, time/iteration:  5.166e+01 ms
+[16:20:34] - [step:      58700] loss:  2.379e-01, time/iteration:  4.880e+01 ms
+[16:20:39] - [step:      58800] loss:  2.370e-01, time/iteration:  5.202e+01 ms
+[16:20:44] - [step:      58900] loss:  2.624e-01, time/iteration:  5.154e+01 ms
+[16:20:49] - [step:      59000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:20:49] - [step:      59000] loss:  2.607e-01, time/iteration:  5.055e+01 ms
+[16:20:55] - [step:      59100] loss:  2.394e-01, time/iteration:  5.190e+01 ms
+[16:20:59] - [step:      59200] loss:  2.265e-01, time/iteration:  4.920e+01 ms
+[16:21:05] - [step:      59300] loss:  2.361e-01, time/iteration:  5.202e+01 ms
+[16:21:10] - [step:      59400] loss:  2.185e-01, time/iteration:  5.187e+01 ms
+[16:21:15] - [step:      59500] loss:  2.210e-01, time/iteration:  4.912e+01 ms
+[16:21:20] - [step:      59600] loss:  2.562e-01, time/iteration:  5.169e+01 ms
+[16:21:25] - [step:      59700] loss:  2.327e-01, time/iteration:  5.227e+01 ms
+[16:21:30] - [step:      59800] loss:  2.233e-01, time/iteration:  4.943e+01 ms
+[16:21:35] - [step:      59900] loss:  2.393e-01, time/iteration:  5.187e+01 ms
+[16:21:45] - [step:      60000] record constraint batch time:  4.944e+00s
+[16:21:55] - [step:      60000] record validators time:  1.014e+01s
+[16:21:58] - [step:      60000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:21:58] - [step:      60000] loss:  2.010e-01, time/iteration:  2.292e+02 ms
+[16:22:03] - [step:      60100] loss:  2.015e-01, time/iteration:  5.221e+01 ms
+[16:22:09] - [step:      60200] loss:  2.241e-01, time/iteration:  5.178e+01 ms
+[16:22:14] - [step:      60300] loss:  2.383e-01, time/iteration:  4.932e+01 ms
+[16:22:19] - [step:      60400] loss:  2.574e-01, time/iteration:  5.222e+01 ms
+[16:22:24] - [step:      60500] loss:  1.775e-01, time/iteration:  4.991e+01 ms
+[16:22:29] - [step:      60600] loss:  2.089e-01, time/iteration:  5.180e+01 ms
+[16:22:34] - [step:      60700] loss:  2.070e-01, time/iteration:  5.174e+01 ms
+[16:22:39] - [step:      60800] loss:  1.809e-01, time/iteration:  4.967e+01 ms
+[16:22:44] - [step:      60900] loss:  2.084e-01, time/iteration:  5.234e+01 ms
+[16:22:55] - [step:      61000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:22:55] - [step:      61000] loss:  1.932e-01, time/iteration:  1.081e+02 ms
+[16:23:00] - [step:      61100] loss:  1.939e-01, time/iteration:  5.241e+01 ms
+[16:23:06] - [step:      61200] loss:  2.124e-01, time/iteration:  5.163e+01 ms
+[16:23:10] - [step:      61300] loss:  1.657e-01, time/iteration:  4.925e+01 ms
+[16:23:16] - [step:      61400] loss:  1.779e-01, time/iteration:  5.216e+01 ms
+[16:23:21] - [step:      61500] loss:  1.693e-01, time/iteration:  4.963e+01 ms
+[16:23:26] - [step:      61600] loss:  2.043e-01, time/iteration:  5.235e+01 ms
+[16:23:31] - [step:      61700] loss:  1.748e-01, time/iteration:  5.180e+01 ms
+[16:23:36] - [step:      61800] loss:  1.963e-01, time/iteration:  4.951e+01 ms
+[16:23:41] - [step:      61900] loss:  1.797e-01, time/iteration:  5.132e+01 ms
+[16:23:48] - [step:      62000] record constraint batch time:  1.515e+00s
+[16:23:49] - [step:      62000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:23:49] - [step:      62000] loss:  1.773e-01, time/iteration:  7.964e+01 ms
+[16:23:54] - [step:      62100] loss:  1.457e-01, time/iteration:  5.199e+01 ms
+[16:23:59] - [step:      62200] loss:  1.616e-01, time/iteration:  5.110e+01 ms
+[16:24:04] - [step:      62300] loss:  1.409e-01, time/iteration:  4.924e+01 ms
+[16:24:10] - [step:      62400] loss:  1.856e-01, time/iteration:  5.206e+01 ms
+[16:24:14] - [step:      62500] loss:  1.915e-01, time/iteration:  4.956e+01 ms
+[16:24:20] - [step:      62600] loss:  1.355e-01, time/iteration:  5.230e+01 ms
+[16:24:25] - [step:      62700] loss:  1.437e-01, time/iteration:  5.251e+01 ms
+[16:24:30] - [step:      62800] loss:  1.963e-01, time/iteration:  4.940e+01 ms
+[16:24:35] - [step:      62900] loss:  1.520e-01, time/iteration:  5.189e+01 ms
+[16:24:43] - [step:      63000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:24:43] - [step:      63000] loss:  1.667e-01, time/iteration:  8.132e+01 ms
+[16:24:48] - [step:      63100] loss:  1.574e-01, time/iteration:  5.000e+01 ms
+[16:24:53] - [step:      63200] loss:  1.683e-01, time/iteration:  5.121e+01 ms
+[16:24:58] - [step:      63300] loss:  1.752e-01, time/iteration:  4.948e+01 ms
+[16:25:04] - [step:      63400] loss:  1.264e-01, time/iteration:  5.194e+01 ms
+[16:25:09] - [step:      63500] loss:  1.401e-01, time/iteration:  5.171e+01 ms
+[16:25:14] - [step:      63600] loss:  1.258e-01, time/iteration:  4.922e+01 ms
+[16:25:19] - [step:      63700] loss:  1.535e-01, time/iteration:  5.196e+01 ms
+[16:25:24] - [step:      63800] loss:  1.483e-01, time/iteration:  5.002e+01 ms
+[16:25:29] - [step:      63900] loss:  1.614e-01, time/iteration:  5.151e+01 ms
+[16:25:36] - [step:      64000] record constraint batch time:  1.987e+00s
+[16:25:38] - [step:      64000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:25:38] - [step:      64000] loss:  1.369e-01, time/iteration:  8.792e+01 ms
+[16:25:43] - [step:      64100] loss:  1.235e-01, time/iteration:  4.918e+01 ms
+[16:25:48] - [step:      64200] loss:  1.299e-01, time/iteration:  5.215e+01 ms
+[16:25:53] - [step:      64300] loss:  1.719e-01, time/iteration:  4.971e+01 ms
+[16:25:58] - [step:      64400] loss:  1.344e-01, time/iteration:  5.166e+01 ms
+[16:26:03] - [step:      64500] loss:  1.334e-01, time/iteration:  5.172e+01 ms
+[16:26:08] - [step:      64600] loss:  1.214e-01, time/iteration:  4.909e+01 ms
+[16:26:13] - [step:      64700] loss:  1.348e-01, time/iteration:  5.206e+01 ms
+[16:26:18] - [step:      64800] loss:  1.310e-01, time/iteration:  4.938e+01 ms
+[16:26:23] - [step:      64900] loss:  1.196e-01, time/iteration:  5.224e+01 ms
+[16:26:37] - [step:      65000] record validators time:  8.641e+00s
+[16:26:38] - [step:      65000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:26:38] - [step:      65000] loss:  1.350e-01, time/iteration:  1.484e+02 ms
+[16:26:43] - [step:      65100] loss:  1.176e-01, time/iteration:  4.977e+01 ms
+[16:26:48] - [step:      65200] loss:  1.235e-01, time/iteration:  5.203e+01 ms
+[16:26:53] - [step:      65300] loss:  1.094e-01, time/iteration:  4.972e+01 ms
+[16:26:59] - [step:      65400] loss:  1.445e-01, time/iteration:  5.188e+01 ms
+[16:27:04] - [step:      65500] loss:  1.137e-01, time/iteration:  5.169e+01 ms
+[16:27:09] - [step:      65600] loss:  1.423e-01, time/iteration:  4.959e+01 ms
+[16:27:14] - [step:      65700] loss:  1.210e-01, time/iteration:  5.191e+01 ms
+[16:27:19] - [step:      65800] loss:  1.318e-01, time/iteration:  4.963e+01 ms
+[16:27:24] - [step:      65900] loss:  1.084e-01, time/iteration:  5.197e+01 ms
+[16:27:30] - [step:      66000] record constraint batch time:  2.596e-01s
+[16:27:30] - [step:      66000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:27:30] - [step:      66000] loss:  1.011e-01, time/iteration:  5.618e+01 ms
+[16:27:35] - [step:      66100] loss:  1.505e-01, time/iteration:  4.915e+01 ms
+[16:27:40] - [step:      66200] loss:  1.355e-01, time/iteration:  5.097e+01 ms
+[16:27:45] - [step:      66300] loss:  1.023e-01, time/iteration:  5.182e+01 ms
+[16:27:50] - [step:      66400] loss:  1.378e-01, time/iteration:  4.927e+01 ms
+[16:27:55] - [step:      66500] loss:  1.620e-01, time/iteration:  5.184e+01 ms
+[16:28:00] - [step:      66600] loss:  9.423e-02, time/iteration:  4.928e+01 ms
+[16:28:05] - [step:      66700] loss:  9.285e-02, time/iteration:  5.156e+01 ms
+[16:28:10] - [step:      66800] loss:  1.018e-01, time/iteration:  5.182e+01 ms
+[16:28:15] - [step:      66900] loss:  1.192e-01, time/iteration:  4.948e+01 ms
+[16:28:22] - [step:      67000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:28:22] - [step:      67000] loss:  9.420e-02, time/iteration:  6.672e+01 ms
+[16:28:27] - [step:      67100] loss:  9.170e-02, time/iteration:  4.986e+01 ms
+[16:28:32] - [step:      67200] loss:  1.076e-01, time/iteration:  5.181e+01 ms
+[16:28:37] - [step:      67300] loss:  1.112e-01, time/iteration:  5.194e+01 ms
+[16:28:42] - [step:      67400] loss:  1.042e-01, time/iteration:  4.962e+01 ms
+[16:28:47] - [step:      67500] loss:  1.069e-01, time/iteration:  5.216e+01 ms
+[16:28:52] - [step:      67600] loss:  1.057e-01, time/iteration:  4.968e+01 ms
+[16:28:58] - [step:      67700] loss:  1.015e-01, time/iteration:  5.248e+01 ms
+[16:29:03] - [step:      67800] loss:  1.029e-01, time/iteration:  5.244e+01 ms
+[16:29:08] - [step:      67900] loss:  1.090e-01, time/iteration:  4.916e+01 ms
+[16:29:15] - [step:      68000] record constraint batch time:  1.901e+00s
+[16:29:17] - [step:      68000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:29:17] - [step:      68000] loss:  9.779e-02, time/iteration:  9.567e+01 ms
+[16:29:22] - [step:      68100] loss:  8.589e-02, time/iteration:  5.014e+01 ms
+[16:29:28] - [step:      68200] loss:  1.064e-01, time/iteration:  5.279e+01 ms
+[16:29:33] - [step:      68300] loss:  1.266e-01, time/iteration:  5.289e+01 ms
+[16:29:38] - [step:      68400] loss:  8.985e-02, time/iteration:  4.935e+01 ms
+[16:29:43] - [step:      68500] loss:  8.477e-02, time/iteration:  5.177e+01 ms
+[16:29:48] - [step:      68600] loss:  9.330e-02, time/iteration:  4.982e+01 ms
+[16:29:53] - [step:      68700] loss:  8.562e-02, time/iteration:  5.207e+01 ms
+[16:29:58] - [step:      68800] loss:  9.259e-02, time/iteration:  5.146e+01 ms
+[16:30:03] - [step:      68900] loss:  1.118e-01, time/iteration:  4.896e+01 ms
+[16:30:09] - [step:      69000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:30:09] - [step:      69000] loss:  9.204e-02, time/iteration:  5.295e+01 ms
+[16:30:14] - [step:      69100] loss:  8.502e-02, time/iteration:  5.179e+01 ms
+[16:30:19] - [step:      69200] loss:  8.389e-02, time/iteration:  4.936e+01 ms
+[16:30:24] - [step:      69300] loss:  1.493e-01, time/iteration:  5.243e+01 ms
+[16:30:29] - [step:      69400] loss:  8.026e-02, time/iteration:  4.937e+01 ms
+[16:30:34] - [step:      69500] loss:  7.900e-02, time/iteration:  5.138e+01 ms
+[16:30:39] - [step:      69600] loss:  8.795e-02, time/iteration:  5.195e+01 ms
+[16:30:44] - [step:      69700] loss:  9.266e-02, time/iteration:  4.881e+01 ms
+[16:30:49] - [step:      69800] loss:  9.826e-02, time/iteration:  5.193e+01 ms
+[16:30:54] - [step:      69900] loss:  7.358e-02, time/iteration:  4.894e+01 ms
+[16:31:00] - [step:      70000] record constraint batch time:  7.695e-01s
+[16:31:08] - [step:      70000] record validators time:  8.173e+00s
+[16:31:10] - [step:      70000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:31:10] - [step:      70000] loss:  8.212e-02, time/iteration:  1.614e+02 ms
+[16:31:16] - [step:      70100] loss:  8.335e-02, time/iteration:  5.237e+01 ms
+[16:31:21] - [step:      70200] loss:  7.694e-02, time/iteration:  4.898e+01 ms
+[16:31:26] - [step:      70300] loss:  7.461e-02, time/iteration:  5.252e+01 ms
+[16:31:31] - [step:      70400] loss:  7.604e-02, time/iteration:  4.915e+01 ms
+[16:31:36] - [step:      70500] loss:  6.747e-02, time/iteration:  5.182e+01 ms
+[16:31:41] - [step:      70600] loss:  8.004e-02, time/iteration:  5.110e+01 ms
+[16:31:46] - [step:      70700] loss:  8.250e-02, time/iteration:  4.902e+01 ms
+[16:31:51] - [step:      70800] loss:  7.309e-02, time/iteration:  5.155e+01 ms
+[16:31:56] - [step:      70900] loss:  7.179e-02, time/iteration:  4.952e+01 ms
+[16:32:05] - [step:      71000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:32:05] - [step:      71000] loss:  1.028e-01, time/iteration:  8.679e+01 ms
+[16:32:10] - [step:      71100] loss:  6.347e-02, time/iteration:  5.137e+01 ms
+[16:32:15] - [step:      71200] loss:  9.176e-02, time/iteration:  4.842e+01 ms
+[16:32:20] - [step:      71300] loss:  8.025e-02, time/iteration:  5.186e+01 ms
+[16:32:25] - [step:      71400] loss:  7.752e-02, time/iteration:  4.933e+01 ms
+[16:32:30] - [step:      71500] loss:  7.932e-02, time/iteration:  5.174e+01 ms
+[16:32:35] - [step:      71600] loss:  7.086e-02, time/iteration:  5.132e+01 ms
+[16:32:40] - [step:      71700] loss:  7.448e-02, time/iteration:  4.915e+01 ms
+[16:32:45] - [step:      71800] loss:  7.791e-02, time/iteration:  5.148e+01 ms
+[16:32:50] - [step:      71900] loss:  7.263e-02, time/iteration:  4.874e+01 ms
+[16:32:58] - [step:      72000] record constraint batch time:  2.580e+00s
+[16:32:59] - [step:      72000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:32:59] - [step:      72000] loss:  8.313e-02, time/iteration:  8.555e+01 ms
+[16:33:04] - [step:      72100] loss:  7.792e-02, time/iteration:  5.181e+01 ms
+[16:33:09] - [step:      72200] loss:  7.151e-02, time/iteration:  4.879e+01 ms
+[16:33:14] - [step:      72300] loss:  7.682e-02, time/iteration:  5.150e+01 ms
+[16:33:19] - [step:      72400] loss:  6.424e-02, time/iteration:  5.194e+01 ms
+[16:33:24] - [step:      72500] loss:  7.667e-02, time/iteration:  4.931e+01 ms
+[16:33:29] - [step:      72600] loss:  7.601e-02, time/iteration:  5.173e+01 ms
+[16:33:34] - [step:      72700] loss:  6.060e-02, time/iteration:  4.852e+01 ms
+[16:33:39] - [step:      72800] loss:  6.962e-02, time/iteration:  5.134e+01 ms
+[16:33:44] - [step:      72900] loss:  7.324e-02, time/iteration:  5.160e+01 ms
+[16:33:51] - [step:      73000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:33:51] - [step:      73000] loss:  7.348e-02, time/iteration:  6.784e+01 ms
+[16:33:56] - [step:      73100] loss:  6.174e-02, time/iteration:  5.181e+01 ms
+[16:34:01] - [step:      73200] loss:  7.544e-02, time/iteration:  4.731e+01 ms
+[16:34:06] - [step:      73300] loss:  6.366e-02, time/iteration:  5.109e+01 ms
+[16:34:11] - [step:      73400] loss:  6.830e-02, time/iteration:  5.183e+01 ms
+[16:34:16] - [step:      73500] loss:  6.583e-02, time/iteration:  4.951e+01 ms
+[16:34:21] - [step:      73600] loss:  7.054e-02, time/iteration:  5.075e+01 ms
+[16:34:26] - [step:      73700] loss:  5.411e-02, time/iteration:  4.953e+01 ms
+[16:34:31] - [step:      73800] loss:  5.799e-02, time/iteration:  5.112e+01 ms
+[16:34:37] - [step:      73900] loss:  6.935e-02, time/iteration:  5.251e+01 ms
+[16:34:42] - [step:      74000] record constraint batch time:  8.671e-01s
+[16:34:45] - [step:      74000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:34:45] - [step:      74000] loss:  5.735e-02, time/iteration:  7.969e+01 ms
+[16:34:50] - [step:      74100] loss:  5.378e-02, time/iteration:  5.142e+01 ms
+[16:34:55] - [step:      74200] loss:  5.642e-02, time/iteration:  4.847e+01 ms
+[16:35:00] - [step:      74300] loss:  5.006e-02, time/iteration:  5.122e+01 ms
+[16:35:05] - [step:      74400] loss:  5.712e-02, time/iteration:  5.189e+01 ms
+[16:35:10] - [step:      74500] loss:  9.155e-02, time/iteration:  4.921e+01 ms
+[16:35:15] - [step:      74600] loss:  6.167e-02, time/iteration:  5.185e+01 ms
+[16:35:20] - [step:      74700] loss:  5.923e-02, time/iteration:  4.940e+01 ms
+[16:35:25] - [step:      74800] loss:  5.599e-02, time/iteration:  5.192e+01 ms
+[16:35:30] - [step:      74900] loss:  5.052e-02, time/iteration:  5.131e+01 ms
+[16:35:44] - [step:      75000] record validators time:  8.462e+00s
+[16:35:45] - [step:      75000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:35:45] - [step:      75000] loss:  4.961e-02, time/iteration:  1.451e+02 ms
+[16:35:50] - [step:      75100] loss:  5.218e-02, time/iteration:  5.203e+01 ms
+[16:35:55] - [step:      75200] loss:  4.844e-02, time/iteration:  4.936e+01 ms
+[16:36:00] - [step:      75300] loss:  5.267e-02, time/iteration:  5.187e+01 ms
+[16:36:05] - [step:      75400] loss:  5.334e-02, time/iteration:  5.186e+01 ms
+[16:36:10] - [step:      75500] loss:  6.451e-02, time/iteration:  4.903e+01 ms
+[16:36:15] - [step:      75600] loss:  5.306e-02, time/iteration:  5.210e+01 ms
+[16:36:21] - [step:      75700] loss:  6.171e-02, time/iteration:  5.217e+01 ms
+[16:36:26] - [step:      75800] loss:  5.645e-02, time/iteration:  4.990e+01 ms
+[16:36:31] - [step:      75900] loss:  5.416e-02, time/iteration:  5.164e+01 ms
+[16:36:36] - [step:      76000] record constraint batch time:  6.346e-01s
+[16:36:37] - [step:      76000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:36:37] - [step:      76000] loss:  5.895e-02, time/iteration:  5.774e+01 ms
+[16:36:42] - [step:      76100] loss:  4.984e-02, time/iteration:  5.187e+01 ms
+[16:36:47] - [step:      76200] loss:  5.747e-02, time/iteration:  5.211e+01 ms
+[16:36:52] - [step:      76300] loss:  5.945e-02, time/iteration:  4.937e+01 ms
+[16:36:57] - [step:      76400] loss:  5.621e-02, time/iteration:  5.252e+01 ms
+[16:37:02] - [step:      76500] loss:  5.010e-02, time/iteration:  4.909e+01 ms
+[16:37:07] - [step:      76600] loss:  4.876e-02, time/iteration:  5.181e+01 ms
+[16:37:12] - [step:      76700] loss:  4.978e-02, time/iteration:  5.160e+01 ms
+[16:37:17] - [step:      76800] loss:  5.086e-02, time/iteration:  4.956e+01 ms
+[16:37:22] - [step:      76900] loss:  5.228e-02, time/iteration:  5.183e+01 ms
+[16:37:28] - [step:      77000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:37:28] - [step:      77000] loss:  5.073e-02, time/iteration:  5.031e+01 ms
+[16:37:33] - [step:      77100] loss:  5.687e-02, time/iteration:  5.175e+01 ms
+[16:37:38] - [step:      77200] loss:  4.958e-02, time/iteration:  5.208e+01 ms
+[16:37:43] - [step:      77300] loss:  6.324e-02, time/iteration:  4.844e+01 ms
+[16:37:48] - [step:      77400] loss:  5.081e-02, time/iteration:  5.141e+01 ms
+[16:37:53] - [step:      77500] loss:  5.572e-02, time/iteration:  4.941e+01 ms
+[16:37:58] - [step:      77600] loss:  5.359e-02, time/iteration:  5.182e+01 ms
+[16:38:03] - [step:      77700] loss:  4.695e-02, time/iteration:  5.138e+01 ms
+[16:38:08] - [step:      77800] loss:  5.220e-02, time/iteration:  4.933e+01 ms
+[16:38:13] - [step:      77900] loss:  5.674e-02, time/iteration:  5.194e+01 ms
+[16:38:21] - [step:      78000] record constraint batch time:  2.669e+00s
+[16:38:23] - [step:      78000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:38:23] - [step:      78000] loss:  5.077e-02, time/iteration:  9.353e+01 ms
+[16:38:28] - [step:      78100] loss:  4.229e-02, time/iteration:  5.232e+01 ms
+[16:38:33] - [step:      78200] loss:  4.982e-02, time/iteration:  5.194e+01 ms
+[16:38:38] - [step:      78300] loss:  4.447e-02, time/iteration:  4.903e+01 ms
+[16:38:43] - [step:      78400] loss:  4.946e-02, time/iteration:  5.154e+01 ms
+[16:38:48] - [step:      78500] loss:  5.175e-02, time/iteration:  5.161e+01 ms
+[16:38:53] - [step:      78600] loss:  5.492e-02, time/iteration:  4.857e+01 ms
+[16:38:58] - [step:      78700] loss:  4.262e-02, time/iteration:  5.164e+01 ms
+[16:39:03] - [step:      78800] loss:  4.900e-02, time/iteration:  4.930e+01 ms
+[16:39:08] - [step:      78900] loss:  4.299e-02, time/iteration:  5.173e+01 ms
+[16:39:14] - [step:      79000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:39:14] - [step:      79000] loss:  4.021e-02, time/iteration:  5.755e+01 ms
+[16:39:19] - [step:      79100] loss:  5.380e-02, time/iteration:  4.927e+01 ms
+[16:39:24] - [step:      79200] loss:  4.253e-02, time/iteration:  5.208e+01 ms
+[16:39:29] - [step:      79300] loss:  4.413e-02, time/iteration:  4.891e+01 ms
+[16:39:34] - [step:      79400] loss:  5.031e-02, time/iteration:  5.149e+01 ms
+[16:39:40] - [step:      79500] loss:  3.857e-02, time/iteration:  5.174e+01 ms
+[16:39:45] - [step:      79600] loss:  5.230e-02, time/iteration:  5.053e+01 ms
+[16:39:50] - [step:      79700] loss:  5.576e-02, time/iteration:  5.219e+01 ms
+[16:39:55] - [step:      79800] loss:  7.153e-02, time/iteration:  4.958e+01 ms
+[16:40:00] - [step:      79900] loss:  4.112e-02, time/iteration:  5.154e+01 ms
+[16:40:06] - [step:      80000] record constraint batch time:  1.398e+00s
+[16:40:21] - [step:      80000] record validators time:  1.430e+01s
+[16:40:22] - [step:      80000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:40:22] - [step:      80000] loss:  3.657e-02, time/iteration:  2.175e+02 ms
+[16:40:27] - [step:      80100] loss:  4.400e-02, time/iteration:  4.998e+01 ms
+[16:40:32] - [step:      80200] loss:  4.493e-02, time/iteration:  5.152e+01 ms
+[16:40:37] - [step:      80300] loss:  5.090e-02, time/iteration:  4.919e+01 ms
+[16:40:42] - [step:      80400] loss:  4.440e-02, time/iteration:  5.140e+01 ms
+[16:40:47] - [step:      80500] loss:  3.903e-02, time/iteration:  5.277e+01 ms
+[16:40:52] - [step:      80600] loss:  4.251e-02, time/iteration:  4.926e+01 ms
+[16:40:57] - [step:      80700] loss:  3.757e-02, time/iteration:  5.197e+01 ms
+[16:41:02] - [step:      80800] loss:  3.961e-02, time/iteration:  4.896e+01 ms
+[16:41:07] - [step:      80900] loss:  3.538e-02, time/iteration:  5.135e+01 ms
+[16:41:13] - [step:      81000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:41:13] - [step:      81000] loss:  4.149e-02, time/iteration:  5.483e+01 ms
+[16:41:18] - [step:      81100] loss:  3.817e-02, time/iteration:  4.938e+01 ms
+[16:41:23] - [step:      81200] loss:  3.475e-02, time/iteration:  5.204e+01 ms
+[16:41:28] - [step:      81300] loss:  4.033e-02, time/iteration:  4.949e+01 ms
+[16:41:33] - [step:      81400] loss:  4.222e-02, time/iteration:  5.238e+01 ms
+[16:41:38] - [step:      81500] loss:  4.462e-02, time/iteration:  5.174e+01 ms
+[16:41:43] - [step:      81600] loss:  4.270e-02, time/iteration:  4.907e+01 ms
+[16:41:48] - [step:      81700] loss:  4.311e-02, time/iteration:  5.207e+01 ms
+[16:41:54] - [step:      81800] loss:  4.318e-02, time/iteration:  5.241e+01 ms
+[16:41:59] - [step:      81900] loss:  3.517e-02, time/iteration:  4.909e+01 ms
+[16:42:05] - [step:      82000] record constraint batch time:  1.414e+00s
+[16:42:06] - [step:      82000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:42:06] - [step:      82000] loss:  4.106e-02, time/iteration:  7.027e+01 ms
+[16:42:11] - [step:      82100] loss:  5.024e-02, time/iteration:  4.977e+01 ms
+[16:42:16] - [step:      82200] loss:  3.736e-02, time/iteration:  5.200e+01 ms
+[16:42:21] - [step:      82300] loss:  4.412e-02, time/iteration:  5.216e+01 ms
+[16:42:26] - [step:      82400] loss:  3.784e-02, time/iteration:  4.936e+01 ms
+[16:42:31] - [step:      82500] loss:  4.892e-02, time/iteration:  5.162e+01 ms
+[16:42:36] - [step:      82600] loss:  3.882e-02, time/iteration:  4.867e+01 ms
+[16:42:41] - [step:      82700] loss:  4.357e-02, time/iteration:  5.164e+01 ms
+[16:42:46] - [step:      82800] loss:  3.980e-02, time/iteration:  5.219e+01 ms
+[16:42:51] - [step:      82900] loss:  4.590e-02, time/iteration:  4.876e+01 ms
+[16:42:57] - [step:      83000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:42:57] - [step:      83000] loss:  3.841e-02, time/iteration:  6.104e+01 ms
+[16:43:02] - [step:      83100] loss:  4.530e-02, time/iteration:  4.849e+01 ms
+[16:43:07] - [step:      83200] loss:  3.917e-02, time/iteration:  5.157e+01 ms
+[16:43:12] - [step:      83300] loss:  3.314e-02, time/iteration:  5.150e+01 ms
+[16:43:17] - [step:      83400] loss:  3.522e-02, time/iteration:  4.949e+01 ms
+[16:43:23] - [step:      83500] loss:  3.830e-02, time/iteration:  5.165e+01 ms
+[16:43:27] - [step:      83600] loss:  3.474e-02, time/iteration:  4.886e+01 ms
+[16:43:33] - [step:      83700] loss:  3.679e-02, time/iteration:  5.132e+01 ms
+[16:43:38] - [step:      83800] loss:  3.343e-02, time/iteration:  5.069e+01 ms
+[16:43:43] - [step:      83900] loss:  4.649e-02, time/iteration:  4.896e+01 ms
+[16:43:50] - [step:      84000] record constraint batch time:  2.720e+00s
+[16:43:54] - [step:      84000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:43:54] - [step:      84000] loss:  3.461e-02, time/iteration:  1.139e+02 ms
+[16:43:59] - [step:      84100] loss:  4.325e-02, time/iteration:  4.972e+01 ms
+[16:44:04] - [step:      84200] loss:  3.927e-02, time/iteration:  5.181e+01 ms
+[16:44:09] - [step:      84300] loss:  3.569e-02, time/iteration:  5.171e+01 ms
+[16:44:14] - [step:      84400] loss:  3.976e-02, time/iteration:  4.980e+01 ms
+[16:44:19] - [step:      84500] loss:  3.818e-02, time/iteration:  5.197e+01 ms
+[16:44:24] - [step:      84600] loss:  3.737e-02, time/iteration:  4.971e+01 ms
+[16:44:30] - [step:      84700] loss:  3.469e-02, time/iteration:  5.180e+01 ms
+[16:44:35] - [step:      84800] loss:  3.263e-02, time/iteration:  5.125e+01 ms
+[16:44:40] - [step:      84900] loss:  3.013e-02, time/iteration:  4.894e+01 ms
+[16:44:54] - [step:      85000] record validators time:  8.920e+00s
+[16:44:56] - [step:      85000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:44:56] - [step:      85000] loss:  2.960e-02, time/iteration:  1.592e+02 ms
+[16:45:01] - [step:      85100] loss:  3.900e-02, time/iteration:  5.199e+01 ms
+[16:45:06] - [step:      85200] loss:  3.230e-02, time/iteration:  4.926e+01 ms
+[16:45:11] - [step:      85300] loss:  3.405e-02, time/iteration:  5.202e+01 ms
+[16:45:16] - [step:      85400] loss:  3.154e-02, time/iteration:  4.950e+01 ms
+[16:45:21] - [step:      85500] loss:  3.476e-02, time/iteration:  5.190e+01 ms
+[16:45:26] - [step:      85600] loss:  4.140e-02, time/iteration:  5.181e+01 ms
+[16:45:31] - [step:      85700] loss:  3.554e-02, time/iteration:  4.949e+01 ms
+[16:45:36] - [step:      85800] loss:  4.111e-02, time/iteration:  5.156e+01 ms
+[16:45:41] - [step:      85900] loss:  3.201e-02, time/iteration:  4.914e+01 ms
+[16:45:51] - [step:      86000] record constraint batch time:  4.835e+00s
+[16:45:52] - [step:      86000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:45:52] - [step:      86000] loss:  3.378e-02, time/iteration:  1.094e+02 ms
+[16:45:57] - [step:      86100] loss:  3.119e-02, time/iteration:  5.212e+01 ms
+[16:46:02] - [step:      86200] loss:  3.373e-02, time/iteration:  4.910e+01 ms
+[16:46:08] - [step:      86300] loss:  3.264e-02, time/iteration:  5.217e+01 ms
+[16:46:12] - [step:      86400] loss:  3.303e-02, time/iteration:  4.945e+01 ms
+[16:46:18] - [step:      86500] loss:  3.401e-02, time/iteration:  5.190e+01 ms
+[16:46:23] - [step:      86600] loss:  3.588e-02, time/iteration:  5.097e+01 ms
+[16:46:28] - [step:      86700] loss:  3.680e-02, time/iteration:  4.958e+01 ms
+[16:46:33] - [step:      86800] loss:  3.533e-02, time/iteration:  5.180e+01 ms
+[16:46:38] - [step:      86900] loss:  3.580e-02, time/iteration:  4.916e+01 ms
+[16:46:43] - [step:      87000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:46:43] - [step:      87000] loss:  3.406e-02, time/iteration:  5.293e+01 ms
+[16:46:48] - [step:      87100] loss:  3.022e-02, time/iteration:  5.186e+01 ms
+[16:46:53] - [step:      87200] loss:  3.259e-02, time/iteration:  4.950e+01 ms
+[16:46:58] - [step:      87300] loss:  3.257e-02, time/iteration:  5.102e+01 ms
+[16:47:03] - [step:      87400] loss:  2.970e-02, time/iteration:  4.873e+01 ms
+[16:47:08] - [step:      87500] loss:  3.168e-02, time/iteration:  5.182e+01 ms
+[16:47:14] - [step:      87600] loss:  2.970e-02, time/iteration:  5.156e+01 ms
+[16:47:18] - [step:      87700] loss:  2.826e-02, time/iteration:  4.906e+01 ms
+[16:47:24] - [step:      87800] loss:  3.287e-02, time/iteration:  5.215e+01 ms
+[16:47:29] - [step:      87900] loss:  3.172e-02, time/iteration:  4.917e+01 ms
+[16:47:36] - [step:      88000] record constraint batch time:  1.887e+00s
+[16:47:39] - [step:      88000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:47:39] - [step:      88000] loss:  3.141e-02, time/iteration:  1.026e+02 ms
+[16:47:44] - [step:      88100] loss:  3.133e-02, time/iteration:  5.214e+01 ms
+[16:47:49] - [step:      88200] loss:  3.404e-02, time/iteration:  4.953e+01 ms
+[16:47:54] - [step:      88300] loss:  2.791e-02, time/iteration:  5.200e+01 ms
+[16:47:59] - [step:      88400] loss:  2.843e-02, time/iteration:  5.143e+01 ms
+[16:48:04] - [step:      88500] loss:  2.761e-02, time/iteration:  4.919e+01 ms
+[16:48:09] - [step:      88600] loss:  3.093e-02, time/iteration:  5.167e+01 ms
+[16:48:14] - [step:      88700] loss:  3.133e-02, time/iteration:  4.906e+01 ms
+[16:48:20] - [step:      88800] loss:  2.820e-02, time/iteration:  5.152e+01 ms
+[16:48:25] - [step:      88900] loss:  2.777e-02, time/iteration:  5.197e+01 ms
+[16:48:32] - [step:      89000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:48:32] - [step:      89000] loss:  3.593e-02, time/iteration:  7.319e+01 ms
+[16:48:37] - [step:      89100] loss:  2.995e-02, time/iteration:  5.031e+01 ms
+[16:48:42] - [step:      89200] loss:  3.341e-02, time/iteration:  4.791e+01 ms
+[16:48:47] - [step:      89300] loss:  3.062e-02, time/iteration:  5.041e+01 ms
+[16:48:52] - [step:      89400] loss:  3.445e-02, time/iteration:  5.045e+01 ms
+[16:48:57] - [step:      89500] loss:  2.851e-02, time/iteration:  4.823e+01 ms
+[16:49:02] - [step:      89600] loss:  2.742e-02, time/iteration:  5.041e+01 ms
+[16:49:07] - [step:      89700] loss:  2.883e-02, time/iteration:  4.943e+01 ms
+[16:49:12] - [step:      89800] loss:  2.482e-02, time/iteration:  5.231e+01 ms
+[16:49:17] - [step:      89900] loss:  3.066e-02, time/iteration:  5.178e+01 ms
+[16:49:23] - [step:      90000] record constraint batch time:  7.224e-01s
+[16:49:31] - [step:      90000] record validators time:  8.607e+00s
+[16:49:33] - [step:      90000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:49:33] - [step:      90000] loss:  3.156e-02, time/iteration:  1.588e+02 ms
+[16:49:38] - [step:      90100] loss:  3.083e-02, time/iteration:  5.161e+01 ms
+[16:49:43] - [step:      90200] loss:  2.826e-02, time/iteration:  4.862e+01 ms
+[16:49:48] - [step:      90300] loss:  2.797e-02, time/iteration:  5.059e+01 ms
+[16:49:53] - [step:      90400] loss:  3.149e-02, time/iteration:  5.170e+01 ms
+[16:49:58] - [step:      90500] loss:  2.920e-02, time/iteration:  4.970e+01 ms
+[16:50:03] - [step:      90600] loss:  3.136e-02, time/iteration:  5.175e+01 ms
+[16:50:08] - [step:      90700] loss:  3.072e-02, time/iteration:  4.979e+01 ms
+[16:50:14] - [step:      90800] loss:  2.993e-02, time/iteration:  5.197e+01 ms
+[16:50:19] - [step:      90900] loss:  3.311e-02, time/iteration:  5.161e+01 ms
+[16:50:26] - [step:      91000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:50:26] - [step:      91000] loss:  3.292e-02, time/iteration:  7.208e+01 ms
+[16:50:31] - [step:      91100] loss:  3.063e-02, time/iteration:  5.191e+01 ms
+[16:50:36] - [step:      91200] loss:  2.959e-02, time/iteration:  5.124e+01 ms
+[16:50:41] - [step:      91300] loss:  2.852e-02, time/iteration:  4.951e+01 ms
+[16:50:46] - [step:      91400] loss:  2.805e-02, time/iteration:  5.151e+01 ms
+[16:50:51] - [step:      91500] loss:  2.840e-02, time/iteration:  4.928e+01 ms
+[16:50:57] - [step:      91600] loss:  2.737e-02, time/iteration:  5.192e+01 ms
+[16:51:02] - [step:      91700] loss:  3.088e-02, time/iteration:  5.148e+01 ms
+[16:51:07] - [step:      91800] loss:  2.807e-02, time/iteration:  4.913e+01 ms
+[16:51:12] - [step:      91900] loss:  2.374e-02, time/iteration:  5.174e+01 ms
+[16:51:18] - [step:      92000] record constraint batch time:  8.300e-01s
+[16:51:18] - [step:      92000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:51:18] - [step:      92000] loss:  2.970e-02, time/iteration:  6.167e+01 ms
+[16:51:23] - [step:      92100] loss:  3.072e-02, time/iteration:  5.224e+01 ms
+[16:51:28] - [step:      92200] loss:  2.692e-02, time/iteration:  5.215e+01 ms
+[16:51:33] - [step:      92300] loss:  2.899e-02, time/iteration:  4.985e+01 ms
+[16:51:39] - [step:      92400] loss:  2.770e-02, time/iteration:  5.228e+01 ms
+[16:51:44] - [step:      92500] loss:  2.575e-02, time/iteration:  4.910e+01 ms
+[16:51:49] - [step:      92600] loss:  2.546e-02, time/iteration:  5.142e+01 ms
+[16:51:54] - [step:      92700] loss:  2.874e-02, time/iteration:  5.199e+01 ms
+[16:51:59] - [step:      92800] loss:  2.622e-02, time/iteration:  4.891e+01 ms
+[16:52:04] - [step:      92900] loss:  2.772e-02, time/iteration:  5.203e+01 ms
+[16:52:10] - [step:      93000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:52:10] - [step:      93000] loss:  2.733e-02, time/iteration:  6.004e+01 ms
+[16:52:15] - [step:      93100] loss:  3.146e-02, time/iteration:  5.155e+01 ms
+[16:52:20] - [step:      93200] loss:  2.575e-02, time/iteration:  5.158e+01 ms
+[16:52:25] - [step:      93300] loss:  2.554e-02, time/iteration:  4.963e+01 ms
+[16:52:30] - [step:      93400] loss:  2.538e-02, time/iteration:  5.144e+01 ms
+[16:52:35] - [step:      93500] loss:  2.676e-02, time/iteration:  4.982e+01 ms
+[16:52:41] - [step:      93600] loss:  2.620e-02, time/iteration:  5.176e+01 ms
+[16:52:46] - [step:      93700] loss:  2.834e-02, time/iteration:  5.209e+01 ms
+[16:52:51] - [step:      93800] loss:  2.425e-02, time/iteration:  4.964e+01 ms
+[16:52:56] - [step:      93900] loss:  2.587e-02, time/iteration:  5.211e+01 ms
+[16:53:01] - [step:      94000] record constraint batch time:  8.605e-02s
+[16:53:02] - [step:      94000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:53:02] - [step:      94000] loss:  3.058e-02, time/iteration:  5.682e+01 ms
+[16:53:07] - [step:      94100] loss:  2.628e-02, time/iteration:  5.192e+01 ms
+[16:53:12] - [step:      94200] loss:  2.634e-02, time/iteration:  5.170e+01 ms
+[16:53:17] - [step:      94300] loss:  2.923e-02, time/iteration:  4.955e+01 ms
+[16:53:22] - [step:      94400] loss:  2.610e-02, time/iteration:  5.177e+01 ms
+[16:53:27] - [step:      94500] loss:  2.537e-02, time/iteration:  5.166e+01 ms
+[16:53:32] - [step:      94600] loss:  2.636e-02, time/iteration:  4.960e+01 ms
+[16:53:37] - [step:      94700] loss:  2.437e-02, time/iteration:  5.157e+01 ms
+[16:53:42] - [step:      94800] loss:  2.873e-02, time/iteration:  4.940e+01 ms
+[16:53:48] - [step:      94900] loss:  2.832e-02, time/iteration:  5.198e+01 ms
+[16:54:13] - [step:      95000] record validators time:  2.036e+01s
+[16:54:14] - [step:      95000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:54:14] - [step:      95000] loss:  2.825e-02, time/iteration:  2.627e+02 ms
+[16:54:19] - [step:      95100] loss:  2.341e-02, time/iteration:  4.910e+01 ms
+[16:54:24] - [step:      95200] loss:  2.513e-02, time/iteration:  5.220e+01 ms
+[16:54:29] - [step:      95300] loss:  2.767e-02, time/iteration:  4.939e+01 ms
+[16:54:34] - [step:      95400] loss:  2.615e-02, time/iteration:  5.148e+01 ms
+[16:54:39] - [step:      95500] loss:  2.529e-02, time/iteration:  5.169e+01 ms
+[16:54:44] - [step:      95600] loss:  2.836e-02, time/iteration:  4.925e+01 ms
+[16:54:49] - [step:      95700] loss:  2.589e-02, time/iteration:  5.205e+01 ms
+[16:54:54] - [step:      95800] loss:  2.436e-02, time/iteration:  4.937e+01 ms
+[16:54:59] - [step:      95900] loss:  2.540e-02, time/iteration:  5.144e+01 ms
+[16:55:06] - [step:      96000] record constraint batch time:  1.218e+00s
+[16:55:06] - [step:      96000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:55:06] - [step:      96000] loss:  2.524e-02, time/iteration:  7.071e+01 ms
+[16:55:11] - [step:      96100] loss:  2.618e-02, time/iteration:  5.018e+01 ms
+[16:55:17] - [step:      96200] loss:  2.320e-02, time/iteration:  5.179e+01 ms
+[16:55:22] - [step:      96300] loss:  2.866e-02, time/iteration:  5.009e+01 ms
+[16:55:27] - [step:      96400] loss:  2.146e-02, time/iteration:  5.221e+01 ms
+[16:55:32] - [step:      96500] loss:  2.337e-02, time/iteration:  5.175e+01 ms
+[16:55:37] - [step:      96600] loss:  2.534e-02, time/iteration:  4.909e+01 ms
+[16:55:42] - [step:      96700] loss:  2.451e-02, time/iteration:  5.248e+01 ms
+[16:55:47] - [step:      96800] loss:  2.355e-02, time/iteration:  4.983e+01 ms
+[16:55:52] - [step:      96900] loss:  2.432e-02, time/iteration:  5.153e+01 ms
+[16:55:59] - [step:      97000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:55:59] - [step:      97000] loss:  2.404e-02, time/iteration:  6.704e+01 ms
+[16:56:04] - [step:      97100] loss:  2.781e-02, time/iteration:  4.946e+01 ms
+[16:56:09] - [step:      97200] loss:  2.652e-02, time/iteration:  5.164e+01 ms
+[16:56:14] - [step:      97300] loss:  2.637e-02, time/iteration:  4.928e+01 ms
+[16:56:19] - [step:      97400] loss:  2.310e-02, time/iteration:  5.214e+01 ms
+[16:56:25] - [step:      97500] loss:  2.614e-02, time/iteration:  5.181e+01 ms
+[16:56:29] - [step:      97600] loss:  2.267e-02, time/iteration:  4.885e+01 ms
+[16:56:35] - [step:      97700] loss:  2.366e-02, time/iteration:  5.217e+01 ms
+[16:56:40] - [step:      97800] loss:  2.441e-02, time/iteration:  5.142e+01 ms
+[16:56:45] - [step:      97900] loss:  2.209e-02, time/iteration:  4.926e+01 ms
+[16:56:50] - [step:      98000] record constraint batch time:  3.476e-01s
+[16:56:51] - [step:      98000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:56:51] - [step:      98000] loss:  2.286e-02, time/iteration:  6.797e+01 ms
+[16:56:56] - [step:      98100] loss:  2.276e-02, time/iteration:  4.881e+01 ms
+[16:57:01] - [step:      98200] loss:  2.230e-02, time/iteration:  5.117e+01 ms
+[16:57:07] - [step:      98300] loss:  2.297e-02, time/iteration:  5.152e+01 ms
+[16:57:12] - [step:      98400] loss:  2.103e-02, time/iteration:  4.936e+01 ms
+[16:57:17] - [step:      98500] loss:  2.511e-02, time/iteration:  5.210e+01 ms
+[16:57:22] - [step:      98600] loss:  2.519e-02, time/iteration:  4.934e+01 ms
+[16:57:27] - [step:      98700] loss:  2.591e-02, time/iteration:  5.165e+01 ms
+[16:57:32] - [step:      98800] loss:  2.150e-02, time/iteration:  5.138e+01 ms
+[16:57:37] - [step:      98900] loss:  2.237e-02, time/iteration:  4.918e+01 ms
+[16:57:42] - [step:      99000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:57:42] - [step:      99000] loss:  2.034e-02, time/iteration:  5.230e+01 ms
+[16:57:47] - [step:      99100] loss:  2.521e-02, time/iteration:  4.944e+01 ms
+[16:57:52] - [step:      99200] loss:  2.320e-02, time/iteration:  5.175e+01 ms
+[16:57:57] - [step:      99300] loss:  2.444e-02, time/iteration:  5.185e+01 ms
+[16:58:02] - [step:      99400] loss:  2.307e-02, time/iteration:  4.908e+01 ms
+[16:58:08] - [step:      99500] loss:  2.561e-02, time/iteration:  5.122e+01 ms
+[16:58:12] - [step:      99600] loss:  2.541e-02, time/iteration:  4.892e+01 ms
+[16:58:18] - [step:      99700] loss:  2.713e-02, time/iteration:  5.179e+01 ms
+[16:58:23] - [step:      99800] loss:  2.521e-02, time/iteration:  5.177e+01 ms
+[16:58:28] - [step:      99900] loss:  2.453e-02, time/iteration:  4.945e+01 ms
+[16:58:33] - [step:     100000] record constraint batch time:  1.639e-01s
+[16:58:42] - [step:     100000] record validators time:  9.021e+00s
+[16:58:46] - [step:     100000] saved checkpoint to /scratch/users/domyam/modulus/outputs/morph-wing_surf_big
+[16:58:46] - [step:     100000] loss:  2.296e-02, time/iteration:  1.819e+02 ms
+[16:58:46] - [step:     100000] reached maximum training steps, finished training!

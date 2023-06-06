@@ -1,0 +1,5 @@
+- run_mode=eval
+- custom.d1=-1.2999999999999998
+- custom.d2=0.5
+- custom.Vinf=14.0
+- custom.alpha=3.0

@@ -1,0 +1,3703 @@
+sh02-16n06.int
+addr
+sh02-16n06
+loading data
+17
+Tot L2 Rel Error Gauss:  4.189066655670923   4.532176422722685
+Tot L2 Rel Error Linear:  1.0681499091344098   0.06542419404642405
+Tot L2 Rel Error Cubic:  0.7911499735838687   0.2888201040851334
+Tot L2 Rel Error TP:  0.9565371889496364   0.21400411344035097
+Tot L2 Rel Error Polynomial:  12.131010079563344
+Lift:  cubic  Drag:  linear
+1.689257328242908
+[0.25389662]
+Total Time Cross Entropy, Surroagte (s):  1.4203414916992188
+108
+Total Time Mesh Adaptive, Surroagte (s):  0.18364238739013672
+Total Time Hooke-Jeeves, Surroagte (s):  0.3534832000732422
+[array([0.21098667, 0.00629706]), array([-1.93775635,  2.22676275]), array([0.16679688, 0.12903563])]
+0.25389663129106094 0.2626483391506256 0.2539953232679694
+[0.21098667 0.00629706]
+lift:  1.5248812252133366  drag:  0.25389663129106094
+[08:43:57] - JIT using the NVFuser TorchScript backend
+[08:43:57] - JitManager: {'_enabled': True, '_arch_mode': <JitArchMode.ONLY_ACTIVATION: 1>, '_use_nvfuser': True, '_autograd_nodes': False}
+[08:43:57] - GraphManager: {'_func_arch': False, '_debug': False, '_func_arch_allow_partial_hessian': True}
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:57] - Read wing.vtp file successfully
+[08:43:57] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:58] - Read wing.vtp file successfully
+[08:43:58] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:43:59] - Read wing.vtp file successfully
+[08:43:59] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:00] - Read wing.vtp file successfully
+[08:44:00] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:01] - Read wing.vtp file successfully
+[08:44:01] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:02] - Read wing.vtp file successfully
+[08:44:02] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:03] - Read wing.vtp file successfully
+[08:44:03] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:04] - Read wing.vtp file successfully
+[08:44:04] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:05] - Read wing.vtp file successfully
+[08:44:05] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:06] - Read wing.vtp file successfully
+[08:44:06] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:07] - Read wing.vtp file successfully
+[08:44:07] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:08] - Read wing.vtp file successfully
+[08:44:08] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:09] - Read wing.vtp file successfully
+[08:44:09] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:10] - Read wing.vtp file successfully
+[08:44:10] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:11] - Read wing.vtp file successfully
+[08:44:11] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:12] - Read wing.vtp file successfully
+[08:44:12] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:13] - Read wing.vtp file successfully
+[08:44:13] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:14] - Read wing.vtp file successfully
+[08:44:14] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:15] - Read wing.vtp file successfully
+[08:44:15] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+[08:44:16] - Read wing.vtp file successfully
+[08:44:16] - Loaded vtkPolyData object from file
+(1159523, 1) 225
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.001007s
+Timing for cpatResultsToArrays: 2.7148e-05s
+Timing for cpatDistanceField: 0.00284771s
+Timing for computeDistanceField: 0.00285086s
+Timing for optixAccelBuild: 0.000149895s
+Timing for buildAccelStructure: 0.000230791s
+Spherical Inside/Outside took: 0.00460143
+Timing for computeSignedField: 0.202841s
+Timing for computeSignedDistanceField: 0.205726s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.00180527s
+Timing for cpatResultsToArrays: 1.7586e-05s
+Timing for cpatDistanceField: 0.002175s
+Timing for computeDistanceField: 0.00218091s
+Timing for optixAccelBuild: 0.000141575s
+Timing for buildAccelStructure: 0.00019586s
+Spherical Inside/Outside took: 0.00463307
+Timing for computeSignedField: 0.127113s
+Timing for computeSignedDistanceField: 0.129311s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000955288s
+Timing for cpatResultsToArrays: 1.2295e-05s
+Timing for cpatDistanceField: 0.00124029s
+Timing for computeDistanceField: 0.00124315s
+Timing for optixAccelBuild: 0.000126708s
+Timing for buildAccelStructure: 0.000183956s
+Spherical Inside/Outside took: 0.00492434
+Timing for computeSignedField: 0.087136s
+Timing for computeSignedDistanceField: 0.0883907s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000896757s
+Timing for cpatResultsToArrays: 1.1166e-05s
+Timing for cpatDistanceField: 0.00116644s
+Timing for computeDistanceField: 0.00116932s
+Timing for optixAccelBuild: 0.000112631s
+Timing for buildAccelStructure: 0.000157953s
+Spherical Inside/Outside took: 0.00485241
+Timing for computeSignedField: 0.0829361s
+Timing for computeSignedDistanceField: 0.0841154s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112174s
+Timing for cpatResultsToArrays: 1.4706e-05s
+Timing for cpatDistanceField: 0.00195891s
+Timing for computeDistanceField: 0.00196337s
+Timing for optixAccelBuild: 0.000121719s
+Timing for buildAccelStructure: 0.000333124s
+Spherical Inside/Outside took: 0.00489866
+Timing for computeSignedField: 0.0913396s
+Timing for computeSignedDistanceField: 0.093315s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.000997758s
+Timing for cpatResultsToArrays: 1.1493e-05s
+Timing for cpatDistanceField: 0.00139356s
+Timing for computeDistanceField: 0.0013959s
+Timing for optixAccelBuild: 0.000110831s
+Timing for buildAccelStructure: 0.000159724s
+Spherical Inside/Outside took: 0.00455531
+Timing for computeSignedField: 0.0819923s
+Timing for computeSignedDistanceField: 0.0834009s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105005s
+Timing for cpatResultsToArrays: 1.1654e-05s
+Timing for cpatDistanceField: 0.0014329s
+Timing for computeDistanceField: 0.00143564s
+Timing for optixAccelBuild: 0.000109412s
+Timing for buildAccelStructure: 0.000152105s
+Spherical Inside/Outside took: 0.00498668
+Timing for computeSignedField: 0.0830881s
+Timing for computeSignedDistanceField: 0.0845361s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00100815s
+Timing for cpatResultsToArrays: 1.1888e-05s
+Timing for cpatDistanceField: 0.00141157s
+Timing for computeDistanceField: 0.00141395s
+Timing for optixAccelBuild: 0.000149716s
+Timing for buildAccelStructure: 0.000208071s
+Spherical Inside/Outside took: 0.00481161
+Timing for computeSignedField: 0.0835065s
+Timing for computeSignedDistanceField: 0.0849347s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00116416s
+Timing for cpatResultsToArrays: 1.8196e-05s
+Timing for cpatDistanceField: 0.00162352s
+Timing for computeDistanceField: 0.00162635s
+Timing for optixAccelBuild: 0.000141761s
+Timing for buildAccelStructure: 0.000194753s
+Spherical Inside/Outside took: 0.00517933
+Timing for computeSignedField: 0.138696s
+Timing for computeSignedDistanceField: 0.140338s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00114258s
+Timing for cpatResultsToArrays: 1.3679e-05s
+Timing for cpatDistanceField: 0.00200021s
+Timing for computeDistanceField: 0.00200563s
+Timing for optixAccelBuild: 0.000116991s
+Timing for buildAccelStructure: 0.000353611s
+Spherical Inside/Outside took: 0.00496756
+Timing for computeSignedField: 0.0899432s
+Timing for computeSignedDistanceField: 0.091963s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112575s
+Timing for cpatResultsToArrays: 1.2936e-05s
+Timing for cpatDistanceField: 0.00151282s
+Timing for computeDistanceField: 0.00151546s
+Timing for optixAccelBuild: 0.000115506s
+Timing for buildAccelStructure: 0.000161846s
+Spherical Inside/Outside took: 0.00518673
+Timing for computeSignedField: 0.087274s
+Timing for computeSignedDistanceField: 0.0888118s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010257s
+Timing for cpatResultsToArrays: 1.2534e-05s
+Timing for cpatDistanceField: 0.00141478s
+Timing for computeDistanceField: 0.00141726s
+Timing for optixAccelBuild: 0.000113813s
+Timing for buildAccelStructure: 0.000157681s
+Spherical Inside/Outside took: 0.00505814
+Timing for computeSignedField: 0.0824646s
+Timing for computeSignedDistanceField: 0.0838931s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118625s
+Timing for cpatResultsToArrays: 1.9096e-05s
+Timing for cpatDistanceField: 0.00161422s
+Timing for computeDistanceField: 0.0016171s
+Timing for optixAccelBuild: 0.000123776s
+Timing for buildAccelStructure: 0.000168077s
+Spherical Inside/Outside took: 0.00557791
+Timing for computeSignedField: 0.0965189s
+Timing for computeSignedDistanceField: 0.0981512s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103037s
+Timing for cpatResultsToArrays: 1.1683e-05s
+Timing for cpatDistanceField: 0.00144272s
+Timing for computeDistanceField: 0.00144573s
+Timing for optixAccelBuild: 0.000116996s
+Timing for buildAccelStructure: 0.000160715s
+Spherical Inside/Outside took: 0.00556617
+Timing for computeSignedField: 0.0865189s
+Timing for computeSignedDistanceField: 0.0879792s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111319s
+Timing for cpatResultsToArrays: 1.3312e-05s
+Timing for cpatDistanceField: 0.00153768s
+Timing for computeDistanceField: 0.00154042s
+Timing for optixAccelBuild: 0.000140481s
+Timing for buildAccelStructure: 0.000375793s
+Spherical Inside/Outside took: 0.00569089
+Timing for computeSignedField: 0.0862402s
+Timing for computeSignedDistanceField: 0.0877936s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107362s
+Timing for cpatResultsToArrays: 1.1644e-05s
+Timing for cpatDistanceField: 0.00148955s
+Timing for computeDistanceField: 0.00149221s
+Timing for optixAccelBuild: 0.000112177s
+Timing for buildAccelStructure: 0.000166765s
+Spherical Inside/Outside took: 0.00587587
+Timing for computeSignedField: 0.086531s
+Timing for computeSignedDistanceField: 0.0880347s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111336s
+Timing for cpatResultsToArrays: 1.1985e-05s
+Timing for cpatDistanceField: 0.00153517s
+Timing for computeDistanceField: 0.00153765s
+Timing for optixAccelBuild: 0.000125283s
+Timing for buildAccelStructure: 0.000171412s
+Spherical Inside/Outside took: 0.00573874
+Timing for computeSignedField: 0.0957005s
+Timing for computeSignedDistanceField: 0.0972533s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106631s
+Timing for cpatResultsToArrays: 1.1857e-05s
+Timing for cpatDistanceField: 0.00150176s
+Timing for computeDistanceField: 0.00150486s
+Timing for optixAccelBuild: 0.000117057s
+Timing for buildAccelStructure: 0.000164047s
+Spherical Inside/Outside took: 0.00593452
+Timing for computeSignedField: 0.0843358s
+Timing for computeSignedDistanceField: 0.0858528s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110465s
+Timing for cpatResultsToArrays: 1.321e-05s
+Timing for cpatDistanceField: 0.00152324s
+Timing for computeDistanceField: 0.00152577s
+Timing for optixAccelBuild: 0.000126009s
+Timing for buildAccelStructure: 0.000174831s
+Spherical Inside/Outside took: 0.00636021
+Timing for computeSignedField: 0.0880327s
+Timing for computeSignedDistanceField: 0.0895717s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106541s
+Timing for cpatResultsToArrays: 1.1699e-05s
+Timing for cpatDistanceField: 0.00147186s
+Timing for computeDistanceField: 0.00187894s
+Timing for optixAccelBuild: 0.000121579s
+Timing for buildAccelStructure: 0.000389892s
+Spherical Inside/Outside took: 0.00609943
+Timing for computeSignedField: 0.0872058s
+Timing for computeSignedDistanceField: 0.0891002s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103979s
+Timing for cpatResultsToArrays: 1.2556e-05s
+Timing for cpatDistanceField: 0.00142575s
+Timing for computeDistanceField: 0.00142828s
+Timing for optixAccelBuild: 0.000130339s
+Timing for buildAccelStructure: 0.000176464s
+Spherical Inside/Outside took: 0.0042301
+Timing for computeSignedField: 0.0983404s
+Timing for computeSignedDistanceField: 0.0997835s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00104619s
+Timing for cpatResultsToArrays: 1.2591e-05s
+Timing for cpatDistanceField: 0.00145386s
+Timing for computeDistanceField: 0.00145681s
+Timing for optixAccelBuild: 0.000117285s
+Timing for buildAccelStructure: 0.000163991s
+Spherical Inside/Outside took: 0.00382656
+Timing for computeSignedField: 0.085426s
+Timing for computeSignedDistanceField: 0.0868964s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110524s
+Timing for cpatResultsToArrays: 1.2937e-05s
+Timing for cpatDistanceField: 0.00148841s
+Timing for computeDistanceField: 0.00149084s
+Timing for optixAccelBuild: 0.000122024s
+Timing for buildAccelStructure: 0.000168661s
+Spherical Inside/Outside took: 0.00459297
+Timing for computeSignedField: 0.0853419s
+Timing for computeSignedDistanceField: 0.0868462s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.000993882s
+Timing for cpatResultsToArrays: 1.2013e-05s
+Timing for cpatDistanceField: 0.00140723s
+Timing for computeDistanceField: 0.00140983s
+Timing for optixAccelBuild: 0.000113734s
+Timing for buildAccelStructure: 0.000158617s
+Spherical Inside/Outside took: 0.00422757
+Timing for computeSignedField: 0.083522s
+Timing for computeSignedDistanceField: 0.0849449s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000917015s
+Timing for cpatResultsToArrays: 1.8239e-05s
+Timing for cpatDistanceField: 0.00164101s
+Timing for computeDistanceField: 0.00164587s
+Timing for optixAccelBuild: 0.000125689s
+Timing for buildAccelStructure: 0.000363581s
+Spherical Inside/Outside took: 0.00367023
+Timing for computeSignedField: 0.0847142s
+Timing for computeSignedDistanceField: 0.0863741s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000847304s
+Timing for cpatResultsToArrays: 1.2383e-05s
+Timing for cpatDistanceField: 0.00113576s
+Timing for computeDistanceField: 0.0011384s
+Timing for optixAccelBuild: 0.000111366s
+Timing for buildAccelStructure: 0.000159476s
+Spherical Inside/Outside took: 0.00355989
+Timing for computeSignedField: 0.081333s
+Timing for computeSignedDistanceField: 0.0824835s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.00094019s
+Timing for cpatResultsToArrays: 1.2259e-05s
+Timing for cpatDistanceField: 0.00120772s
+Timing for computeDistanceField: 0.00121037s
+Timing for optixAccelBuild: 0.000114104s
+Timing for buildAccelStructure: 0.000158616s
+Spherical Inside/Outside took: 0.00432366
+Timing for computeSignedField: 0.0839692s
+Timing for computeSignedDistanceField: 0.0851964s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000919218s
+Timing for cpatResultsToArrays: 1.1703e-05s
+Timing for cpatDistanceField: 0.00118573s
+Timing for computeDistanceField: 0.00118832s
+Timing for optixAccelBuild: 0.000111004s
+Timing for buildAccelStructure: 0.000160944s
+Spherical Inside/Outside took: 0.00429297
+Timing for computeSignedField: 0.0829827s
+Timing for computeSignedDistanceField: 0.084183s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113577s
+Timing for cpatResultsToArrays: 1.2454e-05s
+Timing for cpatDistanceField: 0.00151866s
+Timing for computeDistanceField: 0.00152128s
+Timing for optixAccelBuild: 0.000133025s
+Timing for buildAccelStructure: 0.000184063s
+Spherical Inside/Outside took: 0.00394395
+Timing for computeSignedField: 0.0948318s
+Timing for computeSignedDistanceField: 0.0963669s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105669s
+Timing for cpatResultsToArrays: 1.1554e-05s
+Timing for cpatDistanceField: 0.00142474s
+Timing for computeDistanceField: 0.00142745s
+Timing for optixAccelBuild: 0.000128115s
+Timing for buildAccelStructure: 0.000174036s
+Spherical Inside/Outside took: 0.0037746
+Timing for computeSignedField: 0.0840538s
+Timing for computeSignedDistanceField: 0.0854952s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010913s
+Timing for cpatResultsToArrays: 1.2879e-05s
+Timing for cpatDistanceField: 0.00148088s
+Timing for computeDistanceField: 0.00148372s
+Timing for optixAccelBuild: 0.000130894s
+Timing for buildAccelStructure: 0.000418981s
+Spherical Inside/Outside took: 0.00441521
+Timing for computeSignedField: 0.0883422s
+Timing for computeSignedDistanceField: 0.0898403s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00102452s
+Timing for cpatResultsToArrays: 1.1483e-05s
+Timing for cpatDistanceField: 0.00141524s
+Timing for computeDistanceField: 0.00141803s
+Timing for optixAccelBuild: 0.000138921s
+Timing for buildAccelStructure: 0.000191993s
+Spherical Inside/Outside took: 0.00424696
+Timing for computeSignedField: 0.0848295s
+Timing for computeSignedDistanceField: 0.086261s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112342s
+Timing for cpatResultsToArrays: 1.5932e-05s
+Timing for cpatDistanceField: 0.00155654s
+Timing for computeDistanceField: 0.00155928s
+Timing for optixAccelBuild: 0.000124924s
+Timing for buildAccelStructure: 0.000174439s
+Spherical Inside/Outside took: 0.00512252
+Timing for computeSignedField: 0.0931216s
+Timing for computeSignedDistanceField: 0.0946941s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00100653s
+Timing for cpatResultsToArrays: 1.2445e-05s
+Timing for cpatDistanceField: 0.00141018s
+Timing for computeDistanceField: 0.00141281s
+Timing for optixAccelBuild: 0.000124903s
+Timing for buildAccelStructure: 0.000172414s
+Spherical Inside/Outside took: 0.00488875
+Timing for computeSignedField: 0.086608s
+Timing for computeSignedDistanceField: 0.0880346s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110528s
+Timing for cpatResultsToArrays: 1.3089e-05s
+Timing for cpatDistanceField: 0.00150077s
+Timing for computeDistanceField: 0.00150352s
+Timing for optixAccelBuild: 0.000130598s
+Timing for buildAccelStructure: 0.000178493s
+Spherical Inside/Outside took: 0.00551025
+Timing for computeSignedField: 0.0869364s
+Timing for computeSignedDistanceField: 0.0884532s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111114s
+Timing for cpatResultsToArrays: 1.144e-05s
+Timing for cpatDistanceField: 0.00152066s
+Timing for computeDistanceField: 0.00152347s
+Timing for optixAccelBuild: 0.000121511s
+Timing for buildAccelStructure: 0.00143745s
+Spherical Inside/Outside took: 0.00503034
+Timing for computeSignedField: 0.0872852s
+Timing for computeSignedDistanceField: 0.0888209s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00114105s
+Timing for cpatResultsToArrays: 1.7538e-05s
+Timing for cpatDistanceField: 0.00154286s
+Timing for computeDistanceField: 0.00154572s
+Timing for optixAccelBuild: 0.000116766s
+Timing for buildAccelStructure: 0.000163054s
+Spherical Inside/Outside took: 0.00542674
+Timing for computeSignedField: 0.0954068s
+Timing for computeSignedDistanceField: 0.0969658s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00101148s
+Timing for cpatResultsToArrays: 1.2066e-05s
+Timing for cpatDistanceField: 0.00140518s
+Timing for computeDistanceField: 0.00140792s
+Timing for optixAccelBuild: 0.000110395s
+Timing for buildAccelStructure: 0.000151451s
+Spherical Inside/Outside took: 0.00545972
+Timing for computeSignedField: 0.0829368s
+Timing for computeSignedDistanceField: 0.0843567s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106849s
+Timing for cpatResultsToArrays: 1.2317e-05s
+Timing for cpatDistanceField: 0.00146377s
+Timing for computeDistanceField: 0.00146642s
+Timing for optixAccelBuild: 0.000115149s
+Timing for buildAccelStructure: 0.000158903s
+Spherical Inside/Outside took: 0.00626037
+Timing for computeSignedField: 0.0867179s
+Timing for computeSignedDistanceField: 0.088199s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00101466s
+Timing for cpatResultsToArrays: 1.1671e-05s
+Timing for cpatDistanceField: 0.001439s
+Timing for computeDistanceField: 0.00144157s
+Timing for optixAccelBuild: 0.00011262s
+Timing for buildAccelStructure: 0.000164679s
+Spherical Inside/Outside took: 0.00615186
+Timing for computeSignedField: 0.0842667s
+Timing for computeSignedDistanceField: 0.0857216s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000955411s
+Timing for cpatResultsToArrays: 1.3259e-05s
+Timing for cpatDistanceField: 0.00165329s
+Timing for computeDistanceField: 0.00165801s
+Timing for optixAccelBuild: 0.000117148s
+Timing for buildAccelStructure: 0.000344136s
+Spherical Inside/Outside took: 0.00462231
+Timing for computeSignedField: 0.0858865s
+Timing for computeSignedDistanceField: 0.087557s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000885304s
+Timing for cpatResultsToArrays: 1.2209e-05s
+Timing for cpatDistanceField: 0.00116656s
+Timing for computeDistanceField: 0.00116906s
+Timing for optixAccelBuild: 0.000110994s
+Timing for buildAccelStructure: 0.000165009s
+Spherical Inside/Outside took: 0.00451801
+Timing for computeSignedField: 0.0818345s
+Timing for computeSignedDistanceField: 0.0830154s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000925821s
+Timing for cpatResultsToArrays: 1.1972e-05s
+Timing for cpatDistanceField: 0.0012051s
+Timing for computeDistanceField: 0.00120767s
+Timing for optixAccelBuild: 0.000113498s
+Timing for buildAccelStructure: 0.000163988s
+Spherical Inside/Outside took: 0.00467545
+Timing for computeSignedField: 0.0860258s
+Timing for computeSignedDistanceField: 0.0872447s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000868892s
+Timing for cpatResultsToArrays: 1.1143e-05s
+Timing for cpatDistanceField: 0.0011535s
+Timing for computeDistanceField: 0.00115583s
+Timing for optixAccelBuild: 0.000116657s
+Timing for buildAccelStructure: 0.000168314s
+Spherical Inside/Outside took: 0.00457481
+Timing for computeSignedField: 0.0819036s
+Timing for computeSignedDistanceField: 0.083071s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000919613s
+Timing for cpatResultsToArrays: 1.4457e-05s
+Timing for cpatDistanceField: 0.00121193s
+Timing for computeDistanceField: 0.00121459s
+Timing for optixAccelBuild: 0.000125059s
+Timing for buildAccelStructure: 0.000178906s
+Spherical Inside/Outside took: 0.00395775
+Timing for computeSignedField: 0.0880968s
+Timing for computeSignedDistanceField: 0.0893243s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000856981s
+Timing for cpatResultsToArrays: 1.1503e-05s
+Timing for cpatDistanceField: 0.00112585s
+Timing for computeDistanceField: 0.00112822s
+Timing for optixAccelBuild: 0.000107429s
+Timing for buildAccelStructure: 0.000156438s
+Spherical Inside/Outside took: 0.00374094
+Timing for computeSignedField: 0.0790079s
+Timing for computeSignedDistanceField: 0.0801478s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000948818s
+Timing for cpatResultsToArrays: 1.2608e-05s
+Timing for cpatDistanceField: 0.00123802s
+Timing for computeDistanceField: 0.00124104s
+Timing for optixAccelBuild: 0.000122641s
+Timing for buildAccelStructure: 0.000374102s
+Spherical Inside/Outside took: 0.00408518
+Timing for computeSignedField: 0.0862094s
+Timing for computeSignedDistanceField: 0.0874646s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000891205s
+Timing for cpatResultsToArrays: 1.2613e-05s
+Timing for cpatDistanceField: 0.0011953s
+Timing for computeDistanceField: 0.0011981s
+Timing for optixAccelBuild: 0.000161323s
+Timing for buildAccelStructure: 0.000217878s
+Spherical Inside/Outside took: 0.00409287
+Timing for computeSignedField: 0.0834632s
+Timing for computeSignedDistanceField: 0.0846751s
+NUM Triangles: 1588
+Timing for Build CPAT Model (build bvh): 0.000807414s
+Timing for cpatResultsToArrays: 1.6239e-05s
+Timing for cpatDistanceField: 0.00107336s
+Timing for computeDistanceField: 0.00107651s
+Timing for optixAccelBuild: 0.000117038s
+Timing for buildAccelStructure: 0.000176073s
+Spherical Inside/Outside took: 0.0020175
+Timing for computeSignedField: 0.0917803s
+Timing for computeSignedDistanceField: 0.092872s
+NUM Triangles: 1588
+Timing for Build CPAT Model (build bvh): 0.000713775s
+Timing for cpatResultsToArrays: 1.172e-05s
+Timing for cpatDistanceField: 0.00100017s
+Timing for computeDistanceField: 0.00100298s
+Timing for optixAccelBuild: 0.000116969s
+Timing for buildAccelStructure: 0.000169599s
+Spherical Inside/Outside took: 0.00181368
+Timing for computeSignedField: 0.0805907s
+Timing for computeSignedDistanceField: 0.0816066s
+NUM Triangles: 1588
+Timing for Build CPAT Model (build bvh): 0.000793801s
+Timing for cpatResultsToArrays: 1.2956e-05s
+Timing for cpatDistanceField: 0.00104358s
+Timing for computeDistanceField: 0.00104674s
+Timing for optixAccelBuild: 0.000112704s
+Timing for buildAccelStructure: 0.000167109s
+Spherical Inside/Outside took: 0.00245968
+Timing for computeSignedField: 0.0851231s
+Timing for computeSignedDistanceField: 0.0861832s
+NUM Triangles: 1588
+Timing for Build CPAT Model (build bvh): 0.000699496s
+Timing for cpatResultsToArrays: 1.1791e-05s
+Timing for cpatDistanceField: 0.000963476s
+Timing for computeDistanceField: 0.000966092s
+Timing for optixAccelBuild: 0.000124158s
+Timing for buildAccelStructure: 0.000178585s
+Spherical Inside/Outside took: 0.00205535
+Timing for computeSignedField: 0.0842659s
+Timing for computeSignedDistanceField: 0.0852472s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000894627s
+Timing for cpatResultsToArrays: 1.2741e-05s
+Timing for cpatDistanceField: 0.00117282s
+Timing for computeDistanceField: 0.0011754s
+Timing for optixAccelBuild: 0.00011805s
+Timing for buildAccelStructure: 0.0001673s
+Spherical Inside/Outside took: 0.00356201
+Timing for computeSignedField: 0.0887533s
+Timing for computeSignedDistanceField: 0.0899408s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000877169s
+Timing for cpatResultsToArrays: 1.186e-05s
+Timing for cpatDistanceField: 0.00114672s
+Timing for computeDistanceField: 0.00114935s
+Timing for optixAccelBuild: 0.000111275s
+Timing for buildAccelStructure: 0.000156155s
+Spherical Inside/Outside took: 0.00324227
+Timing for computeSignedField: 0.0773106s
+Timing for computeSignedDistanceField: 0.0784711s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.00126322s
+Timing for cpatResultsToArrays: 1.3096e-05s
+Timing for cpatDistanceField: 0.00178372s
+Timing for computeDistanceField: 0.0017878s
+Timing for optixAccelBuild: 0.000112391s
+Timing for buildAccelStructure: 0.000328391s
+Spherical Inside/Outside took: 0.0041297
+Timing for computeSignedField: 0.0786753s
+Timing for computeSignedDistanceField: 0.080473s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000868554s
+Timing for cpatResultsToArrays: 1.1627e-05s
+Timing for cpatDistanceField: 0.00114138s
+Timing for computeDistanceField: 0.0011439s
+Timing for optixAccelBuild: 0.00012525s
+Timing for buildAccelStructure: 0.000179326s
+Spherical Inside/Outside took: 0.00395222
+Timing for computeSignedField: 0.0787307s
+Timing for computeSignedDistanceField: 0.0798941s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000969959s
+Timing for cpatResultsToArrays: 1.7449e-05s
+Timing for cpatDistanceField: 0.00128634s
+Timing for computeDistanceField: 0.0012893s
+Timing for optixAccelBuild: 0.00011422s
+Timing for buildAccelStructure: 0.000164439s
+Spherical Inside/Outside took: 0.00458111
+Timing for computeSignedField: 0.0915344s
+Timing for computeSignedDistanceField: 0.0928373s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000889477s
+Timing for cpatResultsToArrays: 1.2209e-05s
+Timing for cpatDistanceField: 0.00118012s
+Timing for computeDistanceField: 0.00118295s
+Timing for optixAccelBuild: 0.000111496s
+Timing for buildAccelStructure: 0.000159865s
+Spherical Inside/Outside took: 0.00432606
+Timing for computeSignedField: 0.0844522s
+Timing for computeSignedDistanceField: 0.085648s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000890523s
+Timing for cpatResultsToArrays: 1.2552e-05s
+Timing for cpatDistanceField: 0.00172463s
+Timing for computeDistanceField: 0.00172747s
+Timing for optixAccelBuild: 0.000113478s
+Timing for buildAccelStructure: 0.000163878s
+Spherical Inside/Outside took: 0.00452023
+Timing for computeSignedField: 0.0858491s
+Timing for computeSignedDistanceField: 0.0875899s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000922106s
+Timing for cpatResultsToArrays: 1.1657e-05s
+Timing for cpatDistanceField: 0.00121314s
+Timing for computeDistanceField: 0.00121578s
+Timing for optixAccelBuild: 0.000110347s
+Timing for buildAccelStructure: 0.000156134s
+Spherical Inside/Outside took: 0.0044318
+Timing for computeSignedField: 0.082988s
+Timing for computeSignedDistanceField: 0.0842159s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00167257s
+Timing for cpatResultsToArrays: 1.2631e-05s
+Timing for cpatDistanceField: 0.00221387s
+Timing for computeDistanceField: 0.00221811s
+Timing for optixAccelBuild: 0.000114584s
+Timing for buildAccelStructure: 0.000332149s
+Spherical Inside/Outside took: 0.00552398
+Timing for computeSignedField: 0.0907477s
+Timing for computeSignedDistanceField: 0.0929771s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.000999251s
+Timing for cpatResultsToArrays: 1.1354e-05s
+Timing for cpatDistanceField: 0.00142075s
+Timing for computeDistanceField: 0.00142348s
+Timing for optixAccelBuild: 0.000108181s
+Timing for buildAccelStructure: 0.000149983s
+Spherical Inside/Outside took: 0.00546302
+Timing for computeSignedField: 0.0811399s
+Timing for computeSignedDistanceField: 0.0825754s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103889s
+Timing for cpatResultsToArrays: 1.1904e-05s
+Timing for cpatDistanceField: 0.00144734s
+Timing for computeDistanceField: 0.00144996s
+Timing for optixAccelBuild: 0.000114085s
+Timing for buildAccelStructure: 0.000163949s
+Spherical Inside/Outside took: 0.00605238
+Timing for computeSignedField: 0.0850019s
+Timing for computeSignedDistanceField: 0.0864638s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105759s
+Timing for cpatResultsToArrays: 1.1847e-05s
+Timing for cpatDistanceField: 0.00144753s
+Timing for computeDistanceField: 0.00145004s
+Timing for optixAccelBuild: 0.000114712s
+Timing for buildAccelStructure: 0.000163981s
+Spherical Inside/Outside took: 0.00602182
+Timing for computeSignedField: 0.0849336s
+Timing for computeSignedDistanceField: 0.0863985s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010902s
+Timing for cpatResultsToArrays: 1.7412e-05s
+Timing for cpatDistanceField: 0.0014794s
+Timing for computeDistanceField: 0.00148221s
+Timing for optixAccelBuild: 0.000119045s
+Timing for buildAccelStructure: 0.000173863s
+Spherical Inside/Outside took: 0.00481351
+Timing for computeSignedField: 0.0911465s
+Timing for computeSignedDistanceField: 0.0926399s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00138283s
+Timing for cpatResultsToArrays: 1.5713e-05s
+Timing for cpatDistanceField: 0.00187947s
+Timing for computeDistanceField: 0.00188341s
+Timing for optixAccelBuild: 0.000130616s
+Timing for buildAccelStructure: 0.000340332s
+Spherical Inside/Outside took: 0.00464921
+Timing for computeSignedField: 0.0802658s
+Timing for computeSignedDistanceField: 0.0821603s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00102587s
+Timing for cpatResultsToArrays: 1.2085e-05s
+Timing for cpatDistanceField: 0.00140027s
+Timing for computeDistanceField: 0.00140288s
+Timing for optixAccelBuild: 0.000107066s
+Timing for buildAccelStructure: 0.000151973s
+Spherical Inside/Outside took: 0.00524042
+Timing for computeSignedField: 0.0833689s
+Timing for computeSignedDistanceField: 0.0847819s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.000976358s
+Timing for cpatResultsToArrays: 1.1068e-05s
+Timing for cpatDistanceField: 0.00136703s
+Timing for computeDistanceField: 0.00136951s
+Timing for optixAccelBuild: 0.000112245s
+Timing for buildAccelStructure: 0.000193973s
+Spherical Inside/Outside took: 0.00484996
+Timing for computeSignedField: 0.0795679s
+Timing for computeSignedDistanceField: 0.0809477s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00114466s
+Timing for cpatResultsToArrays: 1.2771e-05s
+Timing for cpatDistanceField: 0.00153198s
+Timing for computeDistanceField: 0.00153504s
+Timing for optixAccelBuild: 0.000120398s
+Timing for buildAccelStructure: 0.000166111s
+Spherical Inside/Outside took: 0.00372425
+Timing for computeSignedField: 0.0944017s
+Timing for computeSignedDistanceField: 0.0959505s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.000976109s
+Timing for cpatResultsToArrays: 1.1909e-05s
+Timing for cpatDistanceField: 0.00133727s
+Timing for computeDistanceField: 0.00134001s
+Timing for optixAccelBuild: 0.000121644s
+Timing for buildAccelStructure: 0.000166863s
+Spherical Inside/Outside took: 0.00332884
+Timing for computeSignedField: 0.0819398s
+Timing for computeSignedDistanceField: 0.0832927s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00100971s
+Timing for cpatResultsToArrays: 1.169e-05s
+Timing for cpatDistanceField: 0.00137937s
+Timing for computeDistanceField: 0.00138195s
+Timing for optixAccelBuild: 0.000118943s
+Timing for buildAccelStructure: 0.000362405s
+Spherical Inside/Outside took: 0.00397952
+Timing for computeSignedField: 0.0827491s
+Timing for computeSignedDistanceField: 0.0841423s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105533s
+Timing for cpatResultsToArrays: 1.1472e-05s
+Timing for cpatDistanceField: 0.00141383s
+Timing for computeDistanceField: 0.00141695s
+Timing for optixAccelBuild: 0.000120228s
+Timing for buildAccelStructure: 0.0001685s
+Spherical Inside/Outside took: 0.00366075
+Timing for computeSignedField: 0.0816981s
+Timing for computeSignedDistanceField: 0.0831274s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000931387s
+Timing for cpatResultsToArrays: 1.3596e-05s
+Timing for cpatDistanceField: 0.00123364s
+Timing for computeDistanceField: 0.00123636s
+Timing for optixAccelBuild: 0.000143023s
+Timing for buildAccelStructure: 0.000197918s
+Spherical Inside/Outside took: 0.00356846
+Timing for computeSignedField: 0.086545s
+Timing for computeSignedDistanceField: 0.0877956s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000860707s
+Timing for cpatResultsToArrays: 1.2904e-05s
+Timing for cpatDistanceField: 0.00114693s
+Timing for computeDistanceField: 0.00114963s
+Timing for optixAccelBuild: 0.000111625s
+Timing for buildAccelStructure: 0.000164545s
+Spherical Inside/Outside took: 0.00327714
+Timing for computeSignedField: 0.0840639s
+Timing for computeSignedDistanceField: 0.0852267s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000950942s
+Timing for cpatResultsToArrays: 1.1821e-05s
+Timing for cpatDistanceField: 0.00122285s
+Timing for computeDistanceField: 0.00122566s
+Timing for optixAccelBuild: 0.000115504s
+Timing for buildAccelStructure: 0.000175941s
+Spherical Inside/Outside took: 0.00374048
+Timing for computeSignedField: 0.0842758s
+Timing for computeSignedDistanceField: 0.0855153s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000924465s
+Timing for cpatResultsToArrays: 1.2404e-05s
+Timing for cpatDistanceField: 0.00120703s
+Timing for computeDistanceField: 0.00120977s
+Timing for optixAccelBuild: 0.000116324s
+Timing for buildAccelStructure: 0.000171615s
+Spherical Inside/Outside took: 0.00362608
+Timing for computeSignedField: 0.0833755s
+Timing for computeSignedDistanceField: 0.0845969s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00121342s
+Timing for cpatResultsToArrays: 1.2065e-05s
+Timing for cpatDistanceField: 0.00166348s
+Timing for computeDistanceField: 0.00166596s
+Timing for optixAccelBuild: 0.000121485s
+Timing for buildAccelStructure: 0.000179214s
+Spherical Inside/Outside took: 0.00408456
+Timing for computeSignedField: 0.100538s
+Timing for computeSignedDistanceField: 0.102217s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00117551s
+Timing for cpatResultsToArrays: 1.1406e-05s
+Timing for cpatDistanceField: 0.00165723s
+Timing for computeDistanceField: 0.00196579s
+Timing for optixAccelBuild: 0.000121797s
+Timing for buildAccelStructure: 0.000170552s
+Spherical Inside/Outside took: 0.00372415
+Timing for computeSignedField: 0.0890096s
+Timing for computeSignedDistanceField: 0.0909903s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00122686s
+Timing for cpatResultsToArrays: 1.1929e-05s
+Timing for cpatDistanceField: 0.0016861s
+Timing for computeDistanceField: 0.00168909s
+Timing for optixAccelBuild: 0.00011547s
+Timing for buildAccelStructure: 0.000171354s
+Spherical Inside/Outside took: 0.00410028
+Timing for computeSignedField: 0.0910724s
+Timing for computeSignedDistanceField: 0.0927761s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00114932s
+Timing for cpatResultsToArrays: 1.1231e-05s
+Timing for cpatDistanceField: 0.00161205s
+Timing for computeDistanceField: 0.00161492s
+Timing for optixAccelBuild: 0.000126749s
+Timing for buildAccelStructure: 0.000189091s
+Spherical Inside/Outside took: 0.00370392
+Timing for computeSignedField: 0.0936837s
+Timing for computeSignedDistanceField: 0.0953118s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.001126s
+Timing for cpatResultsToArrays: 1.2273e-05s
+Timing for cpatDistanceField: 0.00155729s
+Timing for computeDistanceField: 0.00156988s
+Timing for optixAccelBuild: 0.000125823s
+Timing for buildAccelStructure: 0.00159381s
+Spherical Inside/Outside took: 0.00591948
+Timing for computeSignedField: 0.0899531s
+Timing for computeSignedDistanceField: 0.0915341s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107955s
+Timing for cpatResultsToArrays: 1.1608e-05s
+Timing for cpatDistanceField: 0.00153351s
+Timing for computeDistanceField: 0.00153628s
+Timing for optixAccelBuild: 0.000132755s
+Timing for buildAccelStructure: 0.000188753s
+Spherical Inside/Outside took: 0.00601056
+Timing for computeSignedField: 0.0863145s
+Timing for computeSignedDistanceField: 0.0878647s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111245s
+Timing for cpatResultsToArrays: 1.3933e-05s
+Timing for cpatDistanceField: 0.00153399s
+Timing for computeDistanceField: 0.00153666s
+Timing for optixAccelBuild: 0.000113349s
+Timing for buildAccelStructure: 0.000166207s
+Spherical Inside/Outside took: 0.0062909
+Timing for computeSignedField: 0.0876347s
+Timing for computeSignedDistanceField: 0.0891849s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107361s
+Timing for cpatResultsToArrays: 1.1862e-05s
+Timing for cpatDistanceField: 0.00149644s
+Timing for computeDistanceField: 0.00149904s
+Timing for optixAccelBuild: 0.000110854s
+Timing for buildAccelStructure: 0.000160441s
+Spherical Inside/Outside took: 0.00651214
+Timing for computeSignedField: 0.0878531s
+Timing for computeSignedDistanceField: 0.0893637s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119397s
+Timing for cpatResultsToArrays: 1.2337e-05s
+Timing for cpatDistanceField: 0.00163982s
+Timing for computeDistanceField: 0.0016426s
+Timing for optixAccelBuild: 0.000119822s
+Timing for buildAccelStructure: 0.000170026s
+Spherical Inside/Outside took: 0.00574703
+Timing for computeSignedField: 0.0929677s
+Timing for computeSignedDistanceField: 0.0946239s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108136s
+Timing for cpatResultsToArrays: 1.2918e-05s
+Timing for cpatDistanceField: 0.00192973s
+Timing for computeDistanceField: 0.00193435s
+Timing for optixAccelBuild: 0.000124619s
+Timing for buildAccelStructure: 0.00033773s
+Spherical Inside/Outside took: 0.005704
+Timing for computeSignedField: 0.0853247s
+Timing for computeSignedDistanceField: 0.0872698s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108722s
+Timing for cpatResultsToArrays: 1.2173e-05s
+Timing for cpatDistanceField: 0.00148747s
+Timing for computeDistanceField: 0.00149004s
+Timing for optixAccelBuild: 0.000115798s
+Timing for buildAccelStructure: 0.000177455s
+Spherical Inside/Outside took: 0.00614776
+Timing for computeSignedField: 0.0878362s
+Timing for computeSignedDistanceField: 0.0893398s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010625s
+Timing for cpatResultsToArrays: 1.1374e-05s
+Timing for cpatDistanceField: 0.00146923s
+Timing for computeDistanceField: 0.00147203s
+Timing for optixAccelBuild: 0.000115226s
+Timing for buildAccelStructure: 0.000170235s
+Spherical Inside/Outside took: 0.00597714
+Timing for computeSignedField: 0.0860218s
+Timing for computeSignedDistanceField: 0.0875069s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113454s
+Timing for cpatResultsToArrays: 1.2896e-05s
+Timing for cpatDistanceField: 0.00154669s
+Timing for computeDistanceField: 0.00154946s
+Timing for optixAccelBuild: 0.000116408s
+Timing for buildAccelStructure: 0.000165517s
+Spherical Inside/Outside took: 0.00467656
+Timing for computeSignedField: 0.102055s
+Timing for computeSignedDistanceField: 0.103617s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107053s
+Timing for cpatResultsToArrays: 1.2707e-05s
+Timing for cpatDistanceField: 0.00148859s
+Timing for computeDistanceField: 0.0014915s
+Timing for optixAccelBuild: 0.000119347s
+Timing for buildAccelStructure: 0.000169461s
+Spherical Inside/Outside took: 0.0045609
+Timing for computeSignedField: 0.0872574s
+Timing for computeSignedDistanceField: 0.0887623s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115084s
+Timing for cpatResultsToArrays: 1.2466e-05s
+Timing for cpatDistanceField: 0.00155681s
+Timing for computeDistanceField: 0.00155967s
+Timing for optixAccelBuild: 0.000125316s
+Timing for buildAccelStructure: 0.000343529s
+Spherical Inside/Outside took: 0.00488265
+Timing for computeSignedField: 0.0872766s
+Timing for computeSignedDistanceField: 0.0888501s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010824s
+Timing for cpatResultsToArrays: 1.1893e-05s
+Timing for cpatDistanceField: 0.00148085s
+Timing for computeDistanceField: 0.00148341s
+Timing for optixAccelBuild: 0.000117314s
+Timing for buildAccelStructure: 0.00016947s
+Spherical Inside/Outside took: 0.00463623
+Timing for computeSignedField: 0.0863455s
+Timing for computeSignedDistanceField: 0.0878405s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111786s
+Timing for cpatResultsToArrays: 1.2769e-05s
+Timing for cpatDistanceField: 0.00154263s
+Timing for computeDistanceField: 0.00154553s
+Timing for optixAccelBuild: 0.000120079s
+Timing for buildAccelStructure: 0.000168357s
+Spherical Inside/Outside took: 0.00456047
+Timing for computeSignedField: 0.102382s
+Timing for computeSignedDistanceField: 0.10394s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105747s
+Timing for cpatResultsToArrays: 1.1803e-05s
+Timing for cpatDistanceField: 0.0015178s
+Timing for computeDistanceField: 0.00152056s
+Timing for optixAccelBuild: 0.000112002s
+Timing for buildAccelStructure: 0.000160894s
+Spherical Inside/Outside took: 0.00442521
+Timing for computeSignedField: 0.0840933s
+Timing for computeSignedDistanceField: 0.0856275s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106395s
+Timing for cpatResultsToArrays: 1.1557e-05s
+Timing for cpatDistanceField: 0.00149286s
+Timing for computeDistanceField: 0.00149536s
+Timing for optixAccelBuild: 0.000123654s
+Timing for buildAccelStructure: 0.000172812s
+Spherical Inside/Outside took: 0.00461259
+Timing for computeSignedField: 0.0850777s
+Timing for computeSignedDistanceField: 0.0865859s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00102346s
+Timing for cpatResultsToArrays: 1.1638e-05s
+Timing for cpatDistanceField: 0.0014568s
+Timing for computeDistanceField: 0.00145933s
+Timing for optixAccelBuild: 0.000112884s
+Timing for buildAccelStructure: 0.00016007s
+Spherical Inside/Outside took: 0.00457421
+Timing for computeSignedField: 0.0834988s
+Timing for computeSignedDistanceField: 0.0849719s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000982568s
+Timing for cpatResultsToArrays: 1.7944e-05s
+Timing for cpatDistanceField: 0.00128704s
+Timing for computeDistanceField: 0.00128997s
+Timing for optixAccelBuild: 0.000119443s
+Timing for buildAccelStructure: 0.00018691s
+Spherical Inside/Outsid[08:48:48] - attempting to initialize network from /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k
+[08:48:48] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_p.0.pth
+[08:48:48] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_tau.0.pth
+[08:48:48] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_p.0.pth
+[08:48:48] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_tau.0.pth
+e took: 0.00455457
+Timing for computeSignedField: 0.0919852s
+Timing for computeSignedDistanceField: 0.0932883s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000905761s
+Timing for cpatResultsToArrays: 1.1738e-05s
+Timing for cpatDistanceField: 0.00118614s
+Timing for computeDistanceField: 0.00118883s
+Timing for optixAccelBuild: 0.000111832s
+Timing for buildAccelStructure: 0.000170195s
+Spherical Inside/Outside took: 0.00430271
+Timing for computeSignedField: 0.0843406s
+Timing for computeSignedDistanceField: 0.0855407s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000947949s
+Timing for cpatResultsToArrays: 1.2661e-05s
+Timing for cpatDistanceField: 0.00125057s
+Timing for computeDistanceField: 0.00125347s
+Timing for optixAccelBuild: 0.000112904s
+Timing for buildAccelStructure: 0.000164875s
+Spherical Inside/Outside took: 0.00489336
+Timing for computeSignedField: 0.0888013s
+Timing for computeSignedDistanceField: 0.0900679s
+NUM Triangles: 2128
+Timing for Build CPAT Model (build bvh): 0.000883967s
+Timing for cpatResultsToArrays: 1.124e-05s
+Timing for cpatDistanceField: 0.00116091s
+Timing for computeDistanceField: 0.00116359s
+Timing for optixAccelBuild: 0.00011119s
+Timing for buildAccelStructure: 0.000165265s
+Spherical Inside/Outside took: 0.00490555
+Timing for computeSignedField: 0.0852997s
+Timing for computeSignedDistanceField: 0.0864784s
+[08:48:50] - [step:     100000] record monitor time:  1.890e+00s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.001677s
+Timing for cpatResultsToArrays: 1.2635e-05s
+Timing for cpatDistanceField: 0.002136s
+Timing for computeDistanceField: 0.00213898s
+Timing for optixAccelBuild: 0.00012429s
+Timing for buildAccelStructure: 0.000376296s
+Spherical Inside/Outside took: 0.00570425
+Timing for computeSignedField: 0.10288s
+Timing for computeSignedDistanceField: 0.105033s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115358s
+Timing for cpatResultsToArrays: 1.2146e-05s
+Timing for cpatDistanceField: 0.00161871s
+Timing for computeDistanceField: 0.00162137s
+Timing for optixAccelBuild: 0.000120507s
+Timing for buildAccelStructure: 0.000171714s
+Spherical Inside/Outside took: 0.00584921
+Timing for computeSignedField: 0.0869067s
+Timing for computeSignedDistanceField: 0.0885412s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119833s
+Timing for cpatResultsToArrays: 1.293e-05s
+Timing for cpatDistanceField: 0.00168267s
+Timing for computeDistanceField: 0.0016856s
+Timing for optixAccelBuild: 0.000122038s
+Timing for buildAccelStructure: 0.0001709s
+Spherical Inside/Outside took: 0.00580891
+Timing for computeSignedField: 0.090235s
+Timing for computeSignedDistanceField: 0.0919331s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115944s
+Timing for cpatResultsToArrays: 1.286e-05s
+Timing for cpatDistanceField: 0.00165298s
+Timing for computeDistanceField: 0.00165587s
+Timing for optixAccelBuild: 0.000118665s
+Timing for buildAccelStructure: 0.000168288s
+Spherical Inside/Outside took: 0.00570478
+Timing for computeSignedField: 0.0875448s
+Timing for computeSignedDistanceField: 0.0892142s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113414s
+Timing for cpatResultsToArrays: 1.2726e-05s
+Timing for cpatDistanceField: 0.00157474s
+Timing for computeDistanceField: 0.00157749s
+Timing for optixAccelBuild: 0.000134752s
+Timing for buildAccelStructure: 0.000188094s
+Spherical Inside/Outside took: 0.00592542
+Timing for computeSignedField: 0.131355s
+Timing for computeSignedDistanceField: 0.132946s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00121668s
+Timing for cpatResultsToArrays: 1.2409e-05s
+Timing for cpatDistanceField: 0.00166153s
+Timing for computeDistanceField: 0.00166468s
+Timing for optixAccelBuild: 0.000129627s
+Timing for buildAccelStructure: 0.000361112s
+Spherical Inside/Outside took: 0.00573824
+Timing for computeSignedField: 0.0901271s
+Timing for computeSignedDistanceField: 0.0918048s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00141198s
+Timing for cpatResultsToArrays: 1.2567e-05s
+Timing for cpatDistanceField: 0.00184735s
+Timing for computeDistanceField: 0.00185038s
+Timing for optixAccelBuild: 0.000124144s
+Timing for buildAccelStructure: 0.000177368s
+Spherical Inside/Outside took: 0.00596985
+Timing for computeSignedField: 0.0872594s
+Timing for computeSignedDistanceField: 0.0891226s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112496s
+Timing for cpatResultsToArrays: 1.2137e-05s
+Timing for cpatDistanceField: 0.00156027s
+Timing for computeDistanceField: 0.00156296s
+Timing for optixAccelBuild: 0.000120277s
+Timing for buildAccelStructure: 0.000173273s
+Spherical Inside/Outside took: 0.00560291
+Timing for computeSignedField: 0.0860806s
+Timing for computeSignedDistanceField: 0.087656s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0020015s
+Timing for cpatResultsToArrays: 1.2973e-05s
+Timing for cpatDistanceField: 0.00241798s
+Timing for computeDistanceField: 0.00242083s
+Timing for optixAccelBuild: 0.000117984s
+Timing for buildAccelStructure: 0.0001675s
+Spherical Inside/Outside took: 0.00597461
+Timing for computeSignedField: 0.0878892s
+Timing for computeSignedDistanceField: 0.0903229s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108775s
+Timing for cpatResultsToArrays: 1.1992e-05s
+Timing for cpatDistanceField: 0.00151973s
+Timing for computeDistanceField: 0.00152272s
+Timing for optixAccelBuild: 0.00011585s
+Timing for buildAccelStructure: 0.000163818s
+Spherical Inside/Outside took: 0.00581831
+Timing for computeSignedField: 0.0853128s
+Timing for computeSignedDistanceField: 0.0868481s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108343s
+Timing for cpatResultsToArrays: 1.2559e-05s
+Timing for cpatDistanceField: 0.00148954s
+Timing for computeDistanceField: 0.00149226s
+Timing for optixAccelBuild: 0.000118576s
+Timing for buildAccelStructure: 0.000171116s
+Spherical Inside/Outside took: 0.00618209
+Timing for computeSignedField: 0.0870783s
+Timing for computeSignedDistanceField: 0.0885847s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00181495s
+Timing for cpatResultsToArrays: 1.3613e-05s
+Timing for cpatDistanceField: 0.00245372s
+Timing for computeDistanceField: 0.00245838s
+Timing for optixAccelBuild: 0.000121087s
+Timing for buildAccelStructure: 0.00034871s
+Spherical Inside/Outside took: 0.0060637
+Timing for computeSignedField: 0.0867025s
+Timing for computeSignedDistanceField: 0.0891754s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.001562s
+Timing for cpatResultsToArrays: 1.3001e-05s
+Timing for cpatDistanceField: 0.00201732s
+Timing for computeDistanceField: 0.00202053s
+Timing for optixAccelBuild: 0.000117374s
+Timing for buildAccelStructure: 0.000165177s
+Spherical Inside/Outside took: 0.00651211
+Timing for computeSignedField: 0.088929s
+Timing for computeSignedDistanceField: 0.0909614s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106087s
+Timing for cpatResultsToArrays: 1.2239e-05s
+Timing for cpatDistanceField: 0.00148342s
+Timing for computeDistanceField: 0.0014861s
+Timing for optixAccelBuild: 0.000119414s
+Timing for buildAccelStructure: 0.000168333s
+Spherical Inside/Outside took: 0.00673477
+Timing for computeSignedField: 0.0867026s
+Timing for computeSignedDistanceField: 0.0882018s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119773s
+Timing for cpatResultsToArrays: 1.3125e-05s
+Timing for cpatDistanceField: 0.00162388s
+Timing for computeDistanceField: 0.00162683s
+Timing for optixAccelBuild: 0.000114517s
+Timing for buildAccelStructure: 0.000169187s
+Spherical Inside/Outside took: 0.00647632
+Timing for computeSignedField: 0.0881388s
+Timing for computeSignedDistanceField: 0.08978s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106399s
+Timing for cpatResultsToArrays: 1.2453e-05s
+Timing for cpatDistanceField: 0.00146893s
+Timing for computeDistanceField: 0.00147158s
+Timing for optixAccelBuild: 0.000123099s
+Timing for buildAccelStructure: 0.000186206s
+Spherical Inside/Outside took: 0.00648475
+Timing for computeSignedField: 0.0855255s
+Timing for computeSignedDistanceField: 0.0870098s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115728s
+Timing for cpatResultsToArrays: 1.546e-05s
+Timing for cpatDistanceField: 0.00158855s
+Timing for computeDistanceField: 0.00159141s
+Timing for optixAccelBuild: 0.000118616s
+Timing for buildAccelStructure: 0.000166768s
+Spherical Inside/Outside took: 0.00619842
+Timing for computeSignedField: 0.0900095s
+Timing for computeSignedDistanceField: 0.0916142s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010688s
+Timing for cpatResultsToArrays: 1.3278e-05s
+Timing for cpatDistanceField: 0.00147465s
+Timing for computeDistanceField: 0.00147753s
+Timing for optixAccelBuild: 0.000115521s
+Timing for buildAccelStructure: 0.000165567s
+Spherical Inside/Outside took: 0.00635217
+Timing for computeSignedField: 0.0907028s
+Timing for computeSignedDistanceField: 0.0921931s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110334s
+Timing for cpatResultsToArrays: 1.6245e-05s
+Timing for cpatDistanceField: 0.00154964s
+Timing for computeDistanceField: 0.00155239s
+Timing for optixAccelBuild: 0.000120737s
+Timing for buildAccelStructure: 0.000184469s
+Spherical Inside/Outside took: 0.00707138
+Timing for computeSignedField: 0.0875831s
+Timing for computeSignedDistanceField: 0.089149s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106808s
+Timing for cpatResultsToArrays: 1.198e-05s
+Timing for cpatDistanceField: 0.0015153s
+Timing for computeDistanceField: 0.00151784s
+Timing for optixAccelBuild: 0.000117784s
+Timing for buildAccelStructure: 0.000172037s
+Spherical Inside/Outside took: 0.00706218
+Timing for computeSignedField: 0.0844382s
+Timing for computeSignedDistanceField: 0.0859703s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00162446s
+Timing for cpatResultsToArrays: 1.2601e-05s
+Timing for cpatDistanceField: 0.00200811s
+Timing for computeDistanceField: 0.00201082s
+Timing for optixAccelBuild: 0.000116061s
+Timing for buildAccelStructure: 0.000342375s
+Spherical Inside/Outside took: 0.00547988
+Timing for computeSignedField: 0.0909241s
+Timing for computeSignedDistanceField: 0.092948s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107899s
+Timing for cpatResultsToArrays: 1.2005e-05s
+Timing for cpatDistanceField: 0.00146756s
+Timing for computeDistanceField: 0.00147042s
+Timing for optixAccelBuild: 0.000116442s
+Timing for buildAccelStructure: 0.000179065s
+Spherical Inside/Outside took: 0.00538608
+Timing for computeSignedField: 0.0836224s
+Timing for computeSignedDistanceField: 0.0851039s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00116777s
+Timing for cpatResultsToArrays: 1.3045e-05s
+Timing for cpatDistanceField: 0.00157921s
+Timing for computeDistanceField: 0.00158209s
+Timing for optixAccelBuild: 0.000121525s
+Timing for buildAccelStructure: 0.000188637s
+Spherical Inside/Outside took: 0.00548215
+Timing for computeSignedField: 0.0886825s
+Timing for computeSignedDistanceField: 0.0902792s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108198s
+Timing for cpatResultsToArrays: 1.2271e-05s
+Timing for cpatDistanceField: 0.00147925s
+Timing for computeDistanceField: 0.00148214s
+Timing for optixAccelBuild: 0.000124357s
+Timing for buildAccelStructure: 0.000178782s
+Spherical Inside/Outside took: 0.0053265
+Timing for computeSignedField: 0.0871309s
+Timing for computeSignedDistanceField: 0.0886256s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0018721s
+Timing for cpatResultsToArrays: 1.2712e-05s
+Timing for cpatDistanceField: 0.0023186s
+Timing for computeDistanceField: 0.00232144s
+Timing for optixAccelBuild: 0.000131711s
+Timing for buildAccelStructure: 0.000181019s
+Spherical Inside/Outside took: 0.00550672
+Timing for computeSignedField: 0.0929408s
+Timing for computeSignedDistanceField: 0.095272s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00102829s
+Timing for cpatResultsToArrays: 1.2479e-05s
+Timing for cpatDistanceField: 0.00142932s
+Timing for computeDistanceField: 0.00143178s
+Timing for optixAccelBuild: 0.000125308s
+Timing for buildAccelStructure: 0.000359524s
+Spherical Inside/Outside took: 0.00541125
+Timing for computeSignedField: 0.0828849s
+Timing for computeSignedDistanceField: 0.084328s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109531s
+Timing for cpatResultsToArrays: 1.2235e-05s
+Timing for cpatDistanceField: 0.00149226s
+Timing for computeDistanceField: 0.00149519s
+Timing for optixAccelBuild: 0.000114357s
+Timing for buildAccelStructure: 0.000166421s
+Spherical Inside/Outside took: 0.00592715
+Timing for computeSignedField: 0.0868615s
+Timing for computeSignedDistanceField: 0.0883702s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107366s
+Timing for cpatResultsToArrays: 1.1808e-05s
+Timing for cpatDistanceField: 0.0014697s
+Timing for computeDistanceField: 0.00147229s
+Timing for optixAccelBuild: 0.000113595s
+Timing for buildAccelStructure: 0.000162047s
+Spherical Inside/Outside took: 0.00535571
+Timing for computeSignedField: 0.0852432s
+Timing for computeSignedDistanceField: 0.0867458s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00301563s
+Timing for cpatResultsToArrays: 1.8619e-05s
+Timing for cpatDistanceField: 0.00353506s
+Timing for computeDistanceField: 0.00354093s
+Timing for optixAccelBuild: 0.000135723s
+Timing for buildAccelStructure: 0.00019056s
+Spherical Inside/Outside took: 0.0057829
+Timing for computeSignedField: 0.138772s
+Timing for computeSignedDistanceField: 0.142328s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00123076s
+Timing for cpatResultsToArrays: 1.3156e-05s
+Timing for cpatDistanceField: 0.00165948s
+Timing for computeDistanceField: 0.00166276s
+Timing for optixAccelBuild: 0.000117571s
+Timing for buildAccelStructure: 0.000163883s
+Spherical Inside/Outside took: 0.00578561
+Timing for computeSignedField: 0.0897251s
+Timing for computeSignedDistanceField: 0.0914008s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111779s
+Timing for cpatResultsToArrays: 1.2562e-05s
+Timing for cpatDistanceField: 0.00153216s
+Timing for computeDistanceField: 0.00153498s
+Timing for optixAccelBuild: 0.00011332s
+Timing for buildAccelStructure: 0.000175224s
+Spherical Inside/Outside took: 0.00593783
+Timing for computeSignedField: 0.085495s
+Timing for computeSignedDistanceField: 0.0870421s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00136754s
+Timing for cpatResultsToArrays: 1.2591e-05s
+Timing for cpatDistanceField: 0.00205149s
+Timing for computeDistanceField: 0.00205593s
+Timing for optixAccelBuild: 0.000120613s
+Timing for buildAccelStructure: 0.000377761s
+Spherical Inside/Outside took: 0.00573555
+Timing for computeSignedField: 0.0846835s
+Timing for computeSignedDistanceField: 0.0867523s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00157282s
+Timing for cpatResultsToArrays: 1.2318e-05s
+Timing for cpatDistanceField: 0.00200357s
+Timing for computeDistanceField: 0.00200637s
+Timing for optixAccelBuild: 0.000112676s
+Timing for buildAccelStructure: 0.000163771s
+Spherical Inside/Outside took: 0.00625966
+Timing for computeSignedField: 0.0916277s
+Timing for computeSignedDistanceField: 0.0936475s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106521s
+Timing for cpatResultsToArrays: 1.3422e-05s
+Timing for cpatDistanceField: 0.00152384s
+Timing for computeDistanceField: 0.00152646s
+Timing for optixAccelBuild: 0.000108228s
+Timing for buildAccelStructure: 0.000156072s
+Spherical Inside/Outside took: 0.00638854
+Timing for computeSignedField: 0.0840546s
+Timing for computeSignedDistanceField: 0.085591s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111633s
+Timing for cpatResultsToArrays: 1.2478e-05s
+Timing for cpatDistanceField: 0.0015431s
+Timing for computeDistanceField: 0.00154588s
+Timing for optixAccelBuild: 0.000116387s
+Timing for buildAccelStructure: 0.000170838s
+Spherical Inside/Outside took: 0.00639727
+Timing for computeSignedField: 0.0852995s
+Timing for computeSignedDistanceField: 0.0868589s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115431s
+Timing for cpatResultsToArrays: 1.349e-05s
+Timing for cpatDistanceField: 0.0015942s
+Timing for computeDistanceField: 0.00159754s
+Timing for optixAccelBuild: 0.000124331s
+Timing for buildAccelStructure: 0.000174787s
+Spherical Inside/Outside took: 0.00601378
+Timing for computeSignedField: 0.0858679s
+Timing for computeSignedDistanceField: 0.0874776s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111358s
+Timing for cpatResultsToArrays: 1.3316e-05s
+Timing for cpatDistanceField: 0.00154525s
+Timing for computeDistanceField: 0.00154796s
+Timing for optixAccelBuild: 0.000126838s
+Timing for buildAccelStructure: 0.000179203s
+Spherical Inside/Outside took: 0.00614913
+Timing for computeSignedField: 0.0955775s
+Timing for computeSignedDistanceField: 0.0971404s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108057s
+Timing for cpatResultsToArrays: 1.2227e-05s
+Timing for cpatDistanceField: 0.00150956s
+Timing for computeDistanceField: 0.00151279s
+Timing for optixAccelBuild: 0.00011931s
+Timing for buildAccelStructure: 0.00016751s
+Spherical Inside/Outside took: 0.0060179
+Timing for computeSignedField: 0.0882456s
+Timing for computeSignedDistanceField: 0.0897722s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00117398s
+Timing for cpatResultsToArrays: 1.2856e-05s
+Timing for cpatDistanceField: 0.00159257s
+Timing for computeDistanceField: 0.00159543s
+Timing for optixAccelBuild: 0.000117916s
+Timing for buildAccelStructure: 0.000195664s
+Spherical Inside/Outside took: 0.00657162
+Timing for computeSignedField: 0.0903434s
+Timing for computeSignedDistanceField: 0.091952s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110239s
+Timing for cpatResultsToArrays: 1.3334e-05s
+Timing for cpatDistanceField: 0.00151574s
+Timing for computeDistanceField: 0.0015187s
+Timing for optixAccelBuild: 0.000123192s
+Timing for buildAccelStructure: 0.000188252s
+Spherical Inside/Outside took: 0.00661461
+Timing for computeSignedField: 0.0949643s
+Timing for computeSignedDistanceField: 0.096496s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00171663s
+Timing for cpatResultsToArrays: 1.7301e-05s
+Timing for cpatDistanceField: 0.00214904s
+Timing for computeDistanceField: 0.00215212s
+Timing for optixAccelBuild: 0.000147739s
+Timing for buildAccelStructure: 0.000399924s
+Spherical Inside/Outside took: 0.00519173
+Timing for computeSignedField: 0.093155s
+Timing for computeSignedDistanceField: 0.0953203s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109495s
+Timing for cpatResultsToArrays: 1.1974e-05s
+Timing for cpatDistanceField: 0.00151614s
+Timing for computeDistanceField: 0.00151902s
+Timing for optixAccelBuild: 0.00011299s
+Timing for buildAccelStructure: 0.000173021s
+Spherical Inside/Outside took: 0.00530126
+Timing for computeSignedField: 0.0868504s
+Timing for computeSignedDistanceField: 0.0883825s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109369s
+Timing for cpatResultsToArrays: 1.2963e-05s
+Timing for cpatDistanceField: 0.00150633s
+Timing for computeDistanceField: 0.00150892s
+Timing for optixAccelBuild: 0.000116591s
+Timing for buildAccelStructure: 0.000178702s
+Spherical Inside/Outside took: 0.0053686
+Timing for computeSignedField: 0.0868253s
+Timing for computeSignedDistanceField: 0.0883476s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106999s
+Timing for cpatResultsToArrays: 1.2542e-05s
+Timing for cpatDistanceField: 0.00151832s
+Timing for computeDistanceField: 0.00152108s
+Timing for optixAccelBuild: 0.000112818s
+Timing for buildAccelStructure: 0.00016397s
+Spherical Inside/Outside took: 0.00486941
+Timing for computeSignedField: 0.0861178s
+Timing for computeSignedDistanceField: 0.0876515s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00166847s
+Timing for cpatResultsToArrays: 1.314e-05s
+Timing for cpatDistanceField: 0.00208619s
+Timing for computeDistanceField: 0.00208898s
+Timing for optixAccelBuild: 0.000115657s
+Timing for buildAccelStructure: 0.000169231s
+Spherical Inside/Outside took: 0.00552857
+Timing for computeSignedField: 0.0936812s
+Timing for computeSignedDistanceField: 0.0957959s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103073s
+Timing for cpatResultsToArrays: 1.3137e-05s
+Timing for cpatDistanceField: 0.00181775s
+Timing for computeDistanceField: 0.00182243s
+Timing for optixAccelBuild: 0.00011975s
+Timing for buildAccelStructure: 0.000353955s
+Spherical Inside/Outside took: 0.00516629
+Timing for computeSignedField: 0.0863594s
+Timing for computeSignedDistanceField: 0.0881953s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118096s
+Timing for cpatResultsToArrays: 1.4115e-05s
+Timing for cpatDistanceField: 0.00158894s
+Timing for computeDistanceField: 0.00159206s
+Timing for optixAccelBuild: 0.000119242s
+Timing for buildAccelStructure: 0.000178571s
+Spherical Inside/Outside took: 0.00550963
+Timing for computeSignedField: 0.0884588s
+Timing for computeSignedDistanceField: 0.0900647s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107241s
+Timing for cpatResultsToArrays: 1.2041e-05s
+Timing for cpatDistanceField: 0.0014635s
+Timing for computeDistanceField: 0.0014664s
+Timing for optixAccelBuild: 0.000111353s
+Timing for buildAccelStructure: 0.00016678s
+Spherical Inside/Outside took: 0.00515553
+Timing for computeSignedField: 0.0839546s
+Timing for computeSignedDistanceField: 0.085432s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107436s
+Timing for cpatResultsToArrays: 1.3388e-05s
+Timing for cpatDistanceField: 0.00147907s
+Timing for computeDistanceField: 0.00148201s
+Timing for optixAccelBuild: 0.000115346s
+Timing for buildAccelStructure: 0.000165555s
+Spherical Inside/Outside took: 0.00541107
+Timing for computeSignedField: 0.0836251s
+Timing for computeSignedDistanceField: 0.0851181s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00100533s
+Timing for cpatResultsToArrays: 1.1699e-05s
+Timing for cpatDistanceField: 0.00139682s
+Timing for computeDistanceField: 0.00139995s
+Timing for optixAccelBuild: 0.000113802s
+Timing for buildAccelStructure: 0.000164148s
+Spherical Inside/Outside took: 0.00542309
+Timing for computeSignedField: 0.0802161s
+Timing for computeSignedDistanceField: 0.0816258s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105777s
+Timing for cpatResultsToArrays: 1.2309e-05s
+Timing for cpatDistanceField: 0.00143591s
+Timing for computeDistanceField: 0.00143856s
+Timing for optixAccelBuild: 0.000113081s
+Timing for buildAccelStructure: 0.000348851s
+Spherical Inside/Outside took: 0.005835
+Timing for computeSignedField: 0.0818473s
+Timing for computeSignedDistanceField: 0.0832972s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103229s
+Timing for cpatResultsToArrays: 1.1416e-05s
+Timing for cpatDistanceField: 0.00140234s
+Timing for computeDistanceField: 0.00140529s
+Timing for optixAccelBuild: 0.000116038s
+Timing for buildAccelStructure: 0.000179174s
+Spherical Inside/Outside took: 0.00588531
+Timing for computeSignedField: 0.0850909s
+Timing for computeSignedDistanceField: 0.0865096s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00162083s
+Timing for cpatResultsToArrays: 1.2246e-05s
+Timing for cpatDistanceField: 0.00203388s
+Timing for computeDistanceField: 0.00203681s
+Timing for optixAccelBuild: 0.000150577s
+Timing for buildAccelStructure: 0.000203049s
+Spherical Inside/Outside took: 0.00551295
+Timing for computeSignedField: 0.0938625s
+Timing for computeSignedDistanceField: 0.0959131s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106563s
+Timing for cpatResultsToArrays: 1.2112e-05s
+Timing for cpatDistanceField: 0.00145792s
+Timing for computeDistanceField: 0.00146056s
+Timing for optixAccelBuild: 0.000124297s
+Timing for buildAccelStructure: 0.000174404s
+Spherical Inside/Outside took: 0.00549761
+Timing for computeSignedField: 0.0875535s
+Timing for computeSignedDistanceField: 0.0890288s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113717s
+Timing for cpatResultsToArrays: 1.2343e-05s
+Timing for cpatDistanceField: 0.00153184s
+Timing for computeDistanceField: 0.0015347s
+Timing for optixAccelBuild: 0.000124777s
+Timing for buildAccelStructure: 0.000183629s
+Spherical Inside/Outside took: 0.00585287
+Timing for computeSignedField: 0.0885335s
+Timing for computeSignedDistanceField: 0.0900808s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109704s
+Timing for cpatResultsToArrays: 1.1679e-05s
+Timing for cpatDistanceField: 0.00148348s
+Timing for computeDistanceField: 0.00148646s
+Timing for optixAccelBuild: 0.000114706s
+Timing for buildAccelStructure: 0.000174646s
+Spherical Inside/Outside took: 0.00578164
+Timing for computeSignedField: 0.0886617s
+Timing for computeSignedDistanceField: 0.0901607s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00163857s
+Timing for cpatResultsToArrays: 1.3856e-05s
+Timing for cpatDistanceField: 0.00205875s
+Timing for computeDistanceField: 0.0020614s
+Timing for optixAccelBuild: 0.000113414s
+Timing for buildAccelStructure: 0.000161784s
+Spherical Inside/Outside took: 0.00606835
+Timing for computeSignedField: 0.0961307s
+Timing for computeSignedDistanceField: 0.0982054s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105954s
+Timing for cpatResultsToArrays: 1.2457e-05s
+Timing for cpatDistanceField: 0.00147122s
+Timing for computeDistanceField: 0.00147402s
+Timing for optixAccelBuild: 0.000114701s
+Timing for buildAccelStructure: 0.000164105s
+Spherical Inside/Outside took: 0.00615059
+Timing for computeSignedField: 0.0858488s
+Timing for computeSignedDistanceField: 0.0873341s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118241s
+Timing for cpatResultsToArrays: 1.2507e-05s
+Timing for cpatDistanceField: 0.00161094s
+Timing for computeDistanceField: 0.00161388s
+Timing for optixAccelBuild: 0.000117128s
+Timing for buildAccelStructure: 0.000174094s
+Spherical Inside/Outside took: 0.00578191
+Timing for computeSignedField: 0.0888569s
+Timing for computeSignedDistanceField: 0.0904822s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108535s
+Timing for cpatResultsToArrays: 1.2056e-05s
+Timing for cpatDistanceField: 0.00150753s
+Timing for computeDistanceField: 0.00151017s
+Timing for optixAccelBuild: 0.000112878s
+Timing for buildAccelStructure: 0.00016576s
+Spherical Inside/Outside took: 0.00599227
+Timing for computeSignedField: 0.0866689s
+Timing for computeSignedDistanceField: 0.088191s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00157249s
+Timing for cpatResultsToArrays: 1.3997e-05s
+Timing for cpatDistanceField: 0.00223212s
+Timing for computeDistanceField: 0.00223652s
+Timing for optixAccelBuild: 0.000118817s
+Timing for buildAccelStructure: 0.000356527s
+Spherical Inside/Outside took: 0.00509753
+Timing for computeSignedField: 0.0936086s
+Timing for computeSignedDistanceField: 0.0958574s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00104018s
+Timing for cpatResultsToArrays: 1.2418e-05s
+Timing for cpatDistanceField: 0.00144627s
+Timing for computeDistanceField: 0.0014488s
+Timing for optixAccelBuild: 0.000119304s
+Timing for buildAccelStructure: 0.000168809s
+Spherical Inside/Outside took: 0.00504019
+Timing for computeSignedField: 0.0836302s
+Timing for computeSignedDistanceField: 0.0850922s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00116488s
+Timing for cpatResultsToArrays: 1.1989e-05s
+Timing for cpatDistanceField: 0.00157703s
+Timing for computeDistanceField: 0.00157993s
+Timing for optixAccelBuild: 0.000117812s
+Timing for buildAccelStructure: 0.00018139s
+Spherical Inside/Outside took: 0.00516628
+Timing for computeSignedField: 0.0870045s
+Timing for computeSignedDistanceField: 0.0885975s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108447s
+Timing for cpatResultsToArrays: 1.3178e-05s
+Timing for cpatDistanceField: 0.00151008s
+Timing for computeDistanceField: 0.00151321s
+Timing for optixAccelBuild: 0.000116087s
+Timing for buildAccelStructure: 0.000171824s
+Spherical Inside/Outside took: 0.00493902
+Timing for computeSignedField: 0.0860015s
+Timing for computeSignedDistanceField: 0.0875281s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00167042s
+Timing for cpatResultsToArrays: 1.315e-05s
+Timing for cpatDistanceField: 0.00210121s
+Timing for computeDistanceField: 0.00210409s
+Timing for optixAccelBuild: 0.000125233s
+Timing for buildAccelStructure: 0.000175571s
+Spherical Inside/Outside took: 0.00519575
+Timing for computeSignedField: 0.094262s
+Timing for computeSignedDistanceField: 0.0963791s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00143171s
+Timing for cpatResultsToArrays: 1.2914e-05s
+Timing for cpatDistanceField: 0.0020885s
+Timing for computeDistanceField: 0.00209291s
+Timing for optixAccelBuild: 0.0001213s
+Timing for buildAccelStructure: 0.000354641s
+Spherical Inside/Outside took: 0.00504744
+Timing for computeSignedField: 0.0858431s
+Timing for computeSignedDistanceField: 0.0879495s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111596s
+Timing for cpatResultsToArrays: 1.2258e-05s
+Timing for cpatDistanceField: 0.00152854s
+Timing for computeDistanceField: 0.00153144s
+Timing for optixAccelBuild: 0.000111639s
+Timing for buildAccelStructure: 0.000166601s
+Spherical Inside/Outside took: 0.00534254
+Timing for computeSignedField: 0.0840265s
+Timing for computeSignedDistanceField: 0.0855691s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00105822s
+Timing for cpatResultsToArrays: 1.1898e-05s
+Timing for cpatDistanceField: 0.0014715s
+Timing for computeDistanceField: 0.00147424s
+Timing for optixAccelBuild: 0.000127742s
+Timing for buildAccelStructure: 0.000182485s
+Spherical Inside/Outside took: 0.00505643
+Timing for computeSignedField: 0.0824542s
+Timing for computeSignedDistanceField: 0.0839392s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00297805s
+Timing for cpatResultsToArrays: 2.8176e-05s
+Timing for cpatDistanceField: 0.00352582s
+Timing for computeDistanceField: 0.0035318s
+Timing for optixAccelBuild: 0.00013372s
+Timing for buildAccelStructure: 0.000195699s
+Spherical Inside/Outside took: 0.00534873
+Timing for computeSignedField: 0.136909s
+Timing for computeSignedDistanceField: 0.140454s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119269s
+Timing for cpatResultsToArrays: 1.2562e-05s
+Timing for cpatDistanceField: 0.00160399s
+Timing for computeDistanceField: 0.00160719s
+Timing for optixAccelBuild: 0.00011833s
+Timing for buildAccelStructure: 0.000185372s
+Spherical Inside/Outside took: 0.00522457
+Timing for computeSignedField: 0.0889231s
+Timing for computeSignedDistanceField: 0.0905412s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106125s
+Timing for cpatResultsToArrays: 1.2608e-05s
+Timing for cpatDistanceField: 0.00146873s
+Timing for computeDistanceField: 0.00147144s
+Timing for optixAccelBuild: 0.000120109s
+Timing for buildAccelStructure: 0.00182113s
+Spherical Inside/Outside took: 0.00537847
+Timing for computeSignedField: 0.0861777s
+Timing for computeSignedDistanceField: 0.08766s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010766s
+Timing for cpatResultsToArrays: 1.1793e-05s
+Timing for cpatDistanceField: 0.00148299s
+Timing for computeDistanceField: 0.0014856s
+Timing for optixAccelBuild: 0.000110393s
+Timing for buildAccelStructure: 0.000165181s
+Spherical Inside/Outside took: 0.00511882
+Timing for computeSignedField: 0.0831003s
+Timing for computeSignedDistanceField: 0.0845976s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108816s
+Timing for cpatResultsToArrays: 1.2701e-05s
+Timing for cpatDistanceField: 0.00149793s
+Timing for computeDistanceField: 0.0015009s
+Timing for optixAccelBuild: 0.000123564s
+Timing for buildAccelStructure: 0.000172422s
+Spherical Inside/Outside took: 0.00572298
+Timing for computeSignedField: 0.0877387s
+Timing for computeSignedDistanceField: 0.0892534s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108481s
+Timing for cpatResultsToArrays: 1.3228e-05s
+Timing for cpatDistanceField: 0.0015115s
+Timing for computeDistanceField: 0.00151461s
+Timing for optixAccelBuild: 0.000119376s
+Timing for buildAccelStructure: 0.00017168s
+Spherical Inside/Outside took: 0.00571274
+Timing for computeSignedField: 0.0854226s
+Timing for computeSignedDistanceField: 0.0869492s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00114632s
+Timing for cpatResultsToArrays: 1.2695e-05s
+Timing for cpatDistanceField: 0.00156145s
+Timing for computeDistanceField: 0.00156437s
+Timing for optixAccelBuild: 0.000119414s
+Timing for buildAccelStructure: 0.000179992s
+Spherical Inside/Outside took: 0.00583072
+Timing for computeSignedField: 0.0922715s
+Timing for computeSignedDistanceField: 0.0938505s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109319s
+Timing for cpatResultsToArrays: 1.2267e-05s
+Timing for cpatDistanceField: 0.00152654s
+Timing for computeDistanceField: 0.00152966s
+Timing for optixAccelBuild: 0.000138222s
+Timing for buildAccelStructure: 0.000382085s
+Spherical Inside/Outside took: 0.00547748
+Timing for computeSignedField: 0.0867334s
+Timing for computeSignedDistanceField: 0.0882763s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00167533s
+Timing for cpatResultsToArrays: 1.3103e-05s
+Timing for cpatDistanceField: 0.00209085s
+Timing for computeDistanceField: 0.00209367s
+Timing for optixAccelBuild: 0.000109638s
+Timing for buildAccelStructure: 0.000158694s
+Spherical Inside/Outside took: 0.00558937
+Timing for computeSignedField: 0.0898918s
+Timing for computeSignedDistanceField: 0.091998s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00101956s
+Timing for cpatResultsToArrays: 1.2232e-05s
+Timing for cpatDistanceField: 0.00143102s
+Timing for computeDistanceField: 0.00143365s
+Timing for optixAccelBuild: 0.000112896s
+Timing for buildAccelStructure: 0.000163533s
+Spherical Inside/Outside took: 0.00556696
+Timing for computeSignedField: 0.082786s
+Timing for computeSignedDistanceField: 0.0842322s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108972s
+Timing for cpatResultsToArrays: 1.2224e-05s
+Timing for cpatDistanceField: 0.00150876s
+Timing for computeDistanceField: 0.00151136s
+Timing for optixAccelBuild: 0.000113835s
+Timing for buildAccelStructure: 0.00016785s
+Spherical Inside/Outside took: 0.00586018
+Timing for computeSignedField: 0.0844548s
+Timing for computeSignedDistanceField: 0.0859792s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103519s
+Timing for cpatResultsToArrays: 1.1738e-05s
+Timing for cpatDistanceField: 0.00144436s
+Timing for computeDistanceField: 0.00144716s
+Timing for optixAccelBuild: 0.000117598s
+Timing for buildAccelStructure: 0.000170139s
+Spherical Inside/Outside took: 0.00582
+Timing for computeSignedField: 0.0831293s
+Timing for computeSignedDistanceField: 0.0845893s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00201296s
+Timing for cpatResultsToArrays: 1.3137e-05s
+Timing for cpatDistanceField: 0.00264258s
+Timing for computeDistanceField: 0.00264686s
+Timing for optixAccelBuild: 0.000115074s
+Timing for buildAccelStructure: 0.00035591s
+Spherical Inside/Outside took: 0.00446642
+Timing for computeSignedField: 0.0878155s
+Timing for computeSignedDistanceField: 0.0904735s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00101664s
+Timing for cpatResultsToArrays: 1.2043e-05s
+Timing for cpatDistanceField: 0.00140625s
+Timing for computeDistanceField: 0.00140878s
+Timing for optixAccelBuild: 0.000114447s
+Timing for buildAccelStructure: 0.000163522s
+Spherical Inside/Outside took: 0.0041893
+Timing for computeSignedField: 0.0808446s
+Timing for computeSignedDistanceField: 0.0822645s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106796s
+Timing for cpatResultsToArrays: 1.2404e-05s
+Timing for cpatDistanceField: 0.00143702s
+Timing for computeDistanceField: 0.00143971s
+Timing for optixAccelBuild: 0.000129964s
+Timing for buildAccelStructure: 0.000189304s
+Spherical Inside/Outside took: 0.00477908
+Timing for computeSignedField: 0.0814336s
+Timing for computeSignedDistanceField: 0.0828837s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00102644s
+Timing for cpatResultsToArrays: 1.1618e-05s
+Timing for cpatDistanceField: 0.00141956s
+Timing for computeDistanceField: 0.00142211s
+Timing for optixAccelBuild: 0.000114008s
+Timing for buildAccelStructure: 0.000177563s
+Spherical Inside/Outside took: 0.00455716
+Timing for computeSignedField: 0.0792958s
+Timing for computeSignedDistanceField: 0.0807287s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00159543s
+Timing for cpatResultsToArrays: 1.2497e-05s
+Timing for cpatDistanceField: 0.00199696s
+Timing for computeDistanceField: 0.00199975s
+Timing for optixAccelBuild: 0.000115093s
+Timing for buildAccelStructure: 0.000167078s
+Spherical Inside/Outside took: 0.00458113
+Timing for computeSignedField: 0.0887777s
+Timing for computeSignedDistanceField: 0.0907884s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00134556s
+Timing for cpatResultsToArrays: 1.3587e-05s
+Timing for cpatDistanceField: 0.00198586s
+Timing for computeDistanceField: 0.00199013s
+Timing for optixAccelBuild: 0.000121702s
+Timing for buildAccelStructure: 0.000366289s
+Spherical Inside/Outside took: 0.00462372
+Timing for computeSignedField: 0.08177s
+Timing for computeSignedDistanceField: 0.0837726s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108354s
+Timing for cpatResultsToArrays: 1.3175e-05s
+Timing for cpatDistanceField: 0.00147931s
+Timing for computeDistanceField: 0.00148204s
+Timing for optixAccelBuild: 0.000129196s
+Timing for buildAccelStructure: 0.000182487s
+Spherical Inside/Outside took: 0.00478073
+Timing for computeSignedField: 0.084966s
+Timing for computeSignedDistanceField: 0.0864764s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108121s
+Timing for cpatResultsToArrays: 1.2358e-05s
+Timing for cpatDistanceField: 0.00148011s
+Timing for computeDistanceField: 0.00148281s
+Timing for optixAccelBuild: 0.000108393s
+Timing for buildAccelStructure: 0.000162428s
+Spherical Inside/Outside took: 0.00463683
+Timing for computeSignedField: 0.0815608s
+Timing for computeSignedDistanceField: 0.0830553s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00155028s
+Timing for cpatResultsToArrays: 1.3571e-05s
+Timing for cpatDistanceField: 0.00197953s
+Timing for computeDistanceField: 0.00198231s
+Timing for optixAccelBuild: 0.00011869s
+Timing for buildAccelStructure: 0.000201219s
+Spherical Inside/Outside took: 0.00507553
+Timing for computeSignedField: 0.0913447s
+Timing for computeSignedDistanceField: 0.0933406s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00102371s
+Timing for cpatResultsToArrays: 1.2502e-05s
+Timing for cpatDistanceField: 0.00145342s
+Timing for computeDistanceField: 0.0014563s
+Timing for optixAccelBuild: 0.000114986s
+Timing for buildAccelStructure: 0.000166494s
+Spherical Inside/Outside took: 0.00491394
+Timing for computeSignedField: 0.084359s
+Timing for computeSignedDistanceField: 0.0858279s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111038s
+Timing for cpatResultsToArrays: 1.2254e-05s
+Timing for cpatDistanceField: 0.00150441s
+Timing for computeDistanceField: 0.00150722s
+Timing for optixAccelBuild: 0.00012125s
+Timing for buildAccelStructure: 0.000366178s
+Spherical Inside/Outside took: 0.00495355
+Timing for computeSignedField: 0.0858656s
+Timing for computeSignedDistanceField: 0.0873863s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109066s
+Timing for cpatResultsToArrays: 1.1965e-05s
+Timing for cpatDistanceField: 0.0015106s
+Timing for computeDistanceField: 0.00151347s
+Timing for optixAccelBuild: 0.000126188s
+Timing for buildAccelStructure: 0.000180031s
+Spherical Inside/Outside took: 0.00492217
+Timing for computeSignedField: 0.0838653s
+Timing for computeSignedDistanceField: 0.0853923s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00123275s
+Timing for cpatResultsToArrays: 1.7444e-05s
+Timing for cpatDistanceField: 0.00167501s
+Timing for computeDistanceField: 0.00167799s
+Timing for optixAccelBuild: 0.000121517s
+Timing for buildAccelStructure: 0.000173632s
+Spherical Inside/Outside took: 0.00553538
+Timing for computeSignedField: 0.0949666s
+Timing for computeSignedDistanceField: 0.0966583s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107193s
+Timing for cpatResultsToArrays: 1.263e-05s
+Timing for cpatDistanceField: 0.00151286s
+Timing for computeDistanceField: 0.00151573s
+Timing for optixAccelBuild: 0.000116834s
+Timing for buildAccelStructure: 0.000169155s
+Spherical Inside/Outside took: 0.00567444
+Timing for computeSignedField: 0.0857443s
+Timing for computeSignedDistanceField: 0.0872721s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00146352s
+Timing for cpatResultsToArrays: 1.2885e-05s
+Timing for cpatDistanceField: 0.00186713s
+Timing for computeDistanceField: 0.00187042s
+Timing for optixAccelBuild: 0.000117713s
+Timing for buildAccelStructure: 0.000174451s
+Spherical Inside/Outside took: 0.00583847
+Timing for computeSignedField: 0.0880395s
+Timing for computeSignedDistanceField: 0.0899229s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103726s
+Timing for cpatResultsToArrays: 1.295e-05s
+Timing for cpatDistanceField: 0.00141656s
+Timing for computeDistanceField: 0.00141947s
+Timing for optixAccelBuild: 0.000127254s
+Timing for buildAccelStructure: 0.000373424s
+Spherical Inside/Outside took: 0.00564522
+Timing for computeSignedField: 0.0893401s
+Timing for computeSignedDistanceField: 0.0907725s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0018021s
+Timing for cpatResultsToArrays: 1.4616e-05s
+Timing for cpatDistanceField: 0.00221121s
+Timing for computeDistanceField: 0.00221407s
+Timing for optixAccelBuild: 0.000123658s
+Timing for buildAccelStructure: 0.000178228s
+Spherical Inside/Outside took: 0.00579507
+Timing for computeSignedField: 0.0959511s
+Timing for computeSignedDistanceField: 0.0981787s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00104919s
+Timing for cpatResultsToArrays: 1.2104e-05s
+Timing for cpatDistanceField: 0.00144897s
+Timing for computeDistanceField: 0.00145166s
+Timing for optixAccelBuild: 0.000116619s
+Timing for buildAccelStructure: 0.000174939s
+Spherical Inside/Outside took: 0.00598796
+Timing for computeSignedField: 0.0861798s
+Timing for computeSignedDistanceField: 0.0876444s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115828s
+Timing for cpatResultsToArrays: 1.3196e-05s
+Timing for cpatDistanceField: 0.00156244s
+Timing for computeDistanceField: 0.0015708s
+Timing for optixAccelBuild: 0.000114608s
+Timing for buildAccelStructure: 0.000167814s
+Spherical Inside/Outside took: 0.00563125
+Timing for computeSignedField: 0.0879078s
+Timing for computeSignedDistanceField: 0.0894915s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107576s
+Timing for cpatResultsToArrays: 1.2424e-05s
+Timing for cpatDistanceField: 0.00148785s
+Timing for computeDistanceField: 0.00149045s
+Timing for optixAccelBuild: 0.000111858s
+Timing for buildAccelStructure: 0.000162878s
+Spherical Inside/Outside took: 0.00573196
+Timing for computeSignedField: 0.0826467s
+Timing for computeSignedDistanceField: 0.0841478s
+[6.5372576 0.        0.       ]
+[ 1.5 -1.5]  L:  -5.016926  D:  0.99604464  Obj:  43736.732913498396
+[1.13624844 0.         0.        ]
+[-3.   1.5]  L:  2.9944315  D:  0.675605  Obj:  2291.7361199772276
+[0.8539375 0.        0.       ]
+[3. 0.]  L:  0.6663941  D:  2.108154  Obj:  1731.3174000818208
+[7.1072399 0.        0.       ]
+[0.  1.5]  L:  -5.5869083  D:  2.4008384  Obj:  51515.259769430035
+[13.21730394  0.          0.        ]
+[3.  1.5]  L:  15.075487  D:  2.5227203  Obj:  175699.64613442853
+[16.09898694  0.          0.        ]
+[-3.  0.]  L:  17.95717  D:  -0.935725  Obj:  260176.444734929
+[21.80755394  0.          0.        ]
+[-1.5 -3. ]  L:  23.665737  D:  0.6751148  Obj:  476570.0839142634
+[11.80711694  0.          0.        ]
+[1.5 3. ]  L:  13.6653  D:  1.3569343  Obj:  140409.36734393387
+[20.08179294  0.          0.        ]
+[-3. -3.]  L:  21.939976  D:  0.74226254  Obj:  404279.14990471123
+[12.56885794  0.          0.        ]
+[-3.  -1.5]  L:  14.427041  D:  0.07569212  Obj:  158976.2655811941
+[6.90168844 0.         0.        ]
+[-1.5  0. ]  L:  8.7598715  D:  0.18749022  Obj:  48633.49079831868
+[16.33338694  0.          0.        ]
+[ 1.5 -3. ]  L:  18.19157  D:  1.0583524  Obj:  267780.5872493005
+[3.3960715 0.        0.       ]
+[ 3.  -1.5]  L:  -1.8757399  D:  1.6943059  Obj:  12534.995907894843
+[0.84287045 0.         0.        ]
+[3. 3.]  L:  0.67746115  D:  1.7096257  Obj:  1712.140213460178
+[8.76714494 0.         0.        ]
+[ 0. -3.]  L:  10.625328  D:  1.3496656  Obj:  77864.18004585506
+[5.43559094 0.         0.        ]
+[1.5 1.5]  L:  7.293774  D:  1.531622  Obj:  30547.18047740837
+[1.83904825 0.         0.        ]
+[-3.  3.]  L:  -0.31871665  D:  0.9637823  Obj:  4383.062231277294
+[2.5431459 0.        0.       ]
+[-1.5 -1.5]  L:  -1.0228143  D:  0.35799527  Obj:  7467.949040654562
+[12.94421944  0.          0.        ]
+[0. 3.]  L:  14.8024025  D:  1.3906257  Obj:  168554.2075089458
+[4.40866794 0.         0.        ]
+[0. 0.]  L:  6.266851  D:  0.7329548  Obj:  20437.085950573997
+[5.20874094 0.         0.        ]
+[-1.5  1.5]  L:  7.066924  D:  0.64528286  Obj:  28131.627451774566
+[18.82279394  0.          0.        ]
+[ 0.  -1.5]  L:  20.680977  D:  0.45773208  Obj:  355298.02939960524
+[0.62357934 0.         0.        ]
+[-1.5  3. ]  L:  2.4817624  D:  0.5412903  Obj:  1389.3924822438694
+[1.24834687 0.         0.        ]
+[1.5 0. ]  L:  0.27198473  D:  1.6533489  Obj:  2560.0232453004874
+[2.61950624 0.         0.        ]
+[ 3. -3.]  L:  4.4776893  D:  1.0642751  Obj:  7862.877210907868
+[-1.5  3. ]
+lift:  2.4817624  drag:  0.5412903
+[08:53:28] - attempting to initialize network from /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k
+[08:53:28] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_p.0.pth
+[08:53:28] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_tau.0.pth
+[08:53:28] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_p.0.pth
+[08:53:28] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_tau.0.pth
+[08:53:29] - [step:     100000] record monitor time:  1.121e+00s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00725787s
+Timing for cpatResultsToArrays: 1.3489e-05s
+Timing for cpatDistanceField: 0.00804236s
+Timing for computeDistanceField: 0.00804702s
+Timing for optixAccelBuild: 0.000129274s
+Timing for buildAccelStructure: 0.000350412s
+Spherical Inside/Outside took: 0.00500833
+Timing for computeSignedField: 0.0945725s
+Timing for computeSignedDistanceField: 0.102631s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00121387s
+Timing for cpatResultsToArrays: 1.2449e-05s
+Timing for cpatDistanceField: 0.00175595s
+Timing for computeDistanceField: 0.00175852s
+Timing for optixAccelBuild: 0.000110941s
+Timing for buildAccelStructure: 0.000161516s
+Spherical Inside/Outside took: 0.00490764
+Timing for computeSignedField: 0.0877359s
+Timing for computeSignedDistanceField: 0.0895062s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00122542s
+Timing for cpatResultsToArrays: 1.2101e-05s
+Timing for cpatDistanceField: 0.00176233s
+Timing for computeDistanceField: 0.00176502s
+Timing for optixAccelBuild: 0.000146283s
+Timing for buildAccelStructure: 0.000204935s
+Spherical Inside/Outside took: 0.00542736
+Timing for computeSignedField: 0.0898552s
+Timing for computeSignedDistanceField: 0.0916331s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00127047s
+Timing for cpatResultsToArrays: 1.1655e-05s
+Timing for cpatDistanceField: 0.00180718s
+Timing for computeDistanceField: 0.0018101s
+Timing for optixAccelBuild: 0.000119215s
+Timing for buildAccelStructure: 0.000178006s
+Spherical Inside/Outside took: 0.00545534
+Timing for computeSignedField: 0.0897516s
+Timing for computeSignedDistanceField: 0.0915753s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00180035s
+Timing for cpatResultsToArrays: 1.2408e-05s
+Timing for cpatDistanceField: 0.00229281s
+Timing for computeDistanceField: 0.00229604s
+Timing for optixAccelBuild: 0.000114877s
+Timing for buildAccelStructure: 0.000165403s
+Spherical Inside/Outside took: 0.00513617
+Timing for computeSignedField: 0.0973634s
+Timing for computeSignedDistanceField: 0.0996719s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00146217s
+Timing for cpatResultsToArrays: 1.2462e-05s
+Timing for cpatDistanceField: 0.00215706s
+Timing for computeDistanceField: 0.00216135s
+Timing for optixAccelBuild: 0.000120099s
+Timing for buildAccelStructure: 0.000358961s
+Spherical Inside/Outside took: 0.00485925
+Timing for computeSignedField: 0.0884456s
+Timing for computeSignedDistanceField: 0.0906199s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00128347s
+Timing for cpatResultsToArrays: 1.3656e-05s
+Timing for cpatDistanceField: 0.0018117s
+Timing for computeDistanceField: 0.00181458s
+Timing for optixAccelBuild: 0.000146762s
+Timing for buildAccelStructure: 0.000208904s
+Spherical Inside/Outside took: 0.00544435
+Timing for computeSignedField: 0.0902765s
+Timing for computeSignedDistanceField: 0.0921036s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115145s
+Timing for cpatResultsToArrays: 1.2165e-05s
+Timing for cpatDistanceField: 0.00164925s
+Timing for computeDistanceField: 0.00165242s
+Timing for optixAccelBuild: 0.00011418s
+Timing for buildAccelStructure: 0.000175069s
+Spherical Inside/Outside took: 0.00532829
+Timing for computeSignedField: 0.0850052s
+Timing for computeSignedDistanceField: 0.086669s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0016039s
+Timing for cpatResultsToArrays: 1.3641e-05s
+Timing for cpatDistanceField: 0.0020848s
+Timing for computeDistanceField: 0.00208761s
+Timing for optixAccelBuild: 0.000108914s
+Timing for buildAccelStructure: 0.000156264s
+Spherical Inside/Outside took: 0.00514035
+Timing for computeSignedField: 0.0872397s
+Timing for computeSignedDistanceField: 0.0893404s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0011599s
+Timing for cpatResultsToArrays: 1.2195e-05s
+Timing for cpatDistanceField: 0.00163503s
+Timing for computeDistanceField: 0.00163783s
+Timing for optixAccelBuild: 0.000117912s
+Timing for buildAccelStructure: 0.00018199s
+Spherical Inside/Outside took: 0.00528142
+Timing for computeSignedField: 0.0898127s
+Timing for computeSignedDistanceField: 0.0914628s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00117139s
+Timing for cpatResultsToArrays: 1.334e-05s
+Timing for cpatDistanceField: 0.00166612s
+Timing for computeDistanceField: 0.00166892s
+Timing for optixAccelBuild: 0.000129753s
+Timing for buildAccelStructure: 0.000424114s
+Spherical Inside/Outside took: 0.00555416
+Timing for computeSignedField: 0.0900856s
+Timing for computeSignedDistanceField: 0.0917669s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110071s
+Timing for cpatResultsToArrays: 1.1977e-05s
+Timing for cpatDistanceField: 0.00155183s
+Timing for computeDistanceField: 0.00155439s
+Timing for optixAccelBuild: 0.000125207s
+Timing for buildAccelStructure: 0.000189081s
+Spherical Inside/Outside took: 0.00550723
+Timing for computeSignedField: 0.0883116s
+Timing for computeSignedDistanceField: 0.0898815s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119997s
+Timing for cpatResultsToArrays: 1.3888e-05s
+Timing for cpatDistanceField: 0.00165332s
+Timing for computeDistanceField: 0.00165644s
+Timing for optixAccelBuild: 0.00011402s
+Timing for buildAccelStructure: 0.00016185s
+Spherical Inside/Outside took: 0.00523489
+Timing for computeSignedField: 0.0901859s
+Timing for computeSignedDistanceField: 0.0918539s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110233s
+Timing for cpatResultsToArrays: 1.1807e-05s
+Timing for cpatDistanceField: 0.00154774s
+Timing for computeDistanceField: 0.0015504s
+Timing for optixAccelBuild: 0.000114055s
+Timing for buildAccelStructure: 0.000164444s
+Spherical Inside/Outside took: 0.00501841
+Timing for computeSignedField: 0.0865394s
+Timing for computeSignedDistanceField: 0.0881007s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115468s
+Timing for cpatResultsToArrays: 1.3737e-05s
+Timing for cpatDistanceField: 0.00161295s
+Timing for computeDistanceField: 0.00161552s
+Timing for optixAccelBuild: 0.000117624s
+Timing for buildAccelStructure: 0.000171853s
+Spherical Inside/Outside took: 0.00546789
+Timing for computeSignedField: 0.0882866s
+Timing for computeSignedDistanceField: 0.0899138s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112624s
+Timing for cpatResultsToArrays: 1.167e-05s
+Timing for cpatDistanceField: 0.00155576s
+Timing for computeDistanceField: 0.00155829s
+Timing for optixAccelBuild: 0.000114084s
+Timing for buildAccelStructure: 0.000329696s
+Spherical Inside/Outside took: 0.00536155
+Timing for computeSignedField: 0.0839135s
+Timing for computeSignedDistanceField: 0.0854829s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00181527s
+Timing for cpatResultsToArrays: 1.8298e-05s
+Timing for cpatDistanceField: 0.00229292s
+Timing for computeDistanceField: 0.00229559s
+Timing for optixAccelBuild: 0.00011446s
+Timing for buildAccelStructure: 0.000163037s
+Spherical Inside/Outside took: 0.00549749
+Timing for computeSignedField: 0.087901s
+Timing for computeSignedDistanceField: 0.0902079s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113694s
+Timing for cpatResultsToArrays: 1.2107e-05s
+Timing for cpatDistanceField: 0.00155001s
+Timing for computeDistanceField: 0.00155278s
+Timing for optixAccelBuild: 0.000116762s
+Timing for buildAccelStructure: 0.000168594s
+Spherical Inside/Outside took: 0.00531769
+Timing for computeSignedField: 0.0868869s
+Timing for computeSignedDistanceField: 0.0884525s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112743s
+Timing for cpatResultsToArrays: 1.2558e-05s
+Timing for cpatDistanceField: 0.00161538s
+Timing for computeDistanceField: 0.00161827s
+Timing for optixAccelBuild: 0.000108617s
+Timing for buildAccelStructure: 0.000162618s
+Spherical Inside/Outside took: 0.00568277
+Timing for computeSignedField: 0.0857118s
+Timing for computeSignedDistanceField: 0.0873424s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110706s
+Timing for cpatResultsToArrays: 1.1676e-05s
+Timing for cpatDistanceField: 0.00156076s
+Timing for computeDistanceField: 0.00156335s
+Timing for optixAccelBuild: 0.00011035s
+Timing for buildAccelStructure: 0.000166276s
+Spherical Inside/Outside took: 0.00543951
+Timing for computeSignedField: 0.0836652s
+Timing for computeSignedDistanceField: 0.0852396s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00222375s
+Timing for cpatResultsToArrays: 1.3252e-05s
+Timing for cpatDistanceField: 0.00292458s
+Timing for computeDistanceField: 0.00292901s
+Timing for optixAccelBuild: 0.00011791s
+Timing for buildAccelStructure: 0.000357101s
+Spherical Inside/Outside took: 0.00503053
+Timing for computeSignedField: 0.0937848s
+Timing for computeSignedDistanceField: 0.0967277s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00116094s
+Timing for cpatResultsToArrays: 1.3265e-05s
+Timing for cpatDistanceField: 0.00163468s
+Timing for computeDistanceField: 0.00163741s
+Timing for optixAccelBuild: 0.000110067s
+Timing for buildAccelStructure: 0.00015892s
+Spherical Inside/Outside took: 0.00492113
+Timing for computeSignedField: 0.0927615s
+Timing for computeSignedDistanceField: 0.0944134s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00122729s
+Timing for cpatResultsToArrays: 1.3316e-05s
+Timing for cpatDistanceField: 0.00168376s
+Timing for computeDistanceField: 0.00168677s
+Timing for optixAccelBuild: 0.00012274s
+Timing for buildAccelStructure: 0.000176528s
+Spherical Inside/Outside took: 0.00507237
+Timing for computeSignedField: 0.093306s
+Timing for computeSignedDistanceField: 0.0950065s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00130003s
+Timing for cpatResultsToArrays: 1.2661e-05s
+Timing for cpatDistanceField: 0.00176487s
+Timing for computeDistanceField: 0.00176819s
+Timing for optixAccelBuild: 0.000115113s
+Timing for buildAccelStructure: 0.00017037s
+Spherical Inside/Outside took: 0.00501691
+Timing for computeSignedField: 0.0897368s
+Timing for computeSignedDistanceField: 0.0915194s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00164275s
+Timing for cpatResultsToArrays: 1.3189e-05s
+Timing for cpatDistanceField: 0.00211558s
+Timing for computeDistanceField: 0.0021183s
+Timing for optixAccelBuild: 0.000123415s
+Timing for buildAccelStructure: 0.00017431s
+Spherical Inside/Outside took: 0.00524833
+Timing for computeSignedField: 0.0929449s
+Timing for computeSignedDistanceField: 0.0950783s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00151487s
+Timing for cpatResultsToArrays: 1.3665e-05s
+Timing for cpatDistanceField: 0.00225778s
+Timing for computeDistanceField: 0.00226244s
+Timing for optixAccelBuild: 0.000121601s
+Timing for buildAccelStructure: 0.000393714s
+Spherical Inside/Outside took: 0.00519509
+Timing for computeSignedField: 0.0900335s
+Timing for computeSignedDistanceField: 0.0923094s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119019s
+Timing for cpatResultsToArrays: 1.2993e-05s
+Timing for cpatDistanceField: 0.00165237s
+Timing for computeDistanceField: 0.00165526s
+Timing for optixAccelBuild: 0.000113575s
+Timing for buildAccelStructure: 0.000171202s
+Spherical Inside/Outside took: 0.0053625
+Timing for computeSignedField: 0.088996s
+Timing for computeSignedDistanceField: 0.0906638s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119532s
+Timing for cpatResultsToArrays: 1.316e-05s
+Timing for cpatDistanceField: 0.00162549s
+Timing for computeDistanceField: 0.00162833s
+Timing for optixAccelBuild: 0.000112661s
+Timing for buildAccelStructure: 0.000168215s
+Spherical Inside/Outside took: 0.00510749
+Timing for computeSignedField: 0.0866208s
+Timing for computeSignedDistanceField: 0.088261s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00156402s
+Timing for cpatResultsToArrays: 1.2456e-05s
+Timing for cpatDistanceField: 0.00198994s
+Timing for computeDistanceField: 0.00199258s
+Timing for optixAccelBuild: 0.000115899s
+Timing for buildAccelStructure: 0.000170115s
+Spherical Inside/Outside took: 0.00485311
+Timing for computeSignedField: 0.0973347s
+Timing for computeSignedDistanceField: 0.0993414s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108149s
+Timing for cpatResultsToArrays: 1.2107e-05s
+Timing for cpatDistanceField: 0.00153243s
+Timing for computeDistanceField: 0.00153573s
+Timing for optixAccelBuild: 0.000123873s
+Timing for buildAccelStructure: 0.00017602s
+Spherical Inside/Outside took: 0.0049194
+Timing for computeSignedField: 0.0868737s
+Timing for computeSignedDistanceField: 0.0884236s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00125109s
+Timing for cpatResultsToArrays: 1.3295e-05s
+Timing for cpatDistanceField: 0.00172314s
+Timing for computeDistanceField: 0.0017263s
+Timing for optixAccelBuild: 0.000133442s
+Timing for buildAccelStructure: 0.000423864s
+Spherical Inside/Outside took: 0.00538667
+Timing for computeSignedField: 0.0926789s
+Timing for computeSignedDistanceField: 0.0944192s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115148s
+Timing for cpatResultsToArrays: 1.3243e-05s
+Timing for cpatDistanceField: 0.00159136s
+Timing for computeDistanceField: 0.00159458s
+Timing for optixAccelBuild: 0.000124422s
+Timing for buildAccelStructure: 0.000182267s
+Spherical Inside/Outside took: 0.00525637
+Timing for computeSignedField: 0.0900408s
+Timing for computeSignedDistanceField: 0.0916495s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115049s
+Timing for cpatResultsToArrays: 1.2647e-05s
+Timing for cpatDistanceField: 0.00160408s
+Timing for computeDistanceField: 0.00160679s
+Timing for optixAccelBuild: 0.000137238s
+Timing for buildAccelStructure: 0.000187027s
+Spherical Inside/Outside took: 0.00514703
+Timing for computeSignedField: 0.0879255s
+Timing for computeSignedDistanceField: 0.0895454s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109522s
+Timing for cpatResultsToArrays: 1.2548e-05s
+Timing for cpatDistanceField: 0.00152432s
+Timing for computeDistanceField: 0.00152738s
+Timing for optixAccelBuild: 0.000115093s
+Timing for buildAccelStructure: 0.000165881s
+Spherical Inside/Outside took: 0.00508287
+Timing for computeSignedField: 0.0874772s
+Timing for computeSignedDistanceField: 0.0890187s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00114441s
+Timing for cpatResultsToArrays: 1.2702e-05s
+Timing for cpatDistanceField: 0.00158009s
+Timing for computeDistanceField: 0.00158303s
+Timing for optixAccelBuild: 0.000114371s
+Timing for buildAccelStructure: 0.00017282s
+Spherical Inside/Outside took: 0.0055312
+Timing for computeSignedField: 0.0883112s
+Timing for computeSignedDistanceField: 0.0899071s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109203s
+Timing for cpatResultsToArrays: 1.2492e-05s
+Timing for cpatDistanceField: 0.00154043s
+Timing for computeDistanceField: 0.00154316s
+Timing for optixAccelBuild: 0.000144833s
+Timing for buildAccelStructure: 0.000380847s
+Spherical Inside/Outside took: 0.0057548
+Timing for computeSignedField: 0.0870222s
+Timing for computeSignedDistanceField: 0.0885786s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00167931s
+Timing for cpatResultsToArrays: 1.2418e-05s
+Timing for cpatDistanceField: 0.00210176s
+Timing for computeDistanceField: 0.0021043s
+Timing for optixAccelBuild: 0.000114543s
+Timing for buildAccelStructure: 0.000167018s
+Spherical Inside/Outside took: 0.00520999
+Timing for computeSignedField: 0.0885108s
+Timing for computeSignedDistanceField: 0.0906278s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115591s
+Timing for cpatResultsToArrays: 1.1987e-05s
+Timing for cpatDistanceField: 0.00157637s
+Timing for computeDistanceField: 0.00157912s
+Timing for optixAccelBuild: 0.00010896s
+Timing for buildAccelStructure: 0.000159989s
+Spherical Inside/Outside took: 0.00530082
+Timing for computeSignedField: 0.086101s
+Timing for computeSignedDistanceField: 0.0876922s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00122241s
+Timing for cpatResultsToArrays: 1.3491e-05s
+Timing for cpatDistanceField: 0.00166338s
+Timing for computeDistanceField: 0.00166643s
+Timing for optixAccelBuild: 0.000111365s
+Timing for buildAccelStructure: 0.000174724s
+Spherical Inside/Outside took: 0.00577455
+Timing for computeSignedField: 0.091033s
+Timing for computeSignedDistanceField: 0.0927121s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010994s
+Timing for cpatResultsToArrays: 1.1694e-05s
+Timing for cpatDistanceField: 0.00154478s
+Timing for computeDistanceField: 0.00154788s
+Timing for optixAccelBuild: 0.000116835s
+Timing for buildAccelStructure: 0.000182394s
+Spherical Inside/Outside took: 0.00542489
+Timing for computeSignedField: 0.0875459s
+Timing for computeSignedDistanceField: 0.0891068s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00225051s
+Timing for cpatResultsToArrays: 1.81e-05s
+Timing for cpatDistanceField: 0.00295761s
+Timing for computeDistanceField: 0.00296245s
+Timing for optixAccelBuild: 0.000125568s
+Timing for buildAccelStructure: 0.000385342s
+Spherical Inside/Outside took: 0.00540591
+Timing for computeSignedField: 0.0907055s
+Timing for computeSignedDistanceField: 0.0936807s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010644s
+Timing for cpatResultsToArrays: 1.2257e-05s
+Timing for cpatDistanceField: 0.0014664s
+Timing for computeDistanceField: 0.00146921s
+Timing for optixAccelBuild: 0.000121684s
+Timing for buildAccelStructure: 0.000177632s
+Spherical Inside/Outside took: 0.00504733
+Timing for computeSignedField: 0.0856231s
+Timing for computeSignedDistanceField: 0.0871045s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108981s
+Timing for cpatResultsToArrays: 1.2106e-05s
+Timing for cpatDistanceField: 0.00148668s
+Timing for computeDistanceField: 0.00148944s
+Timing for optixAccelBuild: 0.000122566s
+Timing for buildAccelStructure: 0.000179156s
+Spherical Inside/Outside took: 0.00490023
+Timing for computeSignedField: 0.0839519s
+Timing for computeSignedDistanceField: 0.085453s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00104876s
+Timing for cpatResultsToArrays: 1.1895e-05s
+Timing for cpatDistanceField: 0.00145322s
+Timing for computeDistanceField: 0.00145619s
+Timing for optixAccelBuild: 0.000107518s
+Timing for buildAccelStructure: 0.000165227s
+Spherical Inside/Outside took: 0.0047939
+Timing for computeSignedField: 0.0816809s
+Timing for computeSignedDistanceField: 0.083149s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113257s
+Timing for cpatResultsToArrays: 1.2464e-05s
+Timing for cpatDistanceField: 0.00154394s
+Timing for computeDistanceField: 0.00154671s
+Timing for optixAccelBuild: 0.00011622s
+Timing for buildAccelStructure: 0.000171547s
+Spherical Inside/Outside took: 0.00521792
+Timing for computeSignedField: 0.0912741s
+Timing for computeSignedDistanceField: 0.0928355s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00140583s
+Timing for cpatResultsToArrays: 2.5797e-05s
+Timing for cpatDistanceField: 0.00206137s
+Timing for computeDistanceField: 0.00206562s
+Timing for optixAccelBuild: 0.000117829s
+Timing for buildAccelStructure: 0.000366563s
+Spherical Inside/Outside took: 0.00514545
+Timing for computeSignedField: 0.0837007s
+Timing for computeSignedDistanceField: 0.0857785s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111827s
+Timing for cpatResultsToArrays: 1.1962e-05s
+Timing for cpatDistanceField: 0.00152819s
+Timing for computeDistanceField: 0.0015312s
+Timing for optixAccelBuild: 0.000121929s
+Timing for buildAccelStructure: 0.000182296s
+Spherical Inside/Outside took: 0.00554049
+Timing for computeSignedField: 0.0877709s
+Timing for computeSignedDistanceField: 0.0893152s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109548s
+Timing for cpatResultsToArrays: 1.2144e-05s
+Timing for cpatDistanceField: 0.00148824s
+Timing for computeDistanceField: 0.00149113s
+Timing for optixAccelBuild: 0.000121417s
+Timing for buildAccelStructure: 0.000189122s
+Spherical Inside/Outside took: 0.00527981
+Timing for computeSignedField: 0.0889221s
+Timing for computeSignedDistanceField: 0.0904266s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0014485s
+Timing for cpatResultsToArrays: 1.3423e-05s
+Timing for cpatDistanceField: 0.00187377s
+Timing for computeDistanceField: 0.001877s
+Timing for optixAccelBuild: 0.000114757s
+Timing for buildAccelStructure: 0.00016752s
+Spherical Inside/Outside took: 0.00485135
+Timing for computeSignedField: 0.090023s
+Timing for computeSignedDistanceField: 0.0919126s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112271s
+Timing for cpatResultsToArrays: 1.219e-05s
+Timing for cpatDistanceField: 0.00153073s
+Timing for computeDistanceField: 0.00153354s
+Timing for optixAccelBuild: 0.000119473s
+Timing for buildAccelStructure: 0.000168797s
+Spherical Inside/Outside took: 0.00478271
+Timing for computeSignedField: 0.0864565s
+Timing for computeSignedDistanceField: 0.0880022s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118758s
+Timing for cpatResultsToArrays: 1.3196e-05s
+Timing for cpatDistanceField: 0.00160772s
+Timing for computeDistanceField: 0.00161083s
+Timing for optixAccelBuild: 0.000121882s
+Timing for buildAccelStructure: 0.000374818s
+Spherical Inside/Outside took: 0.00511977
+Timing for computeSignedField: 0.0893612s
+Timing for computeSignedDistanceField: 0.0909857s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111392s
+Timing for cpatResultsToArrays: 1.3011e-05s
+Timing for cpatDistanceField: 0.00150501s
+Timing for computeDistanceField: 0.00150788s
+Timing for optixAccelBuild: 0.000119311s
+Timing for buildAccelStructure: 0.000193146s
+Spherical Inside/Outside took: 0.00516766
+Timing for computeSignedField: 0.0870636s
+Timing for computeSignedDistanceField: 0.0885834s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00177551s
+Timing for cpatResultsToArrays: 1.2634e-05s
+Timing for cpatDistanceField: 0.00219788s
+Timing for computeDistanceField: 0.00220117s
+Timing for optixAccelBuild: 0.000117035s
+Timing for buildAccelStructure: 0.000170683s
+Spherical Inside/Outside took: 0.00487981
+Timing for computeSignedField: 0.0925941s
+Timing for computeSignedDistanceField: 0.0948088s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108372s
+Timing for cpatResultsToArrays: 1.2927e-05s
+Timing for cpatDistanceField: 0.001518s
+Timing for computeDistanceField: 0.00152123s
+Timing for optixAccelBuild: 0.000114909s
+Timing for buildAccelStructure: 0.00016772s
+Spherical Inside/Outside took: 0.00505921
+Timing for computeSignedField: 0.0895516s
+Timing for computeSignedDistanceField: 0.0910865s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0013018s
+Timing for cpatResultsToArrays: 1.3179e-05s
+Timing for cpatDistanceField: 0.00176641s
+Timing for computeDistanceField: 0.00176958s
+Timing for optixAccelBuild: 0.000115221s
+Timing for buildAccelStructure: 0.000173228s
+Spherical Inside/Outside took: 0.00570336
+Timing for computeSignedField: 0.0966939s
+Timing for computeSignedDistanceField: 0.0984767s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111625s
+Timing for cpatResultsToArrays: 1.2489e-05s
+Timing for cpatDistanceField: 0.00152234s
+Timing for computeDistanceField: 0.00152553s
+Timing for optixAccelBuild: 0.000119928s
+Timing for buildAccelStructure: 0.000381982s
+Spherical Inside/Outside took: 0.00569119
+Timing for computeSignedField: 0.0881818s
+Timing for computeSignedDistanceField: 0.0897196s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108686s
+Timing for cpatResultsToArrays: 1.2517e-05s
+Timing for cpatDistanceField: 0.00148254s
+Timing for computeDistanceField: 0.00148518s
+Timing for optixAccelBuild: 0.000113979s
+Timing for buildAccelStructure: 0.000164331s
+Spherical Inside/Outside took: 0.00511417
+Timing for computeSignedField: 0.0918416s
+Timing for computeSignedDistanceField: 0.0933375s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00103094s
+Timing for cpatResultsToArrays: 1.2021e-05s
+Timing for cpatDistanceField: 0.00143575s
+Timing for computeDistanceField: 0.00143847s
+Timing for optixAccelBuild: 0.00011041s
+Timing for buildAccelStructure: 0.000168116s
+Spherical Inside/Outside took: 0.00514964
+Timing for computeSignedField: 0.0811296s
+Timing for computeSignedDistanceField: 0.0825793s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112099s
+Timing for cpatResultsToArrays: 1.2466e-05s
+Timing for cpatDistanceField: 0.00151783s
+Timing for computeDistanceField: 0.00152044s
+Timing for optixAccelBuild: 0.000112356s
+Timing for buildAccelStructure: 0.000175768s
+Spherical Inside/Outside took: 0.00549471
+Timing for computeSignedField: 0.0829167s
+Timing for computeSignedDistanceField: 0.0844464s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.0010543s
+Timing for cpatResultsToArrays: 1.1336e-05s
+Timing for cpatDistanceField: 0.00141967s
+Timing for computeDistanceField: 0.00142224s
+Timing for optixAccelBuild: 0.000116129s
+Timing for buildAccelStructure: 0.000188847s
+Spherical Inside/Outside took: 0.00511175
+Timing for computeSignedField: 0.0841128s
+Timing for computeSignedDistanceField: 0.0855487s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00217009s
+Timing for cpatResultsToArrays: 1.3624e-05s
+Timing for cpatDistanceField: 0.00285101s
+Timing for computeDistanceField: 0.00285601s
+Timing for optixAccelBuild: 0.000125126s
+Timing for buildAccelStructure: 0.000384272s
+Spherical Inside/Outside took: 0.00478032
+Timing for computeSignedField: 0.0894168s
+Timing for computeSignedDistanceField: 0.0922868s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110784s
+Timing for cpatResultsToArrays: 1.307e-05s
+Timing for cpatDistanceField: 0.001534s
+Timing for computeDistanceField: 0.00153693s
+Timing for optixAccelBuild: 0.000133993s
+Timing for buildAccelStructure: 0.00018742s
+Spherical Inside/Outside took: 0.00460341
+Timing for computeSignedField: 0.0866184s
+Timing for computeSignedDistanceField: 0.0881683s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00120078s
+Timing for cpatResultsToArrays: 1.2713e-05s
+Timing for cpatDistanceField: 0.00162486s
+Timing for computeDistanceField: 0.00162779s
+Timing for optixAccelBuild: 0.000124184s
+Timing for buildAccelStructure: 0.000178083s
+Spherical Inside/Outside took: 0.0053913
+Timing for computeSignedField: 0.091135s
+Timing for computeSignedDistanceField: 0.0927775s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00113702s
+Timing for cpatResultsToArrays: 1.2819e-05s
+Timing for cpatDistanceField: 0.00156685s
+Timing for computeDistanceField: 0.00156982s
+Timing for optixAccelBuild: 0.000112988s
+Timing for buildAccelStructure: 0.000166842s
+Spherical Inside/Outside took: 0.00513695
+Timing for computeSignedField: 0.0880815s
+Timing for computeSignedDistanceField: 0.0896661s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00660727s
+Timing for cpatResultsToArrays: 1.2171e-05s
+Timing for cpatDistanceField: 0.00703363s
+Timing for computeDistanceField: 0.00703646s
+Timing for optixAccelBuild: 0.000112856s
+Timing for buildAccelStructure: 0.000161478s
+Spherical Inside/Outside took: 0.00470885
+Timing for computeSignedField: 0.0868912s
+Timing for computeSignedDistanceField: 0.0939402s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00138288s
+Timing for cpatResultsToArrays: 1.3508e-05s
+Timing for cpatDistanceField: 0.00202608s
+Timing for computeDistanceField: 0.00203031s
+Timing for optixAccelBuild: 0.00012718s
+Timing for buildAccelStructure: 0.00170209s
+Spherical Inside/Outside took: 0.00460756
+Timing for computeSignedField: 0.0873944s
+Timing for computeSignedDistanceField: 0.0894375s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118065s
+Timing for cpatResultsToArrays: 1.2201e-05s
+Timing for cpatDistanceField: 0.00158716s
+Timing for computeDistanceField: 0.0015902s
+Timing for optixAccelBuild: 0.000114232s
+Timing for buildAccelStructure: 0.000173528s
+Spherical Inside/Outside took: 0.00550177
+Timing for computeSignedField: 0.088306s
+Timing for computeSignedDistanceField: 0.0899096s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00106553s
+Timing for cpatResultsToArrays: 1.1843e-05s
+Timing for cpatDistanceField: 0.00147206s
+Timing for computeDistanceField: 0.00147483s
+Timing for optixAccelBuild: 0.000107231s
+Timing for buildAccelStructure: 0.000172108s
+Spherical Inside/Outside took: 0.00507487
+Timing for computeSignedField: 0.0846444s
+Timing for computeSignedDistanceField: 0.0861309s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00122329s
+Timing for cpatResultsToArrays: 1.9688e-05s
+Timing for cpatDistanceField: 0.00167336s
+Timing for computeDistanceField: 0.00167645s
+Timing for optixAccelBuild: 0.000126631s
+Timing for buildAccelStructure: 0.000184813s
+Spherical Inside/Outside took: 0.00509234
+Timing for computeSignedField: 0.0927899s
+Timing for computeSignedDistanceField: 0.0944821s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108195s
+Timing for cpatResultsToArrays: 1.2544e-05s
+Timing for cpatDistanceField: 0.00149688s
+Timing for computeDistanceField: 0.00149974s
+Timing for optixAccelBuild: 0.00011506s
+Timing for buildAccelStructure: 0.000168787s
+Spherical Inside/Outside took: 0.00478656
+Timing for computeSignedField: 0.0871454s
+Timing for computeSignedDistanceField: 0.0886567s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00116316s
+Timing for cpatResultsToArrays: 1.2942e-05s
+Timing for cpatDistanceField: 0.00158775s
+Timing for computeDistanceField: 0.00159077s
+Timing for optixAccelBuild: 0.0001246s
+Timing for buildAccelStructure: 0.000663599s
+Spherical Inside/Outside took: 0.00542717
+Timing for computeSignedField: 0.0894055s
+Timing for computeSignedDistanceField: 0.0910107s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111831s
+Timing for cpatResultsToArrays: 1.2342e-05s
+Timing for cpatDistanceField: 0.00156354s
+Timing for computeDistanceField: 0.00156632s
+Timing for optixAccelBuild: 0.000119946s
+Timing for buildAccelStructure: 0.000180243s
+Spherical Inside/Outside took: 0.00509162
+Timing for computeSignedField: 0.0876964s
+Timing for computeSignedDistanceField: 0.0892758s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00179424s
+Timing for cpatResultsToArrays: 1.245e-05s
+Timing for cpatDistanceField: 0.00221184s
+Timing for computeDistanceField: 0.00221489s
+Timing for optixAccelBuild: 0.000115271s
+Timing for buildAccelStructure: 0.000168815s
+Spherical Inside/Outside took: 0.00522324
+Timing for computeSignedField: 0.0888715s
+Timing for computeSignedDistanceField: 0.0910997s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108311s
+Timing for cpatResultsToArrays: 1.1858e-05s
+Timing for cpatDistanceField: 0.00151441s
+Timing for computeDistanceField: 0.0015174s
+Timing for optixAccelBuild: 0.000116863s
+Timing for buildAccelStructure: 0.000172474s
+Spherical Inside/Outside took: 0.00532238
+Timing for computeSignedField: 0.0870153s
+Timing for computeSignedDistanceField: 0.0885466s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00119082s
+Timing for cpatResultsToArrays: 1.4121e-05s
+Timing for cpatDistanceField: 0.00161143s
+Timing for computeDistanceField: 0.00161478s
+Timing for optixAccelBuild: 0.000113016s
+Timing for buildAccelStructure: 0.000180535s
+Spherical Inside/Outside took: 0.00518787
+Timing for computeSignedField: 0.0901188s
+Timing for computeSignedDistanceField: 0.0917475s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107778s
+Timing for cpatResultsToArrays: 1.2569e-05s
+Timing for cpatDistanceField: 0.00147345s
+Timing for computeDistanceField: 0.00147637s
+Timing for optixAccelBuild: 0.000120194s
+Timing for buildAccelStructure: 0.000368655s
+Spherical Inside/Outside took: 0.00536929
+Timing for computeSignedField: 0.0864363s
+Timing for computeSignedDistanceField: 0.0879256s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00203969s
+Timing for cpatResultsToArrays: 1.3681e-05s
+Timing for cpatDistanceField: 0.00247066s
+Timing for computeDistanceField: 0.00247455s
+Timing for optixAccelBuild: 0.000115554s
+Timing for buildAccelStructure: 0.000168927s
+Spherical Inside/Outside took: 0.00489467
+Timing for computeSignedField: 0.101612s
+Timing for computeSignedDistanceField: 0.104101s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112756s
+Timing for cpatResultsToArrays: 1.3198e-05s
+Timing for cpatDistanceField: 0.00154059s
+Timing for computeDistanceField: 0.00154341s
+Timing for optixAccelBuild: 0.000116525s
+Timing for buildAccelStructure: 0.000171294s
+Spherical Inside/Outside took: 0.00507187
+Timing for computeSignedField: 0.0863408s
+Timing for computeSignedDistanceField: 0.0878975s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118688s
+Timing for cpatResultsToArrays: 1.3045e-05s
+Timing for cpatDistanceField: 0.00160618s
+Timing for computeDistanceField: 0.00160946s
+Timing for optixAccelBuild: 0.000138674s
+Timing for buildAccelStructure: 0.000201964s
+Spherical Inside/Outside took: 0.00546852
+Timing for computeSignedField: 0.0960164s
+Timing for computeSignedDistanceField: 0.0976406s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107984s
+Timing for cpatResultsToArrays: 1.2817e-05s
+Timing for cpatDistanceField: 0.00147815s
+Timing for computeDistanceField: 0.00148098s
+Timing for optixAccelBuild: 0.00011119s
+Timing for buildAccelStructure: 0.000166218s
+Spherical Inside/Outside took: 0.00534554
+Timing for computeSignedField: 0.0859528s
+Timing for computeSignedDistanceField: 0.0874454s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00253428s
+Timing for cpatResultsToArrays: 1.5138e-05s
+Timing for cpatDistanceField: 0.00325718s
+Timing for computeDistanceField: 0.00326231s
+Timing for optixAccelBuild: 0.000120597s
+Timing for buildAccelStructure: 0.000361164s
+Spherical Inside/Outside took: 0.00482612
+Timing for computeSignedField: 0.0949943s
+Timing for computeSignedDistanceField: 0.0982692s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00112436s
+Timing for cpatResultsToArrays: 1.2226e-05s
+Timing for cpatDistanceField: 0.00156116s
+Timing for computeDistanceField: 0.00156395s
+Timing for optixAccelBuild: 0.000111577s
+Timing for buildAccelStructure: 0.000161646s
+Spherical Inside/Outside took: 0.00465354
+Timing for computeSignedField: 0.0856077s
+Timing for computeSignedDistanceField: 0.0871847s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.001197s
+Timing for cpatResultsToArrays: 1.3112e-05s
+Timing for cpatDistanceField: 0.0015844s
+Timing for computeDistanceField: 0.00158745s
+Timing for optixAccelBuild: 0.000114545s
+Timing for buildAccelStructure: 0.000173566s
+Spherical Inside/Outside took: 0.00527425
+Timing for computeSignedField: 0.0883549s
+Timing for computeSignedDistanceField: 0.0899547s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110149s
+Timing for cpatResultsToArrays: 1.199e-05s
+Timing for cpatDistanceField: 0.00146951s
+Timing for computeDistanceField: 0.00147257s
+Timing for optixAccelBuild: 0.000122724s
+Timing for buildAccelStructure: 0.00017995s
+Spherical Inside/Outside took: 0.00480419
+Timing for computeSignedField: 0.0848741s
+Timing for computeSignedDistanceField: 0.0863587s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00169916s
+Timing for cpatResultsToArrays: 1.5176e-05s
+Timing for cpatDistanceField: 0.00213262s
+Timing for computeDistanceField: 0.00213572s
+Timing for optixAccelBuild: 0.000113097s
+Timing for buildAccelStructure: 0.000166842s
+Spherical Inside/Outside took: 0.00499757
+Timing for computeSignedField: 0.0908537s
+Timing for computeSignedDistanceField: 0.0930025s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00145829s
+Timing for cpatResultsToArrays: 1.3308e-05s
+Timing for cpatDistanceField: 0.00212729s
+Timing for computeDistanceField: 0.00213184s
+Timing for optixAccelBuild: 0.000121347s
+Timing for buildAccelStructure: 0.00038362s
+Spherical Inside/Outside took: 0.00467615
+Timing for computeSignedField: 0.0880201s
+Timing for computeSignedDistanceField: 0.0901655s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118309s
+Timing for cpatResultsToArrays: 1.4051e-05s
+Timing for cpatDistanceField: 0.00157812s
+Timing for computeDistanceField: 0.00158151s
+Timing for optixAccelBuild: 0.000116791s
+Timing for buildAccelStructure: 0.000174188s
+Spherical Inside/Outside took: 0.00512648
+Timing for computeSignedField: 0.0896683s
+Timing for computeSignedDistanceField: 0.091265s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00108932s
+Timing for cpatResultsToArrays: 1.2188e-05s
+Timing for cpatDistanceField: 0.00149984s
+Timing for computeDistanceField: 0.00150272s
+Timing for optixAccelBuild: 0.000114761s
+Timing for buildAccelStructure: 0.000171972s
+Spherical Inside/Outside took: 0.0047639
+Timing for computeSignedField: 0.0862659s
+Timing for computeSignedDistanceField: 0.0877822s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00116755s
+Timing for cpatResultsToArrays: 1.3843e-05s
+Timing for cpatDistanceField: 0.00160998s
+Timing for computeDistanceField: 0.00161326s
+Timing for optixAccelBuild: 0.000118101s
+Timing for buildAccelStructure: 0.00017083s
+Spherical Inside/Outside took: 0.00530537
+Timing for computeSignedField: 0.0926758s
+Timing for computeSignedDistanceField: 0.0943037s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00111035s
+Timing for cpatResultsToArrays: 1.3155e-05s
+Timing for cpatDistanceField: 0.00155764s
+Timing for computeDistanceField: 0.00156059s
+Timing for optixAccelBuild: 0.000115742s
+Timing for buildAccelStructure: 0.000167588s
+Spherical Inside/Outside took: 0.00529014
+Timing for computeSignedField: 0.0867519s
+Timing for computeSignedDistanceField: 0.0883261s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00156623s
+Timing for cpatResultsToArrays: 1.5517e-05s
+Timing for cpatDistanceField: 0.00197645s
+Timing for computeDistanceField: 0.00197954s
+Timing for optixAccelBuild: 0.000121791s
+Timing for buildAccelStructure: 0.000378816s
+Spherical Inside/Outside took: 0.00505092
+Timing for computeSignedField: 0.0893325s
+Timing for computeSignedDistanceField: 0.0913259s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110555s
+Timing for cpatResultsToArrays: 1.262e-05s
+Timing for cpatDistanceField: 0.00148989s
+Timing for computeDistanceField: 0.00149284s
+Timing for optixAccelBuild: 0.000123575s
+Timing for buildAccelStructure: 0.00018222s
+Spherical Inside/Outside took: 0.005213
+Timing for computeSignedField: 0.0871923s
+Timing for computeSignedDistanceField: 0.0886993s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00176605s
+Timing for cpatResultsToArrays: 1.6731e-05s
+Timing for cpatDistanceField: 0.00218423s
+Timing for computeDistanceField: 0.00218765s
+Timing for optixAccelBuild: 0.00011874s
+Timing for buildAccelStructure: 0.00017425s
+Spherical Inside/Outside took: 0.00532925
+Timing for computeSignedField: 0.0898587s
+Timing for computeSignedDistanceField: 0.0920606s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00110842s
+Timing for cpatResultsToArrays: 1.2207e-05s
+Timing for cpatDistanceField: 0.00153929s
+Timing for computeDistanceField: 0.00154266s
+Timing for optixAccelBuild: 0.000111577s
+Timing for buildAccelStructure: 0.000162395s
+Spherical Inside/Outside took: 0.00525541
+Timing for computeSignedField: 0.0868156s
+Timing for computeSignedDistanceField: 0.0883731s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00118011s
+Timing for cpatResultsToArrays: 1.3032e-05s
+Timing for cpatDistanceField: 0.00157382s
+Timing for computeDistanceField: 0.00157686s
+Timing for optixAccelBuild: 0.000122162s
+Timing for buildAccelStructure: 0.000181639s
+Spherical Inside/Outside took: 0.0055662
+Timing for computeSignedField: 0.0889146s
+Timing for computeSignedDistanceField: 0.0905055s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109967s
+Timing for cpatResultsToArrays: 1.1943e-05s
+Timing for cpatDistanceField: 0.00148211s
+Timing for computeDistanceField: 0.00148504s
+Timing for optixAccelBuild: 0.000140518s
+Timing for buildAccelStructure: 0.00042677s
+Spherical Inside/Outside took: 0.00531887
+Timing for computeSignedField: 0.0881569s
+Timing for computeSignedDistanceField: 0.0896539s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00194146s
+Timing for cpatResultsToArrays: 1.3975e-05s
+Timing for cpatDistanceField: 0.00236443s
+Timing for computeDistanceField: 0.00236766s
+Timing for optixAccelBuild: 0.000118002s
+Timing for buildAccelStructure: 0.000172582s
+Spherical Inside/Outside took: 0.00483057
+Timing for computeSignedField: 0.0895909s
+Timing for computeSignedDistanceField: 0.0919709s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00107777s
+Timing for cpatResultsToArrays: 1.2839e-05s
+Timing for cpatDistanceField: 0.00150567s
+Timing for computeDistanceField: 0.00150863s
+Timing for optixAccelBuild: 0.000115683s
+Timing for buildAccelStructure: 0.000169012s
+Spherical Inside/Outside took: 0.0047042
+Timing for computeSignedField: 0.084742s
+Timing for computeSignedDistanceField: 0.0862639s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00115185s
+Timing for cpatResultsToArrays: 1.2815e-05s
+Timing for cpatDistanceField: 0.00155618s
+Timing for computeDistanceField: 0.00155933s
+Timing for optixAccelBuild: 0.000122995s
+Timing for buildAccelStructure: 0.000190314s
+Spherical Inside/Outside took: 0.00484545
+Timing for computeSignedField: 0.0865277s
+Timing for computeSignedDistanceField: 0.0880994s
+NUM Triangles: 2668
+Timing for Build CPAT Model (build bvh): 0.00109711s
+Timing for cpatResultsToArrays: 1.1792e-05s
+Timing for cpatDistanceField: 0.00149909s
+Timing for computeDistanceField: 0.00150177s
+Timing for optixAccelBuild: 0.000111044s
+Timing for buildAccelStructure: 0.000164255s
+Spherical Inside/Outside took: 0.0047264
+Timing for computeSignedField: 0.0844177s
+Timing for computeSignedDistanceField: 0.0859324s
+[5.32510934 0.         0.        ]
+[-1.05  2.55]  L:  7.1832924  D:  1.2030823  Obj:  29357.992553889333
+[15.72531494  0.          0.45      ]
+[-2.4   3.45]  L:  17.583498  D:  1.2230275  Obj:  249489.25295612312
+[13.36761994  0.          0.45      ]
+[-0.6   3.45]  L:  15.225803  D:  0.88757473  Obj:  180896.6504064838
+[10.17910794  0.          0.45      ]
+[-1.05  3.45]  L:  12.037291  D:  0.7103657  Obj:  105817.44879814479
+[11.83780194  0.          0.9       ]
+[-1.05  3.9 ]  L:  13.695985  D:  -0.22614479  Obj:  142943.32860061122
+[3.68019294 0.         0.        ]
+[-1.5  2.1]  L:  5.538376  D:  1.0819203  Obj:  14544.901988070851
+[11.78750194  0.          0.        ]
+[-1.95  2.55]  L:  13.645685  D:  0.5092253  Obj:  139945.71118564456
+[9.32269194 0.         0.        ]
+[-0.6   2.55]  L:  11.180875  D:  0.43020642  Obj:  87913.01519466266
+[6.06082324 0.         0.9       ]
+[-1.95  3.9 ]  L:  7.9190063  D:  0.088550866  Obj:  39543.666884453894
+[9.41289894 0.         0.        ]
+[-1.05  3.  ]  L:  11.271082  D:  -0.29707187  Obj:  89602.36936269228
+[6.16423294 0.         0.        ]
+[-0.6  2.1]  L:  8.022416  D:  1.6478229  Obj:  38999.41554832412
+[12.47024594  0.          0.        ]
+[-2.4  3. ]  L:  14.328429  D:  0.8105258  Obj:  156507.84430327005
+[10.20248794  0.          0.9       ]
+[-0.6  3.9]  L:  12.060671  D:  1.605077  Obj:  106902.36522106928
+[9.48023194 0.         0.45      ]
+[-1.5   3.45]  L:  11.338415  D:  0.9190256  Obj:  92078.21664156155
+[11.92858894  0.          0.        ]
+[-2.4  2.1]  L:  13.786772  D:  0.17291993  Obj:  143291.40699395997
+[12.68220394  0.          0.9       ]
+[-2.4  3.9]  L:  14.540387  D:  0.93494904  Obj:  163649.23169772266
+[4.76055494 0.         0.        ]
+[-1.5   2.55]  L:  6.618738  D:  0.81858534  Obj:  23663.70191193748
+[5.74181544 0.         0.        ]
+[-1.05  2.1 ]  L:  7.5999985  D:  0.82052445  Obj:  33969.26505921707
+[12.87410494  0.          0.45      ]
+[-1.95  3.45]  L:  14.732288  D:  0.59706503  Obj:  167945.67504368396
+[11.43408794  0.          0.        ]
+[-0.6  3. ]  L:  13.292271  D:  0.5254909  Obj:  131738.89248614857
+[4.62135724 0.         0.        ]
+[-1.95  2.1 ]  L:  6.4795403  D:  1.0037587  Obj:  22357.946488536603
+[4.45332394 0.         0.        ]
+[-1.5  3. ]  L:  6.311507  D:  1.0589198  Obj:  20833.153024871957
+[12.83227894  0.          0.        ]
+[-1.95  3.  ]  L:  14.690462  D:  0.7805122  Obj:  165668.16327877835
+[8.22676644 0.         0.9       ]
+[-1.5  3.9]  L:  10.0849495  D:  1.1390473  Obj:  70490.82508805112
+[10.70484894  0.          0.        ]
+[-2.4   2.55]  L:  12.563032  D:  0.93657976  Obj:  115594.72738513074
+[-1.5  2.1]
+lift:  5.538376  drag:  1.0819203
+[08:58:10] - attempting to initialize network from /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k
+[08:58:10] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_p.0.pth
+[08:58:10] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_tau.0.pth
+[08:58:10] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_p.0.pth
+[08:58:10] - Success loading model: /scratch/users/domyam/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_100k/deepo_tau.0.pth
+[08:58:11] - [step:     100000] record monitor time:  1.041e+00s
+[9.50816094 0.         0.        ]
+[-1.77  1.83]  L:  11.366344  D:  1.0502403  Obj:  91406.17468094747
+[11.83411194  0.          0.        ]
+[-1.5    2.235]  L:  13.692295  D:  0.61095273  Obj:  141046.81633592185
+[13.21926294  0.          0.        ]
+[-1.5  2.1]  L:  15.077446  D:  1.1830254  Obj:  175750.09567404227
+[8.40409094 0.         0.        ]
+[-1.77   1.965]  L:  10.262274  D:  0.52656156  Obj:  71629.27107141238
+[14.31348194  0.          0.        ]
+[-1.23  2.1 ]  L:  16.171665  D:  1.2636117  Obj:  205877.02882785554
+[10.89574994  0.          0.        ]
+[-1.5    1.965]  L:  12.753933  D:  0.3750322  Obj:  119717.74176395415
+[11.14721094  0.          0.        ]
+[-1.635  1.83 ]  L:  13.005394  D:  1.2492213  Obj:  125261.5609383631
+[10.90871294  0.          0.        ]
+[-1.5   2.37]  L:  12.766896  D:  1.9051449  Obj:  120001.9231289399
+[13.61467694  0.          0.        ]
+[-1.5   1.83]  L:  15.47286  D:  0.9127483  Obj:  186360.34089980868
+[11.81213894  0.          0.        ]
+[-1.23  1.83]  L:  13.670322  D:  0.74463904  Obj:  140527.37095169252
+[13.23498294  0.          0.        ]
+[-1.23  2.37]  L:  15.093166  D:  1.6230485  Obj:  176166.39644234237
+[10.96157994  0.          0.        ]
+[-1.77  2.37]  L:  12.819763  D:  1.0698794  Obj:  121157.30463701402
+[13.56859194  0.          0.        ]
+[-1.365  2.235]  L:  15.426775  D:  1.242627  Obj:  185107.9298322722
+[10.30615194  0.          0.        ]
+[-1.635  1.965]  L:  12.164335  D:  0.74332744  Obj:  107217.51111580832
+[11.69987894  0.          0.        ]
+[-1.365  2.1  ]  L:  13.558062  D:  0.22610095  Obj:  137887.39328663336
+[11.18717194  0.          0.        ]
+[-1.635  2.1  ]  L:  13.045355  D:  0.94666195  Obj:  126153.76265319553
+[10.45582894  0.          0.        ]
+[-1.635  2.235]  L:  12.314012  D:  1.5162389  Obj:  110325.87503912461
+[10.12108294  0.          0.        ]
+[-1.635  2.37 ]  L:  11.979266  D:  1.2733815  Obj:  103437.59323825662
+[11.72809594  0.          0.        ]
+[-1.365  2.37 ]  L:  13.586279  D:  1.239646  Obj:  138549.47399881203
+[8.15294594 0.         0.        ]
+[-1.365  1.83 ]  L:  10.011129  D:  1.0604967  Obj:  67471.58797986088
+[6.81309994 0.         0.        ]
+[-1.365  1.965]  L:  8.671283  D:  1.2009073  Obj:  47419.53168518615
+[14.48572894  0.          0.        ]
+[-1.23   2.235]  L:  16.343912  D:  0.43697017  Obj:  210836.77986240524
+[10.46786494  0.          0.        ]
+[-1.23   1.965]  L:  12.326048  D:  1.7877619  Obj:  110577.98414163863
+[12.86340294  0.          0.        ]
+[-1.77  2.1 ]  L:  14.721586  D:  0.7143578  Obj:  166467.849527145
+[11.67961994  0.          0.        ]
+[-1.77   2.235]  L:  13.537803  D:  1.0174835  Obj:  137414.5394014167
+[-1.365  1.965]
+lift:  8.671283  drag:  1.2009073
+Total Time Batch, NN (s):  834.874636888504
+NN Result:
+[-1.365  1.965]
+lift:  8.671283  drag:  1.2009073
