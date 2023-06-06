@@ -1,0 +1,69 @@
+# Created by https://www.toptal.com/developers/gitignore/api/openfoam
+# Edit at https://www.toptal.com/developers/gitignore?templates=openfoam
+
+### OpenFOAM ###
+# Timestep directories
+0.*
+[1-9]*
+
+# Fields that must get ignored
+*/phi*
+*/meshPhi*
+
+# Decomposed domain
+processor*
+
+# logfiles
+log.*
+*log
+
+# paraview/ParaFoam
+*.foam
+*.OpenFOAM
+*.pvsm
+
+# mesh data that is no dictionary
+OpenFoam/constant/polyMesh/points*
+OpenFoam/constant/polyMesh/faces*
+OpenFoam/constant/polyMesh/owner*
+OpenFoam/constant/polyMesh/neighbour*
+OpenFoam/constant/polyMesh/boundary*
+OpenFoam/constant/polyMesh/sets
+OpenFoam/constant/polyMesh/*
+OpenFoam/constant/extendedFeatureEdgeMesh*
+
+# Zones and levels
+*Level*
+*Zone*
+
+# snappyHexMesh files that are not snappyHexMeshDict
+OpenFoam/constant/polyMesh/refinementHistory*
+OpenFoam/constant/polyMesh/surfaceIndex*
+OpenFoam/constant/triSurface
+
+# function object and post-processing data
+OpenFoam/forces
+OpenFoam/postProcessing
+
+# OpenFoam VTK outputs
+OpenFoam/VTK*
+
+#exclude important folders and files:
+!OpenFoam/0.orig*
+!OpenFoam/constant/thermophysicalProperties
+!OpenFoam/constant/turbulenceProperties
+!OpenFoam/system*
+!.gitignore
+
+# End of https://www.toptal.com/developers/gitignore/api/openfoam
+
+*.out
+*.err
+*.stl
+*.ruse
+*.sbatch
+
+
+direct_opt/outputs*
+modulus/outputs*
+*/__pycache__.*
