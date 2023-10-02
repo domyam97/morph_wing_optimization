@@ -21,17 +21,17 @@ defaults :
   - /arch/deeponet_cfg@arch.deeponet_uvw
   - /arch/deeponet_cfg@arch.deeponet_p
   - /arch/deeponet_cfg@arch.deeponet_nuT
-  - scheduler: tf_exponential_lr
+  - scheduler: exponential_lr
   - optimizer: adam
-  - loss: res_norm
+  - loss: sum
   - _self_
 
 arch:
   branch_p:
-    nr_layers: 4
+    nr_layers: 3
     layer_size: 128
   branch_nuT:
-    nr_layers: 4
+    nr_layers: 2
     layer_size: 128
   branch_uvw:
     nr_layers: 4
@@ -44,25 +44,39 @@ arch:
   deeponet_p:
     output_keys: p
   deeponet_nuT:
-    output_keys: nuT
+    output_keys: nut
 
 scheduler:
-  decay_rate: 0.9
-  decay_steps: 2000
+  gamma: 0.99999771
+#  decay_steps: 2000
 
 
 training:
-  rec_validation_freq: 5000
-  rec_constraint_freq: 2000
-  max_steps: 50000
+  rec_validation_freq: 10000
+  rec_constraint_freq: 5000
+  max_steps: 500000
 
 
 batch_size:
-  train: 7000
-  lr_phys: 500
-  validation: 3000
+  train: 3072
+  phys_train: 3072
+  validation: 3072
 
+loss:
+  weights:
+    nu: 1.0e8
+    u: 10.0
+    v: 10.0
+    w: 100.0
+    p: 1.0e5
 
+custom:
+  Vinf: 12.0
+  alpha: 8.0
+  d1: 3.0
+  d2: -3.0
+  
+run_mode: 'train'
 
 save_filetypes: "npy"
 

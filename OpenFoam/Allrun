@@ -4,7 +4,7 @@ cd "${0%/*}" || exit		# Run from this directory
 
 blockMesh
 
-surfaceTransformPoints  -rotate-y $AOA  constant/triSurface/def-morphWing.stl constant/triSurface/morphWingTran.stl > log
+surfaceTransformPoints  -auto-centre -rotate-y $AOA  constant/triSurface/def-morphWing.stl constant/triSurface/morphWingTran.stl > log
 
 surfaceFeatureExtract >> log
 

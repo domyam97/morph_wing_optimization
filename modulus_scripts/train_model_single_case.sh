@@ -2,6 +2,9 @@
 
 pip3 install nvidia-modulus-sym --user -q
 
+mkdir /tmp/data
+mkdir /tmp/stls
+
 host=$HOSTNAME
 echo $host
 

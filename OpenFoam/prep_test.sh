@@ -3,6 +3,9 @@
 export AOA=$(cat aoa.txt)
 export Vinf=$(cat vinf.txt)
 
+echo $AOA
+echo $Vinf
+
 source /usr/lib/openfoam/openfoam2212/etc/bashrc
 
 ./Allclean
@@ -15,6 +18,7 @@ surfaceTransformPoints  -rotate-y $AOA constant/triSurface/def-morphWing.stl con
 echo "Extracting Features"
 surfaceFeatureExtract >> log.surfaceFeature
 
+# Comment out to prevent parallel decompose 
 decomposePar > log.decomposePar
 
 echo "Creating 0 dirs"

@@ -25,13 +25,13 @@ defaults :
   - _self_
 
 arch:
+  trunk:
+    nr_layers: 4
+    layer_size: 128
   branch_p:
     nr_layers: 4
     layer_size: 128
   branch_tau:
-    nr_layers: 4
-    layer_size: 128
-  trunk:
     nr_layers: 4
     layer_size: 128
   deeponet_tau:
@@ -40,14 +40,14 @@ arch:
     output_keys: p
 
 scheduler:
-  T_0: 15000
+  T_0: 20000
   T_mult: 2
-  eta_min: 0.00005
+  eta_min: 0.00001
 
 training:
   rec_validation_freq: 5000
-  rec_constraint_freq: 2000
-  max_steps: 100000
+  rec_constraint_freq: 500
+  max_steps: 500000
 
 
 batch_size:
@@ -56,17 +56,18 @@ batch_size:
   
 loss:
   weights:
-      tau_x:1000
-      tau_z:1000
-  
+    tau_x: 10000.0
+    tau_y: 10000.0
+    tau_z: 10000.0
+    p: 2.0
   
 custom:
-  d1: 0.0
-  d2: 0.0
   Vinf: 14.0
   alpha: 3.0
+  d1: 0.0
+  d2: 0.0
   
-run_mode: 'eval'
+run_mode: 'train'
 
 save_filetypes: "npy"
 

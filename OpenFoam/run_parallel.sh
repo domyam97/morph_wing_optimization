@@ -2,6 +2,9 @@
 
 source /usr/lib/openfoam/openfoam2212/etc/bashrc
 
+export AOA=$(cat aoa.txt)
+export Vinf=$(cat vinf.txt)
+
 echo "Meshing"
 mpirun snappyHexMesh -overwrite -parallel > log.snappyHexMesh
 

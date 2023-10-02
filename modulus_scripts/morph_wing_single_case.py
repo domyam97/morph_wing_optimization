@@ -3,11 +3,12 @@ import warnings
 import sys
 import gc
 
-sys.path.append('../modulus')
-from airfoilgen import make_STL
-
 import numpy as np
 import torch
+
+
+sys.path.append('../modulus_scripts')
+from airfoilgen import make_STL
 
 import modulus.sym
 from modulus.sym.hydra import to_absolute_path, instantiate_arch, ModulusConfig
@@ -15,37 +16,53 @@ from modulus.sym.solver import Solver
 from modulus.sym.domain import Domain
 
 from modulus.sym.geometry.tessellation import Tessellation
+from modulus.sym.geometry.primitives_3d import Box
 from modulus.sym.utils.io.vtk import *
 from modulus.sym.utils.io import csv_to_dict
 
 from modulus.sym.models.fully_connected import FullyConnectedArch
 from modulus.sym.models.deeponet import DeepONetArch
 
+from modulus.sym.eq.pdes.navier_stokes import NavierStokes
+
 from modulus.sym.domain.constraint.continuous import DeepONetConstraint
 from modulus.sym.domain.validator.discrete import GridValidator
 from modulus.sym.dataset.discrete import DictGridDataset
 
 from modulus.sym.domain.monitor import PointwiseMonitor
+from modulus.sym.domain.inferencer import PointwiseInferencer
 
 from modulus.sym.key import Key
 
 from sympy import Symbol, Eq, Lt
 
-n_points = 6000
+n_points = 16384
+n_points_vol = 16384*4
+
+rng = np.random.default_rng()
 
 def get_eval_sample_points(d1, d2, aoa):
     wing = None
-    filename = "/tmp/stls/def_{:.5f}_{:.5f}_wing.stl"
+    filename = os.path.expandvars("${SCRATCH}/stls/def_{:.3f}_{:.3f}_wing.stl")
     if os.path.isfile(filename.format(d1,d2)):
         pass
     else:
         make_STL([d1,d2],filename.format(d1,d2))
     wing = Tessellation.from_stl(filename.format(d1,d2))
-    wing = wing.rotate(np.deg2rad(aoa),axis='y')
-    wing = wing.scale(scale["len"])
+    wing = wing.rotate(-1*np.deg2rad(aoa),axis='y')
+    box =  Box(point_1=(-0.3, -0.6, -0.2), point_2=(0.7, 0, 0.2))
+    
+    vol = box-wing
+    vol = vol.scale(1/scale["len"])
+    wing = wing.scale(1/scale["len"])
     
     y = Symbol('y')
-    s = wing.sample_boundary(n_points, criteria=Lt(y, -0.002))
+    
+    s = {"vol":None, "surf":None}
+    
+    s["vol"] = vol.sample_interior(n_points_vol, quasirandom=True)
+    s["surf"] = wing.sample_boundary(n_points, quasirandom=True)
+    print(s.keys())
     return s
 
 rng = np.random.default_rng(0)
@@ -65,7 +82,7 @@ def set_scale(len_scale, den_scale, vel_scale, angle_scale):
         "angle":angle_scale,
     }
 
-def load_data(res_path, csv_name, n_train=50, n_test=10):
+def load_data(cfg, res_path, csv_name, n_train=50, n_test=10):
     if os.path.isfile("/tmp/data/data.npz"):
         data = np.load("/tmp/data/data.npz")
     else:
@@ -92,21 +109,17 @@ def load_data(res_path, csv_name, n_train=50, n_test=10):
         z_train = np.ndarray((0,1))
         # Branch Inputs
         params_train = np.ndarray((0,4))
-        #V_train = np.ndarray((0,1))
-        #alpha_train = np.ndarray((0,1))
-        #d1_train = np.ndarray((0,1))
-        #d2_train = np.ndarray((0,1))
         
         # Outputs
-        tau_x_train = np.ndarray((0,1))
-        tau_y_train = np.ndarray((0,1))
-        tau_z_train = np.ndarray((0,1))
+        nuT_train = np.ndarray((0,1))
         p_train = np.ndarray((0,1))
-        #nuT_train = np.ndarray((0,1))
+        u_train = np.ndarray((0,1))
+        v_train = np.ndarray((0,1))
+        w_train = np.ndarray((0,1))
         #tau_train = np.ndarray((0,3))
     
         for i in range(n_train):
-            vtk_obj = VTKFromFile(res_path+'/'+csv_data[i]["folder"]+'/wing.vtp')
+            vtk_obj = VTKFromFile(res_path+'/'+csv_data[i]["folder"]+'/internal.vtu')
             # Get Points
             points = vtk_obj.get_points()
             x_train = np.concatenate((x_train, points[:,0].reshape((points.shape[0],1))/len_scale), axis = 0)
@@ -116,21 +129,17 @@ def load_data(res_path, csv_name, n_train=50, n_test=10):
             params = np.array([csv_data[i]["V"]/vel_scale,csv_data[i]["alpha"]/angle_scale,
                 csv_data[i]["d1"]/angle_scale,csv_data[i]["d2"]/angle_scale])
             params_train = np.concatenate((params_train, np.full((points.shape[0],4),params)), axis = 0) 
-            #V_train  = np.concatenate((V_train,np.ones((points.shape[0],1))*csv_data[i]["V"]),axis = 0)
-            #alpha_train  = np.concatenate((alpha_train,np.ones((points.shape[0],1))*csv_data[i]["alpha"]),axis = 0)
-            #d1_train  = np.concatenate((d1_train,np.ones((points.shape[0],1))*csv_data[i]["d1"]),axis = 0)
-            #d2_train  = np.concatenate((d2_train,np.ones((points.shape[0],1))*csv_data[i]["d2"]),axis = 0)
      
             # Get Outputs
-            # Pa = kg/(m*s^2)
-            tau_x_train = np.concatenate((tau_x_train,vtk_obj.get_array("wallShearStress")[:,0]
-                            .reshape((points.shape[0],1))*(time_scale**2)*len_scale/mass_scale), axis=0)
-            tau_y_train = np.concatenate((tau_y_train,vtk_obj.get_array("wallShearStress")[:,1]
-                            .reshape((points.shape[0],1))*(time_scale**2)*len_scale/mass_scale), axis=0)
-            tau_z_train = np.concatenate((tau_z_train,vtk_obj.get_array("wallShearStress")[:,2]
-                            .reshape((points.shape[0],1))*(time_scale**2)*len_scale/mass_scale), axis=0)
-            p_train = np.concatenate((p_train,(vtk_obj.get_array("p")-101e3)*(time_scale**2)*len_scale/mass_scale), axis=0)    
-            #nuT_train = np.concatenate((nuT_train,vtk_obj.get_array("nuTilda")/mass_scale*len_scale*time_scale),axis = 0)
+            # OpenFoam pressure = p/rho = [m^2/s^2]
+            u_train = np.concatenate((u_train,vtk_obj.get_array("U")[:,0]
+                            .reshape((points.shape[0],1))*time_scale/len_scale), axis=0)
+            v_train = np.concatenate((v_train,vtk_obj.get_array("U")[:,1]
+                            .reshape((points.shape[0],1))*time_scale/len_scale), axis=0)
+            w_train = np.concatenate((w_train,vtk_obj.get_array("U")[:,2]
+                            .reshape((points.shape[0],1))*time_scale/len_scale), axis=0)
+            p_train = np.concatenate((p_train,(vtk_obj.get_array("p")-101e3)*(time_scale**2)/(len_scale**2)), axis=0)    
+            nuT_train = np.concatenate((nuT_train,vtk_obj.get_array("nut")/(len_scale**2)*time_scale),axis = 0)
             #tau_train = np.concatenate((tau_train,vtk_obj.get_array("wallShearStress"))
         # Test Data
         # Trunk Inputs    
@@ -139,21 +148,17 @@ def load_data(res_path, csv_name, n_train=50, n_test=10):
         z_test = np.ndarray((0,1))
         # Branch Inputs
         params_test = np.ndarray((0,4))
-        #V_test = np.ndarray((0,1))
-        #alpha_test = np.ndarray((0,1))
-        #d1_test = np.ndarray((0,1))
-        #d2_test = np.ndarray((0,1))
     
         # Outputs
-        tau_x_test = np.ndarray((0,1))
-        tau_y_test = np.ndarray((0,1))
-        tau_z_test = np.ndarray((0,1))
+        nuT_test = np.ndarray((0,1))
         p_test = np.ndarray((0,1))
-        #nuT_test = np.ndarray((0,1))
+        u_test = np.ndarray((0,1))
+        v_test = np.ndarray((0,1))
+        w_test = np.ndarray((0,1))
         #tau_test = np.ndarray((0,3))
     
         for i in range(n_test):
-            vtk_obj = VTKFromFile(res_path+'/'+csv_data[-(i+1)]["folder"]+'/wing.vtp')
+            vtk_obj = VTKFromFile(res_path+'/'+csv_data[-(i+1)]["folder"]+'/internal.vtu')
             # Get Points
             points = vtk_obj.get_points()
             x_test = np.concatenate((x_test, points[:,0].reshape((points.shape[0],1))/len_scale), axis = 0)
@@ -162,68 +167,59 @@ def load_data(res_path, csv_name, n_train=50, n_test=10):
             # Set Input Vals
             params = np.array([csv_data[-(i+1)]["V"]/vel_scale, csv_data[-(i+1)]["alpha"]/angle_scale,
                 csv_data[-(i+1)]["d1"]/angle_scale, csv_data[-(i+1)]["d2"]/angle_scale])
-            params_test = np.concatenate((params_test, np.full((points.shape[0],4),params)), axis = 0) 
-            #V_test  = np.concatenate((V_test,np.ones((points.shape[0],1))*csv_data[i]["V"]),axis = 0)
-            #alpha_test  = np.concatenate((alpha_test,np.ones((points.shape[0],1))*csv_data[i]["alpha"]),axis = 0)
-            #d1_test  = np.concatenate((d1_test,np.ones((points.shape[0],1))*csv_data[i]["d1"]),axis = 0)
-            #d2_test  = np.concatenate((d2_test,np.ones((points.shape[0],1))*csv_data[i]["d2"]),axis = 0)
+            params_test = np.concatenate((params_test, np.full((points.shape[0],4),params)), axis = 0)
      
             # Get Outputs
-            tau_x_test = np.concatenate((tau_x_test,vtk_obj.get_array("wallShearStress")[:,0]
-                           .reshape((points.shape[0],1))*(time_scale**2)*len_scale/mass_scale), axis=0)
-            tau_y_test = np.concatenate((tau_y_test,vtk_obj.get_array("wallShearStress")[:,1]
-                           .reshape((points.shape[0],1))*(time_scale**2)*len_scale/mass_scale), axis=0)
-            tau_z_test = np.concatenate((tau_z_test,vtk_obj.get_array("wallShearStress")[:,2]
-                           .reshape((points.shape[0],1))*(time_scale**2)*len_scale/mass_scale), axis=0)
-            p_test = np.concatenate((p_test,(vtk_obj.get_array("p")-101e3)*(time_scale**2)*len_scale/mass_scale), axis=0)    
-            #nuT_test = np.concatenate((nuT_test,vtk_obj.get_array("nuTilda")*len_scale*time_scale/mass_scale), axis=0)
+            u_test = np.concatenate((u_test,vtk_obj.get_array("U")[:,0]
+                            .reshape((points.shape[0],1))*time_scale/len_scale), axis=0)
+            v_test = np.concatenate((v_test,vtk_obj.get_array("U")[:,1]
+                            .reshape((points.shape[0],1))*time_scale/len_scale), axis=0)
+            w_test = np.concatenate((w_test,vtk_obj.get_array("U")[:,2]
+                            .reshape((points.shape[0],1))*time_scale/len_scale), axis=0)
+            p_test = np.concatenate((p_test,(vtk_obj.get_array("p")-101e3)*(time_scale**2)/(len_scale**2)), axis=0)    
+            nuT_test = np.concatenate((nuT_train,vtk_obj.get_array("nut")/(len_scale**2)*time_scale),axis = 0)
             #tau_test = np.concatenate((tau_test,vtk_obj.get_array("wallShearStress"), axis=0)
         print(x_train.shape, n_train)
         
         data = {'x_test':x_test,
                 'y_test':y_test,
                 'z_test':z_test,
-                'params_test':params_test, 
-                #'V_test':V_test, 
-                #'alpha_test':alpha_test, 
-                #'d1_test':d1_test, 
-                #'d2_test':d2_test, 
-                'tau_x_test':tau_x_test,
-                'tau_y_test':tau_y_test,
-                'tau_z_test':tau_z_test,
+                'params_test':params_test,
+                'nuT_test':nuT_test,
                 'p_test':p_test,
+                'u_test':x_test,
+                'v_test':y_test,
+                'w_test':z_test,
                 #'nuT_test':nuT_test,
                 #'tau_test':tau_test,
                 'x_train':x_train,
                 'y_train':y_train,
                 'z_train':z_train,
-                'params_train':params_train, 
-                #'V_train':V_train, 
-                #'alpha_train':alpha_train, 
-                #'d1_train':d1_train, 
-                #'d2_train':d2_train, 
-                'tau_x_train':tau_x_train,
-                'tau_y_train':tau_y_train,
-                'tau_z_train':tau_z_train,
+                'params_train':params_train,
+                'nuT_train':nuT_train,
                 'p_train':p_train,
+                'u_train':x_train,
+                'v_train':y_train,
+                'w_train':z_train,
                 #'nuT_train':nuT_train,
                 #'tau_train':tau_train, 
                }
-        np.savez("/tmp/data/data.npz", **data)
+        if cfg.run_mode == "eval":
+            np.savez("/tmp/data/data.npz", **data)
     return data
     
-
-
-@modulus.sym.main(config_path="conf", config_name="conf_surf.yaml")
+    
+@modulus.sym.main(config_path="conf", config_name="conf_multi.yaml")
 def run(cfg: ModulusConfig):
     global config, domain, nodes
-    cfg.optimizer.lr = 0.0008
+    cfg.optimizer.lr = 0.002
+    
     # [init-model]
     trunk_net = FullyConnectedArch(
         input_keys=[Key("x"),Key("y"),Key("z")],
         output_keys=[Key("trunk", 128)],
     )
-    branch_net_tau = FullyConnectedArch(
+    branch_net_uvw = FullyConnectedArch(
         input_keys=[Key("params",4)],
         output_keys=[Key("branch", 128)],
     )
@@ -231,32 +227,37 @@ def run(cfg: ModulusConfig):
         input_keys=[Key("params",4)],
         output_keys=[Key("branch", 128)],
     )
-    #branch_net_nu = FullyConnectedArch(
-    #    input_keys=[Key("params",4)],
-    #    output_keys=[Key("branch", 128)],
-    #)
+    branch_net_nu = FullyConnectedArch(
+        input_keys=[Key("params",4)],
+        output_keys=[Key("branch", 128)],
+    )
 
     deeponet_p = DeepONetArch(
         output_keys=[Key("p")],
         branch_net=branch_net_p,
         trunk_net=trunk_net,
     )
-    deeponet_tau = DeepONetArch(
-        output_keys=[Key("tau_x"), Key("tau_y"), Key("tau_z")],
-        branch_net=branch_net_tau,
+    deeponet_uvw = DeepONetArch(
+        output_keys=[Key("u"), Key("v"), Key("w")],
+        branch_net=branch_net_uvw,
         trunk_net=trunk_net,
     )
-    #deeponet_nuT = DeepONetArch(
-    #    output_keys=[Key("nu")],
-    #    branch_net=branch_net_nu,
-    #    trunk_net=trunk_net,
-    #)
+    deeponet_nuT = DeepONetArch(
+        output_keys=[Key("nu")],
+        branch_net=branch_net_nu,
+        trunk_net=trunk_net,
+    )
     deepo_nodes = [
         deeponet_p.make_node("deepo_p"), 
-        deeponet_tau.make_node("deepo_tau")
+        deeponet_uvw.make_node("deepo_uvw"),
+        deeponet_nuT.make_node("deepo_nu")
     ]
 
-    nodes = deepo_nodes
+    # [equations]
+    ns = NavierStokes(nu="nu", rho=1.2, dim=3, time=False)
+    navier_stokes_nodes = ns.make_nodes()
+    
+    nodes = deepo_nodes + navier_stokes_nodes
     
     # [load-data]
     len_scale = 0.7
@@ -266,18 +267,17 @@ def run(cfg: ModulusConfig):
     
     set_scale(len_scale, den_scale, vel_scale, angle_scale)
     
-    
-    
     # Load from dataset csv list
-    csv_name = 'morph-wing_dataset_big.csv'
+    csv_name = 'morph-wing_dataset_single_2.csv'
     res_path = os.path.expandvars('${GROUP_HOME}/${USER}/vtk_res')
-    data = load_data(res_path, csv_name, 225,25)
+    data = load_data(cfg, res_path, csv_name, 20, 5)
+ 
  
     # [constraint]
     # Make Domain
     domain = Domain()
 
-    datacon_tau = DeepONetConstraint.from_numpy(
+    datacon_uvw = DeepONetConstraint.from_numpy(
         nodes = nodes,
         invar = {
             "x":data["x_train"],
@@ -286,13 +286,13 @@ def run(cfg: ModulusConfig):
             "params":data["params_train"],
             },
         outvar={
-            "tau_x":data["tau_x_train"],
-            "tau_y":data["tau_y_train"],
-            "tau_z":data["tau_z_train"],
+            "u":data["u_train"],
+            "v":data["v_train"],
+            "w":data["w_train"],
             },
         batch_size=cfg.batch_size.train,
         )
-    domain.add_constraint(datacon_tau, "data_tau")
+    domain.add_constraint(datacon_uvw, "data_uvw")
 
     datacon_p = DeepONetConstraint.from_numpy(
         nodes = nodes,
@@ -309,7 +309,40 @@ def run(cfg: ModulusConfig):
         )
     domain.add_constraint(datacon_p, "data_p")
     
+    datacon_nu = DeepONetConstraint.from_numpy(
+        nodes = nodes,
+        invar = {
+            "x":data["x_train"],
+            "y":data["y_train"],
+            "z":data["z_train"],
+            "params":data["params_train"],
+            },
+        outvar={
+            "nu":data["nuT_train"],
+            },
+        batch_size=cfg.batch_size.train,
+        )
+    domain.add_constraint(datacon_nu, "data_nu")
     
+    flowcon = DeepONetConstraint.from_numpy(
+        nodes = nodes,
+        invar = {
+            "x":data["x_train"],
+            "y":data["y_train"],
+            "z":data["z_train"],
+            "params":data["params_train"],
+            },
+        outvar = {
+            "continuity":np.zeros_like(data["p_train"]),
+            "momentum_x":np.zeros_like(data["p_train"]),
+            "momentum_y":np.zeros_like(data["p_train"]),
+            "momentum_z":np.zeros_like(data["p_train"]),
+            },
+        batch_size=cfg.batch_size.lr_phys,
+        )
+    domain.add_constraint(flowcon, "flow")
+
+    # [constraint]
     # [constraint]
     # only use validators in train mode
     if cfg.run_mode == "train":
@@ -323,25 +356,22 @@ def run(cfg: ModulusConfig):
                 'params': data['params_test'][k*n:(k+1)*n],
                 }
             outvar_valid={
-                'tau_x': data['tau_x_test'][k*n:(k+1)*n],
-                'tau_y': data['tau_y_test'][k*n:(k+1)*n],
-                'tau_z': data['tau_z_test'][k*n:(k+1)*n],
+                'u': data['u_test'][k*n:(k+1)*n],
+                'v': data['v_test'][k*n:(k+1)*n],
+                'w': data['w_test'][k*n:(k+1)*n],
                 'p': data['p_test'][k*n:(k+1)*n],
-                #'nu': data['nuT_test'][k*n:(k+1)*n],
+                'nu': data['nuT_test'][k*n:(k+1)*n],
                 }
             dataset = DictGridDataset(invar_valid, outvar_valid)
          
             validator = GridValidator(nodes=nodes,dataset=dataset, plotter=None)
             domain.add_validator(validator, "validator_{}".format(k))
         
-        
-        
-    
-    cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big")
-    cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big")
+    cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_single")
+    cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_single")   
     
     config = cfg
-    
+    #print(cfg, config)
     
 def get_config():
     return config
@@ -351,7 +381,7 @@ def get_nodes():
     return nodes
     
 def solve_nn(cfg, domain, nodes):
-    domain.monitors = {}
+    domain.inferencers = {}
     len_scale = scale["len"]
     time_scale = scale["time"]
     mass_scale = scale["mass"]
@@ -360,8 +390,9 @@ def solve_nn(cfg, domain, nodes):
     
     
     if cfg.run_mode == "eval":
-        cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_8e-4")
-        cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big_results")
+        print("EVAL")
+        cfg.initialization_network_dir = os.path.expandvars("${HOME}/fly-by-feel/modulus_results/morph-wing_single_long")
+        cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_single_results")
         sp = {}
         V = cfg.custom.Vinf
         alpha = cfg.custom.alpha
@@ -372,30 +403,39 @@ def solve_nn(cfg, domain, nodes):
         sp = get_eval_sample_points(d1,d2,alpha)
         params = np.array([V/vel_scale, alpha/angle_scale,
             d1/angle_scale, d2/angle_scale])
-        sp["params"] = np.full((sp["x"].shape[0],4),params)
+        vol_sp = sp["vol"]
+        vol_sp["params"] = np.full((vol_sp["x"].shape[0],4),params)
         
         # Make monitor
-        ld_mon = PointwiseMonitor(
-            invar = sp,
-            output_names = ["p","tau_z", "tau_x"],
-            metrics = {'lift': lambda var: -torch.sum(var["area"]*(var["normal_z"]*(var["p"]*mass_scale/(len_scale*(time_scale**2))) +
-                var["tau_z"]*mass_scale/(len_scale*(time_scale**2)) )),
-                
-                'drag': lambda var: -torch.sum(var["area"]*(var["normal_x"]*(var["p"]*mass_scale/(len_scale*(time_scale**2))) +
-                var["tau_x"]*mass_scale/(len_scale*(time_scale**2)) )),
-            },
+        intern_inf = PointwiseInferencer(
             nodes=nodes,
+            invar=vol_sp,
+            output_names=["p","u","v","w","nu"],
+            batch_size=int(n_points/8),
             )
-        domain.add_monitor(ld_mon)
+        domain.add_inferencer(intern_inf, "int_{:.2f}_{:.2f}".format(d1,d2))
+        
+        wing_sp = sp["surf"]
+        wing_sp["params"] = np.full((wing_sp["x"].shape[0],4),params)
+        # Make monitor
+        wing_inf = PointwiseInferencer(
+            nodes=nodes,
+            invar=wing_sp,
+            output_names=["p","u","v","w","nu"],
+            batch_size=int(n_points/8),
+            )
+        domain.add_inferencer(wing_inf, "surf_{:.2f}_{:.2f}".format(d1,d2))
+        torch.cuda.empty_cache()
     
+    print(cfg)
     slv = Solver(cfg,domain)
     slv.solve()
     slv = None
     gc.collect()
     torch.cuda.empty_cache()
     
-def solve_nn_batch(cfg, domain, nodes, d1_range, d2_range, n_samples=10):
-    domain.monitors = {}
+def solve_nn_batch_inf(cfg, domain, nodes, d1_range, d2_range, n_samples=10):
+    domain.inferencers = {}
     len_scale = scale["len"]
     time_scale = scale["time"]
     mass_scale = scale["mass"]
@@ -404,37 +444,31 @@ def solve_nn_batch(cfg, domain, nodes, d1_range, d2_range, n_samples=10):
     
     
     if cfg.run_mode == "eval":
-        cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big_cos_annealing_lr_8e-4")
-        cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big_results")
+        cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_single")
+        cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_single_results")
         V = cfg.custom.Vinf
         alpha = cfg.custom.alpha
+        print(V, alpha)
         d1_space = np.linspace(d1_range[0], d1_range[1], n_samples, endpoint=True)
         d2_space = np.linspace(d2_range[0], d2_range[1], n_samples, endpoint=True)
+        sp = {}
+        # get sample points
+        sp = get_eval_sample_points(0.0,0.0, alpha)
         for d1 in d1_space:
             for d2 in d2_space:
-                sp = {}
-                # get sample points
-                sp = get_eval_sample_points(d1,d2,alpha)
                 params = np.array([V/vel_scale, alpha/angle_scale,
                     d1/angle_scale, d2/angle_scale])
                 sp["params"] = np.full((sp["x"].shape[0],4),params)
-                l_mon = "lift_{}_{}_mon".format(d1,d2)
-                d_mon = "drag_{}_{}_mon".format(d1,d2)
-                # Make monitor
-                ld_mon = PointwiseMonitor(
-                    invar = sp,
-                    output_names = ["p","tau_z", "tau_x"],
-                    metrics = {l_mon: lambda var: -torch.sum(var["area"]*(var["normal_z"]*var["p"]*mass_scale/(len_scale*(time_scale**2)))), #+ 
-                        #var["tau_z"]*mass_scale/(len_scale*(time_scale**2)) )),
-                        
-                        d_mon: lambda var: -torch.sum(var["area"]*(var["normal_x"]*var["p"]*mass_scale/(len_scale*(time_scale**2)) + 
-                        var["tau_x"]*mass_scale/(len_scale*(time_scale**2)) )),
-                    },
+                # Make inferencer
+                intern_inf = PointwiseInferencer(
                     nodes=nodes,
+                    invar=sp,
+                    output_names=["p","u","v","w","nu"],
+                    batch_size=int(n_points/8),
                     )
-                domain.add_monitor(ld_mon)
+                domain.add_inferencer(intern_inf, "int_{:.2f}_{:.2f}".format(d1,d2))
                 torch.cuda.empty_cache()
-                
+    
     slv = Solver(cfg,domain)
     slv.solve()
     slv = None
