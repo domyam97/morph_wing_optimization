@@ -1,7 +1,5 @@
 #!/bin/bash
 
-pip3 install nvidia-modulus-sym --user -q
-
 host=$HOSTNAME
 echo $host
 

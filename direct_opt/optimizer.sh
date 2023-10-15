@@ -2,6 +2,8 @@
 mkdir /tmp/stls
 mkdir /tmp/data
 
+rm $SCRATCH/modulus/outputs/morph-wing_surf_big_results/inferencers/*
+
 host=$HOSTNAME
 echo $host
 

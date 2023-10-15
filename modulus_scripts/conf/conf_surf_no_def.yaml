@@ -14,71 +14,73 @@
 
 defaults :
   - modulus_default
-  - /arch/fully_connected_cfg@arch.branch_uvw
+  - /arch/fully_connected_cfg@arch.branch_tau
   - /arch/fully_connected_cfg@arch.branch_p
-  - /arch/fully_connected_cfg@arch.branch_nuT
-  - /arch/fully_connected_cfg@arch.trunk
-  - /arch/deeponet_cfg@arch.deeponet_uvw
+  - /arch/multiscale_fourier_cfg@arch.trunk
+  - /arch/deeponet_cfg@arch.deeponet_tau
   - /arch/deeponet_cfg@arch.deeponet_p
-  - /arch/deeponet_cfg@arch.deeponet_nuT
   - scheduler: exponential_lr
   - optimizer: adam
   - loss: sum
   - _self_
 
 arch:
-  branch_p:
-    nr_layers: 4
-    layer_size: 128
-  branch_nuT:
-    nr_layers: 4
-    layer_size: 128
-  branch_uvw:
-    nr_layers: 4
-    layer_size: 128
   trunk:
-    nr_layers: 4
-    layer_size: 128
-  deeponet_uvw:
-    output_keys: u,v,w
+    nr_layers: 6
+    layer_size: 512
+    activation_fn: "tanh"
+    output_keys: ["trunk",128]
+    frequencies: (("axis", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),)
+  branch_p:
+    nr_layers: 6
+    layer_size: 256
+    activation_fn: "tanh"
+    output_keys: ["branch_p",128]
+  branch_tau:
+    nr_layers: 6
+    layer_size: 256
+    activation_fn: "tanh"
+    output_keys: ["branch_tau",128]
+  deeponet_tau:
+    output_keys: tau_x, tau_y, tau_z
   deeponet_p:
     output_keys: p
-  deeponet_nuT:
-    output_keys: nut
+
+optimizer:
+  lr: 0.00005
 
 scheduler:
-  gamma: 0.99999771
-#  decay_steps: 2000
-
+  gamma: 0.99998
 
 training:
-  rec_validation_freq: 10000
-  rec_constraint_freq: 5000
-  max_steps: 500000
+  rec_validation_freq: 2000
+  rec_constraint_freq: 500
+  max_steps: 100000
 
 
 batch_size:
   train: 3072
-  nut_train: 7144
-  phys_train: 3072
   validation: 3072
-
+  
 loss:
   weights:
-    nut: 1.0e6
-    u: 100.0
-    v: 10.0
-    w: 10.0
-    p: 1.0e3
-
+    tau_x: 1.0E2
+    tau_y: 1.0E2
+    tau_z: 1.0E2
+    p: 1.0
+  
 custom:
-  Vinf: 12.0
+  Vinf: 14.0
   alpha: 8.0
-  d1: 3.0
-  d2: -3.0
+  d1: 0.0
+  d2: 0.0
   v_scale: 25.0
   ang_scale: 20.0
   len_scale: 0.7
+  den_scale: 1.0
+  n_params: 2
+  train_set: 31
+  eval_set: 4
   
 run_mode: 'train'
 

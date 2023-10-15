@@ -8,8 +8,8 @@ import time
 from optimizer import *
 
 
-sys.path.append("../..")
-from morph_wing.modulus.morph_wing_surface import *
+sys.path.append("../")
+import modulus_scripts.morph_wing_surface as modMorphWing
 
 from modulus.sym.hydra import ModulusConfig
 from modulus.sym.domain import Domain
@@ -69,8 +69,8 @@ def load_vtk_data(res_path, csv_name):
         integrator.Update()
 
 
-        lift  = vtk_to_numpy(integrator.GetOutputDataObject(0).GetCellData().GetArray('Lift'))
-        drag  = vtk_to_numpy(integrator.GetOutputDataObject(0).GetCellData().GetArray('Drag'))
+        lift  = 1.2*vtk_to_numpy(integrator.GetOutputDataObject(0).GetCellData().GetArray('Lift'))
+        drag  = 1.2*vtk_to_numpy(integrator.GetOutputDataObject(0).GetCellData().GetArray('Drag'))
 
         x[i] = np.array([[csv_data[i]['d1'], csv_data[i]['d2'], lift[0]]]).T
         y[i,0] = np.array(drag[0]) 
@@ -300,51 +300,16 @@ def optimize(f, c, x0):
     print(d_cross_en, d_mesh_ad, d_hj) 
     return bests[np.argmin([d_cross_en, d_mesh_ad, d_hj])] 
     
-def optimize_nn(f, c, x0):
-    
-    start_time = time.time()
-    x_his = cross_entropy_pen(f, None, c, x0, 2000, count, var=0.5, m0=20)
-    x_best_cross_en = x_his[-1,:]
-    d_cross_en = eval_nn(x_best_cross_en)
-    tot_time_cross_en = time.time() - start_time
-    
-    print("Total Time Cross Entropy, NN (s): ", tot_time_cross_en)
-    print(count())
-    reset_count()
-    
-    start_time = time.time()
-    x_his = hooke_jeeves(f, None, c, x0, 2000, count, alpha=1.0, gam = 0.8)
-    x_best_hooke_jeeves = x_his[-1,:]
-    d_hooke_jeeves = eval_nn(x_best_hooke_jeeves)
-    tot_time_hooke_jeeves = time.time() - start_time
-    
-    print("Total Time Hooke-Jeeves, NN (s): ", tot_time_hooke_jeeves)
-    print(count())
-    reset_count()
-
-    start_time = time.time()
-    x_his = mesh_adaptive_pen(f, None, c, x0, 2000, count)
-    x_best_mesh_ad = x_his[-1,:] 
-    d_mesh_ad = eval_nn(x_best_mesh_ad)
-
-    tot_time_mesh_ad = time.time() - start_time
-    print("Total Time Mesh Adaptive, NN (s): ", tot_time_mesh_ad)
-    print(count())
-    bests = [x_best_cross_en, x_best_hooke_jeeves, x_best_mesh_ad]
-
-    print(bests)
-    print(d_cross_en, d_hooke_jeeves, d_mesh_ad) 
-    return bests[np.argmin([d_cross_en, d_hooke_jeeves, d_mesh_ad])] 
     
 def optimize_nn_batch(var, gamma):
-    n_iters = 3
+    n_iters = 5
     n_samples = 5
     width = var
     d1_range = (0-(width/2),0+(width/2))
     d2_range = (0-(width/2),0+(width/2))
     start_time = time.time()
     for i in range(n_iters):
-        x_best_batch, l_batch, d_batch = eval_nn_batch(d1_range, d2_range, n_samples)
+        x_best_batch, l_batch, d_batch = eval_nn_batch_inf(d1_range, d2_range, n_samples)
         width *= gamma
         d1_range = (x_best_batch[0]-(width/2),x_best_batch[0]+(width/2))
         d2_range = (x_best_batch[1]-(width/2),x_best_batch[1]+(width/2))
@@ -356,28 +321,6 @@ def optimize_nn_batch(var, gamma):
 
     return x_best_batch, l_batch, d_batch
     
-
-def eval_nn_l(x):
-    global counter, last_x_l
-    counter +=1
-    cfg.custom.d1 = float(x[0])
-    cfg.custom.d2 = float(x[1])
-    cfg.custom.Vinf = V
-    cfg.custom.alpha = alpha
-    cfg.run_mode='eval'
-    if not np.all(np.equal(x,last_x_d)):
-        solve_nn(cfg, domain, nodes)
-    lift = np.loadtxt(os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/lift.csv"), 
-        skiprows=1, delimiter=',',usecols=(1))
-    os.remove("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/lift.csv")
-        
-    last_x_l = x
-    print(lift.shape)
-    if lift.shape:
-        return float(lift[-1])
-    else:
-        return float(lift)
-    
     
 def eval_nn(x):
     global counter, last_x_d
@@ -387,41 +330,65 @@ def eval_nn(x):
     cfg.custom.Vinf = V
     cfg.custom.alpha = alpha
     cfg.run_mode='eval'
-    if not np.all(np.equal(last_x_l,x)):
-        solve_nn(cfg, domain, nodes)
-    drag = np.loadtxt(os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/drag.csv"),
-         skiprows=1, delimiter=',',usecols=(1))
-    os.remove("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors/drag.csv")
-         
-    last_x_d = x
-    if drag.shape:
-        return float(drag[-1])
-    else:
-        return float(drag)
+    
+    modMorphWing.solve_nn(cfg, domain, nodes)
+    
+    # Set Scales
+    len_scale = modMorphWing.scale['len']
+    mass_scale = modMorphWing.scale['mass']
+    time_scale = modMorphWing.scale['time']
+    angle_scale = modMorphWing.scale['angle']
+    
+    res_dir = os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/inferencers")
+    for file in os.listdir(res_dir):
+        if file.startswith("surf") & file.endswith(".npz"):
+            data = np.load(os.path.join(res_dir,file), allow_pickle=True).get('arr_0').item(0)
+            
+            drag = -np.sum(data['area']*(len_scale**2)*(data['normal_x']*
+                data['p']*mass_scale/(len_scale*(time_scale**2)) + 
+                data["tau_x"]*mass_scale/(len_scale*(time_scale**2)) ))
+                
+            lift = -np.sum(data['area']*(len_scale**2)*(data['normal_z']*
+                data['p']*mass_scale/(len_scale*(time_scale**2)) + 
+                data["tau_z"]*mass_scale/(len_scale*(time_scale**2)) ))
+    
+    print('EVAL: lift: ', lift, " drag: ", drag)
         
-def eval_nn_batch(d1_range, d2_range, n_samples):
+def eval_nn_batch_inf(d1_range, d2_range, n_samples):
     cfg.custom.Vinf = V
     cfg.custom.alpha = alpha
     cfg.run_mode='eval'
-    solve_nn_batch(cfg, domain, nodes, d1_range, d2_range, n_samples)
     
-    res_dir = os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/monitors")
+    modMorphWing.solve_nn_batch_inf(cfg, domain, nodes, d1_range, d2_range, n_samples)
+    
+    # Set Scales
+    len_scale = modMorphWing.scale['len']
+    mass_scale = modMorphWing.scale['mass']
+    time_scale = modMorphWing.scale['time']
+    angle_scale = modMorphWing.scale['angle']
+    
+    res_dir = os.path.expandvars("$SCRATCH/modulus/outputs/morph-wing_surf_big_results/inferencers")
     i_drag = 0
     i_lift = 0
     drag = np.zeros((n_samples**2,1)); lift = np.zeros((n_samples**2,1));
     d1 = np.zeros((n_samples**2,1)); d2 = np.zeros((n_samples**2,1));
     for file in os.listdir(res_dir):
-        if file.startswith("drag") & file.endswith("mon.csv"):
-            drag[i_drag,0] = float(np.loadtxt(os.path.join(res_dir,file),
-                skiprows=1, delimiter=',',usecols=(1,)))
-            d1[i_drag,0] = float(file.split('_')[1])
-            d2[i_drag,0] = float(file.split('_')[2])
+        if file.startswith("surf") & file.endswith(".npz"):
+            data = np.load(os.path.join(res_dir,file), allow_pickle=True).get('arr_0').item(0)
+            
+            drag[i_drag,0] = -np.sum(data['area']*(len_scale**2)*(data['normal_x']*
+                data['p']*mass_scale/(len_scale*(time_scale**2)) + 
+                data["tau_x"]*mass_scale/(len_scale*(time_scale**2)) ))
+                
+            lift[i_lift,0] = -np.sum(data['area']*(len_scale**2)*(data['normal_z']*
+                data['p']*mass_scale/(len_scale*(time_scale**2)) + 
+                data["tau_z"]*mass_scale/(len_scale*(time_scale**2)) ))
+                
+            d1[i_drag,0] = data['params'][0,2]*angle_scale
+            d2[i_drag,0] = data['params'][0,3]*angle_scale
+            
+            i_lift += 1
             i_drag += 1
-            os.remove(os.path.join(res_dir,file))
-        if file.startswith("lift") & file.endswith("mon.csv"):
-            lift[i_lift,0] = float(np.loadtxt(os.path.join(res_dir,file),
-                skiprows=1, delimiter=',',usecols=(1,)))
-            i_lift +=1
             os.remove(os.path.join(res_dir,file))
             
     x = np.concatenate((d1,d2,lift),axis=1)
@@ -436,20 +403,12 @@ def eval_nn_batch(d1_range, d2_range, n_samples):
     print(x_best)
     print('lift: ', x[best_idx,2], " drag: ", drag[best_idx,0])
     return x_best, x[best_idx,2], drag[best_idx,0]
-
-def constraint_nn(x):
-    l_x = eval_nn_l(x)
-    c1 = max([0,np.abs(l_x-L0)-0.1*L0])
-    c2 = max([0,np.abs(x[0])-3])
-    c3 = max([0,np.abs(x[1])-3])
-    return np.array([c1, c2, c3])
     
 def constraint_nn_batch(x):
-    c1 = max([0,np.abs(x[2]-L0)-0.1*L0])
+    c1 = max([0,np.abs(x[2]-L0)-0.05*L0])
     c2 = max([0,np.abs(x[0])-3])
     c3 = max([0,np.abs(x[1])-3])
     c = np.array([c1,c2,c3])
-    print(c)
     return c
 
 if __name__ == "__main__":
@@ -467,13 +426,15 @@ if __name__ == "__main__":
     print("lift: ", eval_surrogate_l(x_best)," drag: ", eval_surrogate(x_best))
     V = 14.0
     alpha = 3.0
+    #L0 = 3.3
     reset_count()
-    run()
-    cfg = get_config()
-    domain = get_domain()
-    nodes = get_nodes()
+    modMorphWing.run()
+    cfg = modMorphWing.get_config()
+    domain = modMorphWing.get_domain()
+    nodes = modMorphWing.get_nodes()
     x_best_nn, l_batch, d_batch = optimize_nn_batch(6, 0.3)
     print("NN Result:")
     print(x_best_nn)
     print("lift: ", l_batch, " drag: ",d_batch)
+    eval_nn(x_best_nn)
     

@@ -14,6 +14,8 @@ echo "addr"
 echo $addr
 export SLURM_LAUNCH_NODE_IPADDR=$addr
 export HOSTNAME=$addr
+
+# Change to morph_wing_surface_vec.py if needed
 python3 morph_wing_surface.py
 
  

@@ -23,7 +23,8 @@ from modulus.sym.models.deeponet import DeepONetArch
 from modulus.sym.models.layers import Activation
 
 from modulus.sym.domain.constraint.continuous import DeepONetConstraint
-from modulus.sym.domain.validator.discrete import GridValidator
+from modulus.sym.domain.validator.discrete import DeepONet_Data_Validator
+from modulus.sym.domain.validator.continuous import PointwiseValidator
 from modulus.sym.dataset.discrete import DictGridDataset
 
 from modulus.sym.domain.monitor import PointwiseMonitor
@@ -43,22 +44,19 @@ def get_eval_sample_points(d1, d2, aoa):
     else:
         make_STL([d1,d2],filename.format(d1,d2))
     wing = Tessellation.from_stl(filename.format(d1,d2))
-    wing = wing.rotate(-1*np.deg2rad(aoa),axis='y')
+    # wing = wing.rotate(-1*np.deg2rad(aoa),axis='y')
     wing = wing.scale(1/scale["len"])
     
     y = Symbol('y')
     s = wing.sample_boundary(n_points, quasirandom=True, criteria=Lt(y,-0.0031/scale["len"]))
     return s
 
-rng = np.random.default_rng()
+rng = np.random.default_rng(0)
 
 config = None
 domain = None
 
 scale = None
-
-# Set # of Params
-n_params = 4
 
 def set_scale(len_scale, den_scale, vel_scale, angle_scale):
     global scale
@@ -84,9 +82,9 @@ def load_data(cfg, res_path, csv_name, n_train=50, n_test=10, n_params = 4):
         mass_scale = scale["mass"]
         angle_scale = scale["angle"]
         
-        if (n_train+n_test) > csv_data.shape[0]:
+        if n_train > csv_data.shape[0]:
             warnings.warn(
-                f"Not enough simulations to supply requested n_sims and n_test"
+                f"Not enough simulations to supply requested n_train"
             )
             n_train = 50
             n_test = 10
@@ -109,6 +107,13 @@ def load_data(cfg, res_path, csv_name, n_train=50, n_test=10, n_params = 4):
             vtk_obj = VTKFromFile(res_path+'/'+csv_data[i]["folder"]+'/wing.vtp')
             # Get Points
             points = vtk_obj.get_points()
+            
+            aoa = np.radians(csv_data[i]["alpha"])
+            R = np.array([[np.cos(-aoa), 0, np.sin(-aoa)],[0, 1, 0],[-np.sin(-aoa), 0, np.cos(-aoa)]],dtype='float32')
+            
+            for it in range(points.shape[0]):
+                points[it,:] = R@points[it,:]
+            
             x_train = np.concatenate((x_train, points[:,0].reshape((points.shape[0],1))/len_scale), axis = 0)
             y_train = np.concatenate((y_train, points[:,1].reshape((points.shape[0],1))/len_scale), axis = 0)
             z_train = np.concatenate((z_train, points[:,2].reshape((points.shape[0],1))/len_scale), axis = 0)
@@ -122,18 +127,23 @@ def load_data(cfg, res_path, csv_name, n_train=50, n_test=10, n_params = 4):
      
             # Get Outputs
             # Pa = kg/(m*s^2)
-            tau_x_train = np.concatenate((tau_x_train,vtk_obj.get_array("wallShearStress")[:,0]
+            tau = vtk_obj.get_array("wallShearStress")
+            
+            for it in range(tau.shape[0]):
+                tau[it,:] = R@tau[it,:]
+            
+            tau_x_train = np.concatenate((tau_x_train,tau[:,0]
                             .reshape((points.shape[0],1))*(time_scale**2)/(len_scale**2)), axis=0)
-            tau_y_train = np.concatenate((tau_y_train,vtk_obj.get_array("wallShearStress")[:,1]
+            tau_y_train = np.concatenate((tau_y_train,tau[:,1]
                             .reshape((points.shape[0],1))*(time_scale**2)/(len_scale**2)), axis=0)
-            tau_z_train = np.concatenate((tau_z_train,vtk_obj.get_array("wallShearStress")[:,2]
+            tau_z_train = np.concatenate((tau_z_train,tau[:,2]
                             .reshape((points.shape[0],1))*(time_scale**2)/(len_scale**2)), axis=0)
             p_train = np.concatenate((p_train,(vtk_obj.get_array("p")-101e3)*(time_scale**2)/(len_scale**2)), axis=0)    
             #nuT_train = np.concatenate((nuT_train,vtk_obj.get_array("nuTilda")/(len_scale**2)*time_scale),axis = 0)
             #tau_train = np.concatenate((tau_train,vtk_obj.get_array("wallShearStress"))
         
-        print(np.max(p_train),np.min(p_train))
-        print(np.max(tau_x_train),np.min(tau_x_train))
+        print("z", np.max(z_train),np.min(z_train))
+        print("tau", np.max(tau_x_train),np.min(tau_x_train))
         
         # Test Data
         # Trunk Inputs    
@@ -159,31 +169,46 @@ def load_data(cfg, res_path, csv_name, n_train=50, n_test=10, n_params = 4):
             vtk_obj = VTKFromFile(res_path+'/'+csv_data[-(i+1)]["folder"]+'/wing.vtp')
             # Get Points
             points = vtk_obj.get_points()
+            
+            aoa = np.radians(csv_data[-(i+1)]["alpha"])
+            R = np.array([[np.cos(-aoa), 0, np.sin(-aoa)],[0, 1, 0],[-np.sin(-aoa), 0, np.cos(-aoa)]],dtype='float32')
+            
+            for it in range(points.shape[0]):
+                points[it,:] = R@points[it,:]
+            
             x_test = np.concatenate((x_test, points[:,0].reshape((points.shape[0],1))/len_scale), axis = 0)
             y_test = np.concatenate((y_test, points[:,1].reshape((points.shape[0],1))/len_scale), axis = 0)
             z_test = np.concatenate((z_test, points[:,2].reshape((points.shape[0],1))/len_scale), axis = 0)
             # Set Input Vals
             if n_params == 4:
-                params = np.array([csv_data[i]["V"]/vel_scale,csv_data[i]["alpha"]/angle_scale,
-                csv_data[i]["d1"]/angle_scale,csv_data[i]["d2"]/angle_scale])
+                params = np.array([csv_data[-(i+1)]["V"]/vel_scale,csv_data[-(i+1)]["alpha"]/angle_scale,
+                csv_data[-(i+1)]["d1"]/angle_scale,csv_data[-(i+1)]["d2"]/angle_scale])
             else:
-                 params = np.array([csv_data[i]["V"]/vel_scale,csv_data[i]["alpha"]/angle_scale])
+                 params = np.array([csv_data[-(i+1)]["V"]/vel_scale,csv_data[-(i+1)]["alpha"]/angle_scale])
+            print(params[0], params[1],np.rad2deg(aoa))
             params_test = np.concatenate((params_test, np.full((points.shape[0],n_params),params)), axis = 0) 
             #V_test  = np.concatenate((V_test,np.ones((points.shape[0],1))*csv_data[i]["V"]),axis = 0)
-            #alpha_test  = np.concatenate((alpha_test,np.ones((points.shape[0],1))*csv_data[i]["alpha"]),axis = 0)
-            #d1_test  = np.concatenate((d1_test,np.ones((points.shape[0],1))*csv_data[i]["d1"]),axis = 0)
-            #d2_test  = np.concatenate((d2_test,np.ones((points.shape[0],1))*csv_data[i]["d2"]),axis = 0)
-     
+            #alpha_test  = np.concatenate((alpha_test,np.ones((points.shape[0],1))*csv_data[-(i+1)]["alpha"]),axis = 0)
+            #d1_test  = np.concatenate((d1_test,np.ones((points.shape[0],1))*csv_data[-(i+1)]["d1"]),axis = 0)
+            #d2_test  = np.concatenate((d2_test,np.ones((points.shape[0],1))*csv_data[-(i+1)]["d2"]),axis = 0)
+            
+            tau = vtk_obj.get_array("wallShearStress")
+            
+            for it in range(tau.shape[0]):
+                tau[it,:] = R@tau[it,:]
+                
             # Get Outputs
-            tau_x_test = np.concatenate((tau_x_test,vtk_obj.get_array("wallShearStress")[:,0]
+            tau_x_test = np.concatenate((tau_x_test,tau[:,0]
                            .reshape((points.shape[0],1))*(time_scale**2)/(len_scale**2)), axis=0)
-            tau_y_test = np.concatenate((tau_y_test,vtk_obj.get_array("wallShearStress")[:,1]
+            tau_y_test = np.concatenate((tau_y_test,tau[:,1]
                            .reshape((points.shape[0],1))*(time_scale**2)/(len_scale**2)), axis=0)
-            tau_z_test = np.concatenate((tau_z_test,vtk_obj.get_array("wallShearStress")[:,2]
+            tau_z_test = np.concatenate((tau_z_test,tau[:,2]
                            .reshape((points.shape[0],1))*(time_scale**2)/(len_scale**2)), axis=0)
             p_test = np.concatenate((p_test,(vtk_obj.get_array("p")-101e3)*(time_scale**2)/(len_scale**2)), axis=0)    
             #nuT_test = np.concatenate((nuT_test,vtk_obj.get_array("nuTilda")/(len_scale**2)*time_scale), axis=0)
             #tau_test = np.concatenate((tau_test,vtk_obj.get_array("wallShearStress"), axis=0)
+        print("p", np.max(p_test),np.min(p_test))
+        print("tau", np.max(tau_x_test),np.min(tau_x_test))
         print(x_train.shape, n_train)
         
         data = {'x_test':x_test,
@@ -214,30 +239,24 @@ def load_data(cfg, res_path, csv_name, n_train=50, n_test=10, n_params = 4):
 @modulus.sym.main(config_path="conf", config_name="conf_surf.yaml")
 def run(cfg: ModulusConfig):
     global config, domain, nodes
-    cfg.optimizer.lr = 0.0004
+    
+    n_params = cfg.custom.n_params
     
     # [init-model]
     trunk_net = instantiate_arch(
         input_keys=[Key("x"),Key("y"),Key("z")],
-        output_keys=[Key("trunk", 128)],
-        activation_fn=Activation.STAN,
         cfg=cfg.arch.trunk,
     )
     
     branch_net_tau = instantiate_arch(
         input_keys=[Key("params",n_params)],
-        output_keys=[Key("branch_tau", 128)],
-        activation_fn=Activation.STAN,
         cfg=cfg.arch.branch_tau,
     )
     
     branch_net_p = instantiate_arch(
         input_keys=[Key("params",n_params)],
-        output_keys=[Key("branch_p", 128)],
-        activation_fn=Activation.STAN,
         cfg=cfg.arch.branch_p,
     )
-    print(branch_net_p)
 
     deeponet_p = DeepONetArch(
         output_keys=[Key("p")],
@@ -245,24 +264,24 @@ def run(cfg: ModulusConfig):
         trunk_net=trunk_net,
     )
     
+    print(deeponet_p)
+    
     deeponet_tau = DeepONetArch(
         output_keys=[Key("tau_x"), Key("tau_y"), Key("tau_z")],
         branch_net=branch_net_tau,
         trunk_net=trunk_net,
     )
     
-    deepo_nodes = [
-        deeponet_p.make_node("deepo_p"), 
-        deeponet_tau.make_node("deepo_tau")
-    ]
+    p_nodes = deeponet_p.make_node("deepo_p")
+    tau_nodes = deeponet_tau.make_node("deepo_tau")
 
-    nodes = deepo_nodes
+    nodes = [p_nodes, tau_nodes]
     
     # [load-data]
-    len_scale = 0.7
-    den_scale = 1.2
-    vel_scale = 20.0 
-    angle_scale = 15.0 # degrees
+    len_scale = cfg.custom.len_scale
+    den_scale = cfg.custom.den_scale
+    vel_scale =  cfg.custom.v_scale
+    angle_scale =  cfg.custom.ang_scale # degrees
     
     set_scale(len_scale, den_scale, vel_scale, angle_scale)
     
@@ -271,15 +290,16 @@ def run(cfg: ModulusConfig):
     # Load from dataset csv list
     csv_name = 'morph-wing_dataset_big.csv'
     res_path = os.path.expandvars('${GROUP_HOME}/${USER}/vtk_res')
-    data = load_data(cfg, res_path, csv_name, 225,25, n_params)
+    data = load_data(cfg, res_path, csv_name, cfg.custom.train_set, cfg.custom.eval_set, n_params)
     #print(type(cfg.loss.weights), cfg.loss.weights)
+    print("Loaded Data")
     
     # [constraint]
     # Make Domain
     domain = Domain()
 
     datacon_tau = DeepONetConstraint.from_numpy(
-        nodes = nodes,
+        nodes = [tau_nodes],
         invar = {
             "x":data["x_train"],
             "y":data["y_train"],
@@ -296,7 +316,7 @@ def run(cfg: ModulusConfig):
     domain.add_constraint(datacon_tau, "data_tau")
 
     datacon_p = DeepONetConstraint.from_numpy(
-        nodes = nodes,
+        nodes = [p_nodes],
         invar = {
             "x":data["x_train"],
             "y":data["y_train"],
@@ -310,19 +330,19 @@ def run(cfg: ModulusConfig):
         )
     domain.add_constraint(datacon_p, "data_p")
     
-    
+    print("Created Constraints")
     # [constraint]
     # only use validators in train mode
     if cfg.run_mode == "train":
         # [validator]
+        n = int(data['x_test'].shape[0]/3)
         for k in range(3):
-            n = int(data['x_test'].shape[0]/3)
             invar_valid= {
                 'x': data['x_test'][k*n:(k+1)*n],
                 'y': data['y_test'][k*n:(k+1)*n],
                 'z': data['z_test'][k*n:(k+1)*n],
                 'params': data['params_test'][k*n:(k+1)*n],
-                }
+            }
             outvar_valid={
                 'tau_x': data['tau_x_test'][k*n:(k+1)*n],
                 'tau_y': data['tau_y_test'][k*n:(k+1)*n],
@@ -330,16 +350,21 @@ def run(cfg: ModulusConfig):
                 'p': data['p_test'][k*n:(k+1)*n],
                 #'nu': data['nuT_test'][k*n:(k+1)*n],
                 }
-            dataset = DictGridDataset(invar_valid, outvar_valid)
-         
-            validator = GridValidator(nodes=nodes,dataset=dataset, plotter=None)
+            print("Creating node {}".format(k))
+            validator = PointwiseValidator(
+                nodes=nodes,
+                invar=invar_valid,
+                true_outvar= outvar_valid,
+                batch_size=cfg.batch_size.validation,
+                plotter=None,
+                )
             domain.add_validator(validator, "validator_{}".format(k))
+        print("Created Validators")       
         
-        
-        
+     
     
-    cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big")
-    cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big")
+    cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_four")
+    cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_four")
     
     config = cfg
     
@@ -358,10 +383,11 @@ def solve_nn(cfg, domain, nodes):
     mass_scale = scale["mass"]
     vel_scale = scale["vel"]
     angle_scale = scale["angle"]
+    n_params = cfg.custom.n_params
     
     
     if cfg.run_mode == "eval":
-        cfg.initialization_network_dir = os.path.expandvars("${HOME}/fly-by-feel/modulus_results/morph-wing_surf_no_def")
+        cfg.initialization_network_dir = os.path.expandvars("${HOME}/fly-by-feel/modulus_results/morph-wing_surf_no_def_full")
         cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big_results")
         sp = {}
         V = cfg.custom.Vinf
@@ -401,10 +427,11 @@ def solve_nn_batch_inf(cfg, domain, nodes, d1_range, d2_range, n_samples=10):
     mass_scale = scale["mass"]
     vel_scale = scale["vel"]
     angle_scale = scale["angle"]
+    n_params = cfg.custom.n_params
     
     
     if cfg.run_mode == "eval":
-        cfg.initialization_network_dir = os.path.expandvars("${HOME}/fly-by-feel/modulus_results/morph-wing_surf_no_def")
+        cfg.initialization_network_dir = os.path.expandvars("${HOME}/fly-by-feel/modulus_results/morph-wing_surf_no_def_full")
         cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_surf_big_results")
         print(cfg)
         V = cfg.custom.Vinf

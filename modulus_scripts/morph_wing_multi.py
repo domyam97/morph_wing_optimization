@@ -1,6 +1,7 @@
 import os
 import warnings
 import sys
+import gc
 
 import numpy as np
 import torch
@@ -41,6 +42,7 @@ from modulus.sym.node import Node
         
 
 n_points = 16384
+n_points_vol = 16384*4
 
 rng = np.random.default_rng()
 
@@ -57,9 +59,15 @@ def get_eval_sample_points(d1, d2, aoa):
     
     vol = box-wing
     vol = vol.scale(1/scale["len"])
+    wing = wing.scale(1/scale["len"])
     
     y = Symbol('y')
-    s = vol.sample_interior(n_points, quasirandom=True)
+    
+    s = {"vol":None, "surf":None}
+    
+    s["vol"] = vol.sample_interior(n_points_vol, quasirandom=True)
+    s["surf"] = wing.sample_boundary(n_points, quasirandom=True)
+    print(s.keys())
     return s
 
 rng = np.random.default_rng(0)
@@ -252,11 +260,9 @@ def run(cfg: ModulusConfig):
         branch_net=branch_net_nut,
         trunk_net=trunk_net,
     )
-    deepo_nodes = [
-        deeponet_p.make_node("deepo_p"), 
-        deeponet_uvw.make_node("deepo_uvw"),
-        deeponet_nuT.make_node("deepo_nut")
-    ]
+    p_nodes = [deeponet_p.make_node("deepo_p")]
+    vel_nodes = [deeponet_uvw.make_node("deepo_uvw")]
+    nut_nodes = [deeponet_nuT.make_node("deepo_nut")]
 
     # [equations]
     nu = 1.5e-5
@@ -270,16 +276,16 @@ def run(cfg: ModulusConfig):
     nu = Number(nu)
     turb_nodes = Node.from_sympy(eq=nut+nu, out_name="nu")
     
-    ns = NavierStokes(nu="nu", rho=1.2, dim=3, time=False)
+    ns = NavierStokes(nu="nu", rho=1.0, dim=3, time=False)
     navier_stokes_nodes = ns.make_nodes()
     
-    nodes = deepo_nodes + [turb_nodes] + navier_stokes_nodes
+    nodes = p_nodes + vel_nodes + nut_nodes + [turb_nodes] + navier_stokes_nodes
     
     # [load-data]
-    len_scale = 0.7
-    den_scale = 1.2
-    vel_scale = 20.0 
-    angle_scale = 15.0 # degrees
+    len_scale = cfg.custom.len_scale
+    den_scale = 1.0
+    vel_scale =  cfg.custom.v_scale
+    angle_scale =  cfg.custom.ang_scale # degrees
     
     set_scale(len_scale, den_scale, vel_scale, angle_scale)
     
@@ -294,7 +300,7 @@ def run(cfg: ModulusConfig):
     domain = Domain()
 
     datacon_uvw = DeepONetConstraint.from_numpy(
-        nodes = nodes,
+        nodes = vel_nodes,
         invar = {
             "x":data["x_train"],
             "y":data["y_train"],
@@ -311,7 +317,7 @@ def run(cfg: ModulusConfig):
     domain.add_constraint(datacon_uvw, "data_uvw")
 
     datacon_p = DeepONetConstraint.from_numpy(
-        nodes = nodes,
+        nodes = p_nodes,
         invar = {
             "x":data["x_train"],
             "y":data["y_train"],
@@ -336,7 +342,7 @@ def run(cfg: ModulusConfig):
         outvar={
             "nut":data["nuT_train"],
             },
-        batch_size=cfg.batch_size.train,
+        batch_size=cfg.batch_size.nut_train,
         )
     domain.add_constraint(datacon_nu, "data_nut")
     
@@ -405,7 +411,7 @@ def solve_nn(cfg, domain, nodes):
     
     
     if cfg.run_mode == "eval":
-        cfg.initialization_network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_multi")
+        cfg.initialization_network_dir = os.path.expandvars("${HOME}/fly-by-feel/modulus_results/morph-wing_multi")
         cfg.network_dir = os.path.expandvars("${SCRATCH}/modulus/outputs/morph-wing_multi_results")
         sp = {}
         V = cfg.custom.Vinf
@@ -417,16 +423,28 @@ def solve_nn(cfg, domain, nodes):
         sp = get_eval_sample_points(d1,d2,alpha)
         params = np.array([V/vel_scale, alpha/angle_scale,
             d1/angle_scale, d2/angle_scale])
-        sp["params"] = np.full((sp["x"].shape[0],4),params)
+        vol_sp = sp["vol"]
+        vol_sp["params"] = np.full((vol_sp["x"].shape[0],4),params)
         
-        # Make monitor
+        # Make inferencer
         intern_inf = PointwiseInferencer(
             nodes=nodes,
-            invar=sp,
+            invar=vol_sp,
             output_names=["p","u","v","w","nu"],
             batch_size=int(n_points/8),
             )
         domain.add_inferencer(intern_inf, "int_{:.2f}_{:.2f}".format(d1,d2))
+        
+        wing_sp = sp["surf"]
+        wing_sp["params"] = np.full((wing_sp["x"].shape[0],4),params)
+        # Make monitor
+        wing_inf = PointwiseInferencer(
+            nodes=nodes,
+            invar=wing_sp,
+            output_names=["p","u","v","w","nu"],
+            batch_size=int(n_points/8),
+            )
+        domain.add_inferencer(wing_inf, "surf_{:.2f}_{:.2f}".format(d1,d2))
         torch.cuda.empty_cache()
     
     slv = Solver(cfg,domain)

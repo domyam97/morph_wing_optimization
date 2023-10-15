@@ -16,7 +16,7 @@ defaults :
   - modulus_default
   - /arch/fully_connected_cfg@arch.branch_tau
   - /arch/fully_connected_cfg@arch.branch_p
-  - /arch/fully_connected_cfg@arch.trunk
+  - /arch/multiscale_fourier_cfg@arch.trunk
   - /arch/deeponet_cfg@arch.deeponet_tau
   - /arch/deeponet_cfg@arch.deeponet_p
   - scheduler: cosine_annealing_warm_restarts
@@ -26,46 +26,63 @@ defaults :
 
 arch:
   trunk:
-    nr_layers: 4
-    layer_size: 128
+    nr_layers: 6
+    layer_size: 512
+    activation_fn: "tanh"
+    output_keys: ["trunk",128]
+    frequencies: (("axis", [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),)
   branch_p:
-    nr_layers: 4
-    layer_size: 128
+    nr_layers: 6
+    layer_size: 512
+    activation_fn: "tanh"
+    output_keys: ["branch_tau",128]
   branch_tau:
-    nr_layers: 4
-    layer_size: 128
+    nr_layers: 6
+    layer_size: 512
+    activation_fn: "tanh"
+    output_keys: ["branch_tau",128]
   deeponet_tau:
     output_keys: tau_x, tau_y, tau_z
   deeponet_p:
     output_keys: p
 
+optimizer:
+  lr: 0.0004
+  
 scheduler:
   T_0: 20000
   T_mult: 2
   eta_min: 0.00001
 
 training:
-  rec_validation_freq: 5000
+  rec_validation_freq: 2000
   rec_constraint_freq: 500
   max_steps: 500000
 
 
 batch_size:
-  train: 7154
+  train: 7144
   validation: 3072
   
 loss:
   weights:
-    tau_x: 10000.0
-    tau_y: 10000.0
-    tau_z: 10000.0
-    p: 2.0
+    tau_x: 1.0E3
+    tau_y: 1.0E3
+    tau_z: 1.0E3
+    p: 1.0
   
 custom:
-  Vinf: 14.0
-  alpha: 3.0
+  Vinf: 12.0
+  alpha: 8.0
   d1: 0.0
   d2: 0.0
+  v_scale: 25.0
+  ang_scale: 20.0
+  len_scale: 0.7
+  n_params: 4
+  den_scale: 1.0
+  train_set: 225
+  eval_set: 25
   
 run_mode: 'train'
 
